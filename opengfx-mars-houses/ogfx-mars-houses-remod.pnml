@@ -17,6 +17,7 @@
 #include "header.pnml"
 #include "cargotable.pnml"
 
+#include "small_habitats.pnml"
 #include "habitats.pnml"
 #include "large_habitats.pnml"
 #include "tall_habitats.pnml"
