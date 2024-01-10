@@ -146,7 +146,11 @@ item (FEAT_HOUSES, item_smallhabitat) {
     population: 16;
     mail_multiplier: 6;
     availability_mask: [bitmask(TOWNZONE_EDGE, TOWNZONE_OUTSKIRT), ALL_CLIMATES | bitmask(ABOVE_SNOWLINE)];
+<<<<<<< Updated upstream
 	accepted_cargos: [[PASS, 2], [FOOD, 1], [WATT, 3], [WATR, 3]];
+=======
+	accepted_cargos: [[PASS, 2], [FOOD, 1], [GOOD, 1] [WATT, 4], [WATR, 3]];
+>>>>>>> Stashed changes
 	removal_cost_multiplier: 100;
 	local_authority_impact: 100;
   }
