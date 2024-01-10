@@ -145,7 +145,7 @@ item (FEAT_HOUSES, item_large_habitat) {
     population: 32;
     mail_multiplier: 12;
     availability_mask: [bitmask(TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB), ALL_CLIMATES | bitmask(ABOVE_SNOWLINE)];
-	accepted_cargos: [[PASS, 6], [FOOD, 4], [GOOD, 1]];
+	accepted_cargos: [[PASS, 6], [FOOD, 4], [GOOD, 1], [WATT, 11], [WATR, 10]];
 	removal_cost_multiplier: 135;
 	local_authority_impact: 135;
   }

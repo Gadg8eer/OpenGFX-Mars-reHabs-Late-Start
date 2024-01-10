@@ -640,7 +640,7 @@ item (FEAT_HOUSES, item_luxury_tower_habitat) {
     mail_multiplier: 64;
     availability_mask: [bitmask(TOWNZONE_CENTRE), ALL_CLIMATES | bitmask(ABOVE_SNOWLINE)];
     building_class: 2; // Walkway levels.
-	accepted_cargos: [[PASS, 8], [FOOD, 8], [GOOD, 4]];
+	accepted_cargos: [[PASS, 10], [TOUR, 5], [FOOD, 8], [GOOD, 4], [WATT, 27], [WATR, 25]];
 	removal_cost_multiplier: 200;
 	local_authority_impact: 200;
   }

@@ -686,13 +686,13 @@ item (FEAT_HOUSES, item_tall_habitat) {
     substitute: 0;
     name: string(STR_NAME_TALL_HABITAT);
     probability: 15;
-    years_available: [2050, -1];
+    years_available: [2060, -1];
     minimum_lifetime: 20;
     population: 64;
     mail_multiplier: 24;
     availability_mask: [bitmask(TOWNZONE_INNER_SUBURB, TOWNZONE_CENTRE), ALL_CLIMATES | bitmask(ABOVE_SNOWLINE)];
     building_class: 1; // Walkway levels.
-	accepted_cargos: [[PASS, 8], [FOOD, 6], [GOOD, 2]];
+	accepted_cargos: [[PASS, 8], [FOOD, 6], [GOOD, 2], [WATT, 16], [WATR, 14]];
 	removal_cost_multiplier: 150;
 	local_authority_impact: 150;
   }

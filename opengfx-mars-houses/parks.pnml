@@ -88,10 +88,10 @@ item (FEAT_HOUSES, item_park) {
     substitute: 0;
     name: string(STR_NAME_PARK);
     probability: 3;
-    years_available: [2040, -1];
+    years_available: [2010, -1];
     minimum_lifetime: 20;
     availability_mask: [bitmask(TOWNZONE_EDGE, TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB), ALL_CLIMATES | bitmask(ABOVE_SNOWLINE)];
-	accepted_cargos: [[PASS, 4]];
+	accepted_cargos: [[PASS, 1], [TOUR, 4], [WATT, 5], [WATR, 3]];
 	removal_cost_multiplier: 100;
 	local_authority_impact: 200;
   }
