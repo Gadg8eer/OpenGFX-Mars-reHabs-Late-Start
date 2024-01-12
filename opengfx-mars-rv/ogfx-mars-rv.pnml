@@ -574,9 +574,9 @@ roadtypetable {
 	ROAD, Road,
 	HAUL, Haul,
 	//"SmartStreet"
-	SLIT, SLit,
-	SMRT, Smrt,
-	SHVY, SHvy
+	AUTO, Auto,
+	SMTS, SmtS,
+	SMRT, Smrt
 }
 
 //LITE with Low Clearance and Smartgrid
@@ -592,7 +592,6 @@ item(FEAT_ROADTYPES, item_mars_light) {
 										"RAaI", "RAAI", "RABI",
 										"RAaS", "RAAS", "RABS",
 										"RAaX", "RAAX", "RABX",
-										"RAaX", "RAAx", "RABx",
 										"RAai", "RAAi", "RABi",
 										"RAaL", "RAAL", "RABL",
 										"RAaV", "RAAV", "RABV"
@@ -619,8 +618,6 @@ item(FEAT_ROADTYPES, item_mars_light_lowclear) {
 														"RAbI",
 										"RAaX", "RAAX", "RABX",
 														"RAbX",
-										"RAax", "RAAx", "RABx",
-														"RAbX",
 										"RAai", "RAAi", "RABi",
 														"RAbi",
 										"RAaL", "RAAL", "RABL",
@@ -635,13 +632,8 @@ item(FEAT_ROADTYPES, item_mars_light_lowclear) {
 }
 item(FEAT_ROADTYPES, item_mars_light_smartroad) {
 	property {
-		label:							"SLIT";
+		label:							"AUTO";
 		powered_roadtype_list:			[
-										"RAaN", "RAAN", "RABN",
-										"RAaE", "RAAE", "RABE",
-										"RAaG", "RAAG", "RABG",
-										"RAaZ", "RAAZ", "RABZ",
-										"RAaI", "RAAI", "RABI",
 										"RAaS", "RAAS", "RABS",
 										"RAaX", "RAAX", "RABX",
 										"RAaX", "RAAx", "RABx",
@@ -656,24 +648,11 @@ item(FEAT_ROADTYPES, item_mars_light_smartroad) {
 }
 item(FEAT_ROADTYPES, item_mars_light_smartroad_lowclear) {
 	property {
-		label:							"SLit";
+		label:							"Auto";
 		powered_roadtype_list:			[
-										//				"ROAD",
-										"RAaN", "RAAN", "RABN",
-														"RAbN",
-										"RAaE", "RAAE", "RABE",
-														"RAbE",
-										"RAaG", "RAAG", "RABG",
-														"RAbG",
-										"RAaZ", "RAAZ", "RABZ",
-														"RAbZ",
-										"RAaI", "RAAI", "RABI",
-														"RAbI",
-												"RAAS", "RABS",
+										"RAaS",	"RAAS", "RABS",
 														"RAbS",
 										"RAaX", "RAAX", "RABX",
-														"RAbX",
-										"RAax", "RAAx", "RABx",
 														"RAbX",
 										"RAai", "RAAi", "RABi",
 														"RAbi",
@@ -700,7 +679,6 @@ item(FEAT_ROADTYPES, item_mars) {
 										"RAAZ", "RABZ", "RACZ",
 										"RAAI", "RABI", "RACI",
 										"RAAX", "RABX", "RACX",
-										"RAAx", "RABx", "RACx",
 										"RAAi", "RABi", "RACi",
 										"RAAL", "RABL", "RACL",
 										"RAAV", "RABV", "RACV",
@@ -728,8 +706,6 @@ item(FEAT_ROADTYPES, item_mars_lowclear) {
 												"RAbI",
 										"RAAX", "RABX", "RACX",
 												"RAbX",
-										"RAAx", "RABx", "RACx",
-												"RAbX",
 										"RAAi", "RABi", "RACi",
 												"RAbi",
 										"RAAL", "RABL", "RACL",
@@ -744,7 +720,7 @@ item(FEAT_ROADTYPES, item_mars_lowclear) {
 }
 item(FEAT_ROADTYPES, item_mars_smartroad) {
 	property {
-		label:							"SMRT";
+		label:							"SMTS";
 		powered_roadtype_list:			[
 										//		"ROAD",
 										"RAAN", "RABN", "RACN",
@@ -754,7 +730,6 @@ item(FEAT_ROADTYPES, item_mars_smartroad) {
 										"RAAI", "RABI", "RACI",
 										"RAAS", "RABS", "RACS",
 										"RAAX", "RABX", "RACX",
-										"RAAx", "RABx", "RACx",
 										"RAAi", "RABi", "RACi",
 										"RAAL", "RABL", "RACL",
 										"RAAV", "RABV", "RACV",
@@ -766,7 +741,7 @@ item(FEAT_ROADTYPES, item_mars_smartroad) {
 }
 item(FEAT_ROADTYPES, item_mars_smartstreet_lowclear) {
 	property {
-		label:							"Smrt";
+		label:							"SmtS";
 		powered_roadtype_list:			[
 										//		"ROAD",
 										"RAAN", "RABN", "RACN",
@@ -783,8 +758,6 @@ item(FEAT_ROADTYPES, item_mars_smartstreet_lowclear) {
 										"RAAS", "RABS", "RACS",
 												"RAbS",
 										"RAAX", "RABX", "RACX",
-												"RAbX",
-										"RAAx", "RABx", "RACx",
 												"RAbX",
 										"RAAi", "RABi", "RACi",
 												"RAbi",
@@ -812,7 +785,6 @@ item(FEAT_ROADTYPES, item_mars_heavy) {
 										"RABI", "RACI", "RAcI",
 										"RABS", "RACS", "RAcS",
 										"RABX", "RACX", "RAcX",
-										"RABx", "RACx", "RAcx",
 										"RABi", "RACi", "RAci",
 										"RABL", "RACL", "RAcL",
 										"RABV", "RACV", "RAcV"
@@ -841,8 +813,6 @@ item(FEAT_ROADTYPES, item_mars_heavy_lowclear) {
 										"RAbI",
 										"RABX", "RACX", "RAcX",
 										"RAbX",
-										"RABx", "RACx", "RAcx",
-										"RAbX",
 										"RABi", "RACi", "RAci",
 										"RAbi",
 										"RABL", "RACL", "RAcL",
@@ -856,7 +826,7 @@ item(FEAT_ROADTYPES, item_mars_heavy_lowclear) {
 }
 item(FEAT_ROADTYPES, item_mars_heavy_smartroad) {
 	property {
-		label:							"SHVY";
+		label:							"SMRT";
 		powered_roadtype_list:			[
 										"RABN", "RACN", "RAcN",
 										"RABE", "RACE", "RAcE",
@@ -865,7 +835,6 @@ item(FEAT_ROADTYPES, item_mars_heavy_smartroad) {
 										"RABI", "RACI", "RAcI",
 										"RABS", "RACS", "RAcS",
 										"RABX", "RACX", "RAcX",
-										"RABx", "RACx", "RAcx",
 										"RABi", "RACi", "RAci",
 										"RABL", "RACL", "RAcL",
 										"RABV", "RACV", "RAcV"
@@ -877,7 +846,7 @@ item(FEAT_ROADTYPES, item_mars_heavy_smartroad) {
 }
 item(FEAT_ROADTYPES, item_mars_heavy_smartroad_lowclear) {
 	property {
-		label:							"SHvy";
+		label:							"Smrt";
 		powered_roadtype_list:			[
 									//	"ROAD",
 										"RABN", "RACN", "RAcN",
@@ -893,8 +862,6 @@ item(FEAT_ROADTYPES, item_mars_heavy_smartroad_lowclear) {
 										"RABS", "RACS", "RAcS",
 										"RAbS",
 										"RABX", "RACX", "RAcX",
-										"RAbX",
-										"RABx", "RACx", "RAcx",
 										"RAbX",
 										"RABi", "RACi", "RAci",
 										"RAbi",
@@ -998,7 +965,7 @@ item(FEAT_ROADVEHS, item_Passenger_2) {
 		non_refittable_cargo_classes:	0;
 		cargo_allow_refit:		[PASS];
 		cargo_disallow_refit:		[];
-		road_type: Smrt;
+		road_type: SmtS;
 	}
 	graphics {
 		default:	spriteset_Passenger_2;
@@ -1121,7 +1088,7 @@ item(FEAT_ROADVEHS, item_Passenger_5) {
 		non_refittable_cargo_classes:	0;
 		cargo_allow_refit:		[PASS];
 		cargo_disallow_refit:		[];
-		road_type: SLit;
+		road_type: Auto;
 	}
 	graphics {
 		default:	spriteset_Passenger_5;
@@ -1203,7 +1170,7 @@ item(FEAT_ROADVEHS, item_PressurisedCargo_2) {
 		non_refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_ARMOURED, CC_HAZARDOUS, CC_OVERSIZED);
 		cargo_allow_refit:		[PRGD, FOOD];
 		cargo_disallow_refit:		[];
-		road_type: SMRT;
+		road_type: SMTS;
 	}
 	graphics {
 		default:	spriteset_PressurisedCargo_2;
@@ -1326,7 +1293,7 @@ item(FEAT_ROADVEHS, item_PressurisedCargo_5) {
 		non_refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_ARMOURED, CC_HAZARDOUS, CC_OVERSIZED);
 		cargo_allow_refit:		[PRGD, FOOD];
 		cargo_disallow_refit:		[];
-		road_type: SLIT;
+		road_type: AUTO;
 	}
 	graphics {
 		default:	spriteset_PressurisedCargo_5;
@@ -1408,7 +1375,7 @@ item(FEAT_ROADVEHS, item_Cargo_2) {
 		non_refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_ARMOURED, CC_HAZARDOUS, CC_OVERSIZED, CC_COVERED);
 		cargo_allow_refit:		[ENSP, PLAS, BDMT];
 		cargo_disallow_refit:		[];
-		road_type: SMRT;
+		road_type: SMTS;
 	}
 	graphics {
 		default:	spriteset_Cargo_2;
@@ -1531,7 +1498,7 @@ item(FEAT_ROADVEHS, item_Cargo_5) {
 		non_refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_ARMOURED, CC_HAZARDOUS, CC_OVERSIZED, CC_COVERED);
 		cargo_allow_refit:		[ENSP, PLAS, BDMT];
 		cargo_disallow_refit:		[];
-		road_type: SLIT;
+		road_type: AUTO;
 	}
 	graphics {
 		default:	spriteset_Cargo_5;
@@ -1613,7 +1580,7 @@ item(FEAT_ROADVEHS, item_Chemicals_2) {
 		non_refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_MAIL, CC_NON_POURABLE, CC_ARMOURED, CC_OVERSIZED, CC_COVERED);
 		cargo_allow_refit:		[CHEM, FERT];
 		cargo_disallow_refit:		[];
-		road_type: SMRT;
+		road_type: SMTS;
 	}
 	graphics {
 		default:	spriteset_Chemicals_2;
@@ -1654,7 +1621,7 @@ item(FEAT_ROADVEHS, item_Chemicals_3) {
 		non_refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_MAIL, CC_NON_POURABLE, CC_ARMOURED, CC_OVERSIZED, CC_COVERED);
 		cargo_allow_refit:		[CHEM, FERT];
 		cargo_disallow_refit:		[];
-		road_type: SMRT;
+		road_type: SMTS;
 	}
 	graphics {
 		default:	spriteset_Chemicals_3;
@@ -1736,7 +1703,7 @@ item(FEAT_ROADVEHS, item_Chemicals_5) {
 		non_refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_MAIL, CC_NON_POURABLE, CC_ARMOURED, CC_OVERSIZED, CC_COVERED);
 		cargo_allow_refit:		[CHEM, FERT];
 		cargo_disallow_refit:		[];
-		road_type: SLIT;
+		road_type: AUTO;
 	}
 	graphics {
 		default:	spriteset_Chemicals_5;
@@ -1818,7 +1785,7 @@ item(FEAT_ROADVEHS, item_Water_2) {
 		non_refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_MAIL, CC_NON_POURABLE, CC_ARMOURED, CC_HAZARDOUS, CC_OVERSIZED, CC_COVERED);
 		cargo_allow_refit:		[WATR];
 		cargo_disallow_refit:		[];
-		road_type: SMRT;
+		road_type: SMTS;
 	}
 	graphics {
 		default:	spriteset_Water_2;
@@ -1941,7 +1908,7 @@ item(FEAT_ROADVEHS, item_Water_5) {
 		non_refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_MAIL, CC_NON_POURABLE, CC_ARMOURED, CC_HAZARDOUS, CC_OVERSIZED, CC_COVERED);
 		cargo_allow_refit:		[WATR];
 		cargo_disallow_refit:		[];
-		road_type: SLIT;
+		road_type: AUTO;
 	}
 	graphics {
 		default:	spriteset_Water_5;
@@ -2023,7 +1990,7 @@ item(FEAT_ROADVEHS, item_CompressedGas_2) {
 		non_refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_MAIL, CC_NON_POURABLE, CC_ARMOURED, CC_HAZARDOUS, CC_OVERSIZED);
 		cargo_allow_refit:		[N2__, O2__, H2__];
 		cargo_disallow_refit:		[];
-		road_type: SMRT;
+		road_type: SMTS;
 	}
 	graphics {
 		default:	spriteset_CompressedGas_2;
@@ -2146,7 +2113,7 @@ item(FEAT_ROADVEHS, item_CompressedGas_5) {
 		non_refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_MAIL, CC_NON_POURABLE, CC_ARMOURED, CC_HAZARDOUS, CC_OVERSIZED);
 		cargo_allow_refit:		[N2__, O2__, H2__];
 		cargo_disallow_refit:		[];
-		road_type: SLIT;
+		road_type: AUTO;
 	}
 	graphics {
 		default:	spriteset_CompressedGas_5;
@@ -2272,7 +2239,7 @@ item(FEAT_ROADVEHS, item_Bulk_2) {
 		non_refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_MAIL, CC_LIQUID, CC_ARMOURED, CC_HAZARDOUS, CC_OVERSIZED, CC_COVERED);
 		cargo_allow_refit:		[GRVL, ORES, ORGN];
 		cargo_disallow_refit:		[];
-		road_type: SMRT;
+		road_type: SMTS;
 	}
 	graphics {
 		default:	spriteset_Bulk_2;
@@ -2461,7 +2428,7 @@ item(FEAT_ROADVEHS, item_Bulk_5) {
 		non_refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_MAIL, CC_LIQUID, CC_ARMOURED, CC_HAZARDOUS, CC_OVERSIZED, CC_COVERED);
 		cargo_allow_refit:		[GRVL, ORES, ORGN];
 		cargo_disallow_refit:		[];
-		road_type: SLIT;
+		road_type: AUTO;
 	}
 	graphics {
 		default:	spriteset_Bulk_5;
