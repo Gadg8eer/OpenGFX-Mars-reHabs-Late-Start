@@ -16,7 +16,9 @@
 
 #include "header.pnml"
 #include "cargotable.pnml"
-
+#include "templates.pnml"
+#include "passageways.pnml"
+#include "concrete.pnml"
 #include "habitats.pnml"
 #include "large_habitats.pnml"
 #include "tall_habitats.pnml"
