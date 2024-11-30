@@ -107,17 +107,17 @@ cargotable {
 /* Templates. */
 template template_building(n) {
   // left top width height x y
-  [4 + 64 * n + 4 * n, 140, 64, 64, -27, -28]
-  [4 + 64 * n + 4 * n,  72, 64, 64, -27, -28]
-  [4 + 64 * n + 4 * n,   4, 64, 64, -27, -28]
+  [4 + 64 * n + 4 * n, 140, 64, 64, -31, -33]
+  [4 + 64 * n + 4 * n,  72, 64, 64, -31, -33]
+  [4 + 64 * n + 4 * n,   4, 64, 64, -31, -33]
 }
 
 template template_tall_building(n) {
   // left top width height x y
-  [4 + 72 * n + 4 * n, 400, 72, 128, -31, -92]
-  [4 + 72 * n + 4 * n, 268, 72, 128, -31, -92]
-  [4 + 72 * n + 4 * n, 136, 72, 128, -31, -92]
-  [4 + 72 * n + 4 * n,   4, 72, 128, -31, -92]
+  [4 + 72 * n + 4 * n, 400, 72, 128, -37, -97]
+  [4 + 72 * n + 4 * n, 268, 72, 128, -37, -97]
+  [4 + 72 * n + 4 * n, 136, 72, 128, -37, -97]
+  [4 + 72 * n + 4 * n,   4, 72, 128, -37, -97]
 }
 
 
@@ -149,34 +149,34 @@ template template_tall_building(n) {
 /* Passageway spritesets. */
 spriteset(spriteset_passageway_nw, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
   // left top width height x y
-  [   612, 4,   72,   128, -4, -71]
-  [   612, 4,   72,   128, -4, -71]
-  [   612, 4,   72,   128, -4, -71]
-  [   612, 4,   72,   128, -4, -71]
+  [   612, 4,   72,   128, -9, -76]
+  [   612, 4,   72,   128, -9, -76]
+  [   612, 4,   72,   128, -9, -76]
+  [   612, 4,   72,   128, -9, -76]
 }
 
 spriteset(spriteset_passageway_ne, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
   // left top width height x y
-  [   612,136,   72,   128, -60, -71]
-  [   612,136,   72,   128, -60, -71]
-  [   612,136,   72,   128, -60, -71]
-  [   612,136,   72,   128, -60, -71]
+  [   612,136,   72,   128, -65, -76]
+  [   612,136,   72,   128, -65, -76]
+  [   612,136,   72,   128, -65, -76]
+  [   612,136,   72,   128, -65, -76]
 }
 
 spriteset(spriteset_passageway_se, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
   // left top width height x y
-  [   612,268,   72,   128, -52, -91]
-  [   612,268,   72,   128, -52, -91]
-  [   612,268,   72,   128, -52, -91]
-  [   612,268,   72,   128, -52, -91]
+  [   612,268,   72,   128, -57, -96]
+  [   612,268,   72,   128, -57, -96]
+  [   612,268,   72,   128, -57, -96]
+  [   612,268,   72,   128, -57, -96]
 }
 
 spriteset(spriteset_passageway_sw, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
   // left top width height x y
-  [   612,400,   72,   128, -12, -91]
-  [   612,400,   72,   128, -12, -91]
-  [   612,400,   72,   128, -12, -91]
-  [   612,400,   72,   128, -12, -91]
+  [   612,400,   72,   128, -17, -96]
+  [   612,400,   72,   128, -17, -96]
+  [   612,400,   72,   128, -17, -96]
+  [   612,400,   72,   128, -17, -96]
 }
 
 
@@ -206,10 +206,10 @@ spriteset(spriteset_passageway_sw, "../graphics/Buildings/TownBuildings_TallBuil
 
 /* Concrete spriteset. */
 spriteset(spriteset_concrete, "../graphics/Terrain/ConcreteGroundTile_8bpp.png") {
-  [1, 1, 64, 31, -27, 4]
-  [1, 1, 64, 31, -27, 4]
-  [1, 1, 64, 31, -27, 4]
-  [1, 1, 64, 31, -27, 4]
+  [1, 1, 64, 31, -31, 0]
+  [1, 1, 64, 31, -31, 0]
+  [1, 1, 64, 31, -31, 0]
+  [1, 1, 64, 31, -31, 0]
 }
 
 
