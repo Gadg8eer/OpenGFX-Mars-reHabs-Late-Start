@@ -1,7 +1,4 @@
 # 1 "ogfx-mars-houses-remod.pnml"
-# 1 "<built-in>"
-# 1 "<command-line>"
-# 1 "ogfx-mars-houses-remod.pnml"
 //  OpenGFX Mars Houses
 //
 //  This program is free software; you can redistribute it and/or modify
@@ -43,7 +40,7 @@ grf {
   name: string(STR_GRF_NAME);
   desc: string(STR_GRF_DESC);
   url: string(STR_GRF_URL);
-  version: 0;
+  version: 1; //NEWGRF_VERSION;
   min_compatible_version: 1;
 }
 
@@ -56,7 +53,7 @@ grf {
 
 /* Make heavily inhabited areas have pavement, streetlights even in desert. */
 desert_paved_roads = 1;
-# 18 "ogfx-mars-houses-remod.pnml" 2
+# 1 "ogfx-mars-houses-remod.pnml" 17
 # 1 "cargotable.pnml" 1
 //  OpenGFX Mars Houses
 //
@@ -83,25 +80,8 @@ cargotable {
   FOOD, // Food.
   O2__, // Oxygen.
 }
-# 19 "ogfx-mars-houses-remod.pnml" 2
 
-# 1 "habitats.pnml" 1
-//  OpenGFX Mars Houses
-//
-//  This program is free software; you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation; either version 2 of the License, or
-//  (at your option) any later version.
-//
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
-//
-//  You should have received a copy of the GNU General Public License along
-//  with this program; if not, write to the Free Software Foundation, Inc.,
-//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-
+# 1 "ogfx-mars-houses-remod.pnml" 17
 # 1 "templates.pnml" 1
 //  OpenGFX Mars Houses
 //
@@ -119,27 +99,141 @@ cargotable {
 //  with this program; if not, write to the Free Software Foundation, Inc.,
 //  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-
-
+//#ifndef OPENGFX_MARS_HOUSES_TEMPLATES_PNML
+//#define OPENGFX_MARS_HOUSES_TEMPLATES_PNML
 
 
 
 /* Templates. */
 template template_building(n) {
   // left top width height x y
-  [4 + 64 * n + 4 * n, 140, 64, 64, -32, -32]
-  [4 + 64 * n + 4 * n, 72, 64, 64, -32, -32]
-  [4 + 64 * n + 4 * n, 4, 64, 64, -32, -32]
+  [4 + 64 * n + 4 * n, 140, 64, 64, -27, -28]
+  [4 + 64 * n + 4 * n,  72, 64, 64, -27, -28]
+  [4 + 64 * n + 4 * n,   4, 64, 64, -27, -28]
 }
 
 template template_tall_building(n) {
   // left top width height x y
-  [4 + 72 * n + 4 * n, 400, 72, 128, -36, -96]
-  [4 + 72 * n + 4 * n, 268, 72, 128, -36, -96]
-  [4 + 72 * n + 4 * n, 136, 72, 128, -36, -96]
-  [4 + 72 * n + 4 * n, 4, 72, 128, -36, -96]
+  [4 + 72 * n + 4 * n, 400, 72, 128, -31, -92]
+  [4 + 72 * n + 4 * n, 268, 72, 128, -31, -92]
+  [4 + 72 * n + 4 * n, 136, 72, 128, -31, -92]
+  [4 + 72 * n + 4 * n,   4, 72, 128, -31, -92]
 }
-# 18 "habitats.pnml" 2
+
+
+
+//#endif // OPENGFX_MARS_HOUSES_TEMPLATES_PNML
+# 1 "ogfx-mars-houses-remod.pnml" 17
+# 1 "passageways.pnml" 1
+//  OpenGFX Mars Houses
+//
+//  This program is free software; you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation; either version 2 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License along
+//  with this program; if not, write to the Free Software Foundation, Inc.,
+//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+//#ifndef OPENGFX_MARS_HOUSES_PASSAGEWAYS_PNML
+//#define OPENGFX_MARS_HOUSES_PASSAGEWAYS_PNML
+
+
+
+/* Passageway spritesets. */
+spriteset(spriteset_passageway_nw, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
+  // left top width height x y
+  [   612, 4,   72,   128, -4, -71]
+  [   612, 4,   72,   128, -4, -71]
+  [   612, 4,   72,   128, -4, -71]
+  [   612, 4,   72,   128, -4, -71]
+}
+
+spriteset(spriteset_passageway_ne, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
+  // left top width height x y
+  [   612,136,   72,   128, -60, -71]
+  [   612,136,   72,   128, -60, -71]
+  [   612,136,   72,   128, -60, -71]
+  [   612,136,   72,   128, -60, -71]
+}
+
+spriteset(spriteset_passageway_se, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
+  // left top width height x y
+  [   612,268,   72,   128, -52, -91]
+  [   612,268,   72,   128, -52, -91]
+  [   612,268,   72,   128, -52, -91]
+  [   612,268,   72,   128, -52, -91]
+}
+
+spriteset(spriteset_passageway_sw, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
+  // left top width height x y
+  [   612,400,   72,   128, -12, -91]
+  [   612,400,   72,   128, -12, -91]
+  [   612,400,   72,   128, -12, -91]
+  [   612,400,   72,   128, -12, -91]
+}
+
+
+//#endif // OPENGFX_MARS_HOUSES_PASSAGEWAYS_PNML
+# 1 "ogfx-mars-houses-remod.pnml" 17
+# 1 "concrete.pnml" 1
+//  OpenGFX Mars Houses
+//
+//  This program is free software; you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation; either version 2 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License along
+//  with this program; if not, write to the Free Software Foundation, Inc.,
+//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+//#ifndef OPENGFX_MARS_HOUSES_CONCRETE_PNML
+//#define OPENGFX_MARS_HOUSES_CONCRETE_PNML
+
+
+
+/* Concrete spriteset. */
+spriteset(spriteset_concrete, "../graphics/Terrain/ConcreteGroundTile_8bpp.png") {
+  [1, 1, 64, 31, -27, 4]
+  [1, 1, 64, 31, -27, 4]
+  [1, 1, 64, 31, -27, 4]
+  [1, 1, 64, 31, -27, 4]
+}
+
+
+
+//#endif // OPENGFX_MARS_HOUSES_CONCRETE_PNML
+# 1 "ogfx-mars-houses-remod.pnml" 17
+# 1 "habitats.pnml" 1
+//  OpenGFX Mars Houses
+//
+//  This program is free software; you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation; either version 2 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License along
+//  with this program; if not, write to the Free Software Foundation, Inc.,
+//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+//#include "templates.pnml"
 
 
 
@@ -270,14 +364,14 @@ item (FEAT_HOUSES, item_habitat) {
     population: 16;
     mail_multiplier: 6;
     availability_mask: [bitmask(TOWNZONE_EDGE, TOWNZONE_OUTSKIRT), ALL_CLIMATES | bitmask(ABOVE_SNOWLINE)];
- accepted_cargos: [[PASS, 4], [FOOD, 2]];
- removal_cost_multiplier: 100;
- local_authority_impact: 100;
+	accepted_cargos: [[PASS, 4], [FOOD, 2]];
+	removal_cost_multiplier: 100;
+	local_authority_impact: 100;
   }
 
   graphics { default: random_habitat; }
 }
-# 21 "ogfx-mars-houses-remod.pnml" 2
+# 1 "ogfx-mars-houses-remod.pnml" 17
 # 1 "large_habitats.pnml" 1
 //  OpenGFX Mars Houses
 //
@@ -295,23 +389,7 @@ item (FEAT_HOUSES, item_habitat) {
 //  with this program; if not, write to the Free Software Foundation, Inc.,
 //  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-# 1 "templates.pnml" 1
-//  OpenGFX Mars Houses
-//
-//  This program is free software; you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation; either version 2 of the License, or
-//  (at your option) any later version.
-//
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
-//
-//  You should have received a copy of the GNU General Public License along
-//  with this program; if not, write to the Free Software Foundation, Inc.,
-//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-# 18 "large_habitats.pnml" 2
+//#include "templates.pnml"
 
 
 
@@ -442,14 +520,14 @@ item (FEAT_HOUSES, item_large_habitat) {
     population: 32;
     mail_multiplier: 12;
     availability_mask: [bitmask(TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB), ALL_CLIMATES | bitmask(ABOVE_SNOWLINE)];
- accepted_cargos: [[PASS, 6], [FOOD, 4], [GOOD, 1]];
- removal_cost_multiplier: 135;
- local_authority_impact: 135;
+	accepted_cargos: [[PASS, 6], [FOOD, 4], [GOOD, 1]];
+	removal_cost_multiplier: 135;
+	local_authority_impact: 135;
   }
 
   graphics { default: random_large_habitat; }
 }
-# 22 "ogfx-mars-houses-remod.pnml" 2
+# 1 "ogfx-mars-houses-remod.pnml" 17
 # 1 "tall_habitats.pnml" 1
 //  OpenGFX Mars Houses
 //
@@ -467,108 +545,9 @@ item (FEAT_HOUSES, item_large_habitat) {
 //  with this program; if not, write to the Free Software Foundation, Inc.,
 //  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-# 1 "templates.pnml" 1
-//  OpenGFX Mars Houses
-//
-//  This program is free software; you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation; either version 2 of the License, or
-//  (at your option) any later version.
-//
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
-//
-//  You should have received a copy of the GNU General Public License along
-//  with this program; if not, write to the Free Software Foundation, Inc.,
-//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-# 18 "tall_habitats.pnml" 2
-# 1 "passageways.pnml" 1
-//  OpenGFX Mars Houses
-//
-//  This program is free software; you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation; either version 2 of the License, or
-//  (at your option) any later version.
-//
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
-//
-//  You should have received a copy of the GNU General Public License along
-//  with this program; if not, write to the Free Software Foundation, Inc.,
-//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-
-
-
-
-
-
-/* Passageway spritesets. */
-spriteset(spriteset_passageway_nw, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
-  // left top width height x y
-  [ 612, 4, 72, 128, -8, -75]
-  [ 612, 4, 72, 128, -8, -75]
-  [ 612, 4, 72, 128, -8, -75]
-  [ 612, 4, 72, 128, -8, -75]
-}
-
-spriteset(spriteset_passageway_ne, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
-  // left top width height x y
-  [ 612,136, 72, 128, -64, -75]
-  [ 612,136, 72, 128, -64, -75]
-  [ 612,136, 72, 128, -64, -75]
-  [ 612,136, 72, 128, -64, -75]
-}
-
-spriteset(spriteset_passageway_se, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
-  // left top width height x y
-  [ 612,268, 72, 128, -56, -95]
-  [ 612,268, 72, 128, -56, -95]
-  [ 612,268, 72, 128, -56, -95]
-  [ 612,268, 72, 128, -56, -95]
-}
-
-spriteset(spriteset_passageway_sw, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
-  // left top width height x y
-  [ 612,400, 72, 128, -16, -95]
-  [ 612,400, 72, 128, -16, -95]
-  [ 612,400, 72, 128, -16, -95]
-  [ 612,400, 72, 128, -16, -95]
-}
-# 19 "tall_habitats.pnml" 2
-# 1 "concrete.pnml" 1
-//  OpenGFX Mars Houses
-//
-//  This program is free software; you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation; either version 2 of the License, or
-//  (at your option) any later version.
-//
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
-//
-//  You should have received a copy of the GNU General Public License along
-//  with this program; if not, write to the Free Software Foundation, Inc.,
-//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-
-
-
-
-
-
-/* Concrete spriteset. */
-spriteset(spriteset_concrete, "../graphics/Terrain/ConcreteGroundTile_8bpp.png") {
-  [1, 1, 64, 31, -32, 0]
-  [1, 1, 64, 31, -32, 0]
-  [1, 1, 64, 31, -32, 0]
-  [1, 1, 64, 31, -32, 0]
-}
-# 20 "tall_habitats.pnml" 2
+//#include "templates.pnml"
+//#include "passageways.pnml"
+//#include "concrete.pnml"
 
 
 
@@ -641,7 +620,7 @@ spritelayout spritelayout_tall_habitat_0 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -658,7 +637,7 @@ spritelayout spritelayout_tall_habitat_0 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -675,7 +654,7 @@ spritelayout spritelayout_tall_habitat_0 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -700,7 +679,7 @@ spritelayout spritelayout_tall_habitat_1 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -717,7 +696,7 @@ spritelayout spritelayout_tall_habitat_1 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -734,7 +713,7 @@ spritelayout spritelayout_tall_habitat_1 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -746,12 +725,12 @@ spritelayout spritelayout_tall_habitat_1 {
     yextent: 4;
     zextent: 8;
     hide_sprite:
-   nearby_tile_slope(0,0) > 0 ||
+	  nearby_tile_slope(0,0) > 0 ||
       nearby_tile_slope(1,0) > 0 ||
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) > 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -776,7 +755,7 @@ spritelayout spritelayout_tall_habitat_2 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -793,7 +772,7 @@ spritelayout spritelayout_tall_habitat_2 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -810,7 +789,7 @@ spritelayout spritelayout_tall_habitat_2 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -827,7 +806,7 @@ spritelayout spritelayout_tall_habitat_2 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -852,7 +831,7 @@ spritelayout spritelayout_tall_habitat_3 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -869,7 +848,7 @@ spritelayout spritelayout_tall_habitat_3 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -886,7 +865,7 @@ spritelayout spritelayout_tall_habitat_3 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -903,7 +882,7 @@ spritelayout spritelayout_tall_habitat_3 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -928,7 +907,7 @@ spritelayout spritelayout_tall_habitat_4 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -945,7 +924,7 @@ spritelayout spritelayout_tall_habitat_4 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -962,7 +941,7 @@ spritelayout spritelayout_tall_habitat_4 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -979,7 +958,7 @@ spritelayout spritelayout_tall_habitat_4 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -1004,7 +983,7 @@ spritelayout spritelayout_tall_habitat_5 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -1021,7 +1000,7 @@ spritelayout spritelayout_tall_habitat_5 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -1038,7 +1017,7 @@ spritelayout spritelayout_tall_habitat_5 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -1055,7 +1034,7 @@ spritelayout spritelayout_tall_habitat_5 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -1080,7 +1059,7 @@ spritelayout spritelayout_tall_habitat_6 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -1097,7 +1076,7 @@ spritelayout spritelayout_tall_habitat_6 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -1114,7 +1093,7 @@ spritelayout spritelayout_tall_habitat_6 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -1131,7 +1110,7 @@ spritelayout spritelayout_tall_habitat_6 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -1156,7 +1135,7 @@ spritelayout spritelayout_tall_habitat_7 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -1173,7 +1152,7 @@ spritelayout spritelayout_tall_habitat_7 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -1190,7 +1169,7 @@ spritelayout spritelayout_tall_habitat_7 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -1207,7 +1186,7 @@ spritelayout spritelayout_tall_habitat_7 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -1244,14 +1223,14 @@ item (FEAT_HOUSES, item_tall_habitat) {
     mail_multiplier: 24;
     availability_mask: [bitmask(TOWNZONE_INNER_SUBURB, TOWNZONE_CENTRE), ALL_CLIMATES | bitmask(ABOVE_SNOWLINE)];
     building_class: 1; // Walkway levels.
- accepted_cargos: [[PASS, 8], [FOOD, 6], [GOOD, 2]];
- removal_cost_multiplier: 150;
- local_authority_impact: 150;
+	accepted_cargos: [[PASS, 8], [FOOD, 6], [GOOD, 2]];
+	removal_cost_multiplier: 150;
+	local_authority_impact: 150;
   }
 
   graphics { default: random_tall_habitat; }
 }
-# 23 "ogfx-mars-houses-remod.pnml" 2
+# 1 "ogfx-mars-houses-remod.pnml" 17
 # 1 "tower_habitats.pnml" 1
 //  OpenGFX Mars Houses
 //
@@ -1269,57 +1248,9 @@ item (FEAT_HOUSES, item_tall_habitat) {
 //  with this program; if not, write to the Free Software Foundation, Inc.,
 //  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-# 1 "templates.pnml" 1
-//  OpenGFX Mars Houses
-//
-//  This program is free software; you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation; either version 2 of the License, or
-//  (at your option) any later version.
-//
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
-//
-//  You should have received a copy of the GNU General Public License along
-//  with this program; if not, write to the Free Software Foundation, Inc.,
-//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-# 18 "tower_habitats.pnml" 2
-# 1 "passageways.pnml" 1
-//  OpenGFX Mars Houses
-//
-//  This program is free software; you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation; either version 2 of the License, or
-//  (at your option) any later version.
-//
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
-//
-//  You should have received a copy of the GNU General Public License along
-//  with this program; if not, write to the Free Software Foundation, Inc.,
-//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-# 19 "tower_habitats.pnml" 2
-# 1 "concrete.pnml" 1
-//  OpenGFX Mars Houses
-//
-//  This program is free software; you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation; either version 2 of the License, or
-//  (at your option) any later version.
-//
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
-//
-//  You should have received a copy of the GNU General Public License along
-//  with this program; if not, write to the Free Software Foundation, Inc.,
-//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-# 20 "tower_habitats.pnml" 2
+//#include "templates.pnml"
+//#include "passageways.pnml"
+//#include "concrete.pnml"
 
 
 
@@ -1375,7 +1306,7 @@ spritelayout spritelayout_tower_habitat_0 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1392,7 +1323,7 @@ spritelayout spritelayout_tower_habitat_0 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1409,7 +1340,7 @@ spritelayout spritelayout_tower_habitat_0 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1426,7 +1357,7 @@ spritelayout spritelayout_tower_habitat_0 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1443,7 +1374,7 @@ spritelayout spritelayout_tower_habitat_0 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 258 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1460,7 +1391,7 @@ spritelayout spritelayout_tower_habitat_0 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 258 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1477,7 +1408,7 @@ spritelayout spritelayout_tower_habitat_0 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 258 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1494,7 +1425,7 @@ spritelayout spritelayout_tower_habitat_0 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 258 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1519,7 +1450,7 @@ spritelayout spritelayout_tower_habitat_1 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -1536,7 +1467,7 @@ spritelayout spritelayout_tower_habitat_1 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -1553,7 +1484,7 @@ spritelayout spritelayout_tower_habitat_1 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -1570,7 +1501,7 @@ spritelayout spritelayout_tower_habitat_1 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -1587,7 +1518,7 @@ spritelayout spritelayout_tower_habitat_1 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 258 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1604,7 +1535,7 @@ spritelayout spritelayout_tower_habitat_1 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 258 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1621,7 +1552,7 @@ spritelayout spritelayout_tower_habitat_1 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 258 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1638,7 +1569,7 @@ spritelayout spritelayout_tower_habitat_1 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 258 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1663,7 +1594,7 @@ spritelayout spritelayout_tower_habitat_2 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -1680,7 +1611,7 @@ spritelayout spritelayout_tower_habitat_2 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) < 512 ||
+	  nearby_tile_house_class(-2,0) < 512 ||
       construction_state < 1;
   }
   building {
@@ -1697,7 +1628,7 @@ spritelayout spritelayout_tower_habitat_2 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -1714,7 +1645,7 @@ spritelayout spritelayout_tower_habitat_2 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -1731,7 +1662,7 @@ spritelayout spritelayout_tower_habitat_2 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 258 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1748,7 +1679,7 @@ spritelayout spritelayout_tower_habitat_2 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 258 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1765,7 +1696,7 @@ spritelayout spritelayout_tower_habitat_2 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 258 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1782,7 +1713,7 @@ spritelayout spritelayout_tower_habitat_2 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 258 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1807,7 +1738,7 @@ spritelayout spritelayout_tower_habitat_3 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1824,7 +1755,7 @@ spritelayout spritelayout_tower_habitat_3 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1841,7 +1772,7 @@ spritelayout spritelayout_tower_habitat_3 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1858,7 +1789,7 @@ spritelayout spritelayout_tower_habitat_3 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1875,7 +1806,7 @@ spritelayout spritelayout_tower_habitat_3 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 258 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1892,7 +1823,7 @@ spritelayout spritelayout_tower_habitat_3 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 258 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1909,7 +1840,7 @@ spritelayout spritelayout_tower_habitat_3 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 258 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1926,7 +1857,7 @@ spritelayout spritelayout_tower_habitat_3 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 258 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -1950,7 +1881,7 @@ spritelayout spritelayout_tower_habitat_4 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -1967,7 +1898,7 @@ spritelayout spritelayout_tower_habitat_4 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -1984,7 +1915,7 @@ spritelayout spritelayout_tower_habitat_4 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -2001,7 +1932,7 @@ spritelayout spritelayout_tower_habitat_4 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -2018,7 +1949,7 @@ spritelayout spritelayout_tower_habitat_4 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 258 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2035,7 +1966,7 @@ spritelayout spritelayout_tower_habitat_4 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 258 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2052,7 +1983,7 @@ spritelayout spritelayout_tower_habitat_4 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 258 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2069,7 +2000,7 @@ spritelayout spritelayout_tower_habitat_4 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 258 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2093,7 +2024,7 @@ spritelayout spritelayout_tower_habitat_5 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2110,7 +2041,7 @@ spritelayout spritelayout_tower_habitat_5 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2127,7 +2058,7 @@ spritelayout spritelayout_tower_habitat_5 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2144,7 +2075,7 @@ spritelayout spritelayout_tower_habitat_5 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2161,7 +2092,7 @@ spritelayout spritelayout_tower_habitat_5 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 258 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -2178,7 +2109,7 @@ spritelayout spritelayout_tower_habitat_5 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 258 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -2195,7 +2126,7 @@ spritelayout spritelayout_tower_habitat_5 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 258 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -2212,7 +2143,7 @@ spritelayout spritelayout_tower_habitat_5 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 258 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -2236,7 +2167,7 @@ spritelayout spritelayout_tower_habitat_6 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2253,7 +2184,7 @@ spritelayout spritelayout_tower_habitat_6 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2270,7 +2201,7 @@ spritelayout spritelayout_tower_habitat_6 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2287,7 +2218,7 @@ spritelayout spritelayout_tower_habitat_6 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2304,7 +2235,7 @@ spritelayout spritelayout_tower_habitat_6 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 258 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -2321,7 +2252,7 @@ spritelayout spritelayout_tower_habitat_6 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 258 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -2338,7 +2269,7 @@ spritelayout spritelayout_tower_habitat_6 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 258 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -2355,7 +2286,7 @@ spritelayout spritelayout_tower_habitat_6 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 258 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 3;
   }
   building {
@@ -2380,7 +2311,7 @@ spritelayout spritelayout_tower_habitat_7 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2397,7 +2328,7 @@ spritelayout spritelayout_tower_habitat_7 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2414,7 +2345,7 @@ spritelayout spritelayout_tower_habitat_7 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2431,7 +2362,7 @@ spritelayout spritelayout_tower_habitat_7 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2448,7 +2379,7 @@ spritelayout spritelayout_tower_habitat_7 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 258 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2465,7 +2396,7 @@ spritelayout spritelayout_tower_habitat_7 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 258 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2482,7 +2413,7 @@ spritelayout spritelayout_tower_habitat_7 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 258 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2499,7 +2430,7 @@ spritelayout spritelayout_tower_habitat_7 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 258 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2536,14 +2467,14 @@ item (FEAT_HOUSES, item_tower_habitat) {
     mail_multiplier: 48;
     availability_mask: [bitmask(TOWNZONE_CENTRE), ALL_CLIMATES | bitmask(ABOVE_SNOWLINE)];
     building_class: 2; // Walkway levels.
- accepted_cargos: [[PASS, 8], [FOOD, 8], [GOOD, 4]];
- removal_cost_multiplier: 180;
- local_authority_impact: 180;
+	accepted_cargos: [[PASS, 8], [FOOD, 8], [GOOD, 4]];
+	removal_cost_multiplier: 180;
+	local_authority_impact: 180;
   }
 
   graphics { default: random_tower_habitat; }
 }
-# 24 "ogfx-mars-houses-remod.pnml" 2
+# 1 "ogfx-mars-houses-remod.pnml" 17
 # 1 "luxury_tower_habitats.pnml" 1
 //  OpenGFX Mars Houses
 //
@@ -2561,57 +2492,9 @@ item (FEAT_HOUSES, item_tower_habitat) {
 //  with this program; if not, write to the Free Software Foundation, Inc.,
 //  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-# 1 "templates.pnml" 1
-//  OpenGFX Mars Houses
-//
-//  This program is free software; you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation; either version 2 of the License, or
-//  (at your option) any later version.
-//
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
-//
-//  You should have received a copy of the GNU General Public License along
-//  with this program; if not, write to the Free Software Foundation, Inc.,
-//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-# 18 "luxury_tower_habitats.pnml" 2
-# 1 "passageways.pnml" 1
-//  OpenGFX Mars Houses
-//
-//  This program is free software; you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation; either version 2 of the License, or
-//  (at your option) any later version.
-//
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
-//
-//  You should have received a copy of the GNU General Public License along
-//  with this program; if not, write to the Free Software Foundation, Inc.,
-//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-# 19 "luxury_tower_habitats.pnml" 2
-# 1 "concrete.pnml" 1
-//  OpenGFX Mars Houses
-//
-//  This program is free software; you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation; either version 2 of the License, or
-//  (at your option) any later version.
-//
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
-//
-//  You should have received a copy of the GNU General Public License along
-//  with this program; if not, write to the Free Software Foundation, Inc.,
-//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-# 20 "luxury_tower_habitats.pnml" 2
+//#include "templates.pnml"
+//#include "passageways.pnml"
+//#include "concrete.pnml"
 
 
 
@@ -2651,7 +2534,7 @@ spritelayout spritelayout_luxury_tower_habitat_0 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -2668,7 +2551,7 @@ spritelayout spritelayout_luxury_tower_habitat_0 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -2685,7 +2568,7 @@ spritelayout spritelayout_luxury_tower_habitat_0 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -2702,7 +2585,7 @@ spritelayout spritelayout_luxury_tower_habitat_0 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -2719,7 +2602,7 @@ spritelayout spritelayout_luxury_tower_habitat_0 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 258 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2736,7 +2619,7 @@ spritelayout spritelayout_luxury_tower_habitat_0 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 258 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2753,7 +2636,7 @@ spritelayout spritelayout_luxury_tower_habitat_0 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 258 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2770,7 +2653,7 @@ spritelayout spritelayout_luxury_tower_habitat_0 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 258 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2795,7 +2678,7 @@ spritelayout spritelayout_luxury_tower_habitat_1 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -2812,7 +2695,7 @@ spritelayout spritelayout_luxury_tower_habitat_1 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -2829,7 +2712,7 @@ spritelayout spritelayout_luxury_tower_habitat_1 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -2846,7 +2729,7 @@ spritelayout spritelayout_luxury_tower_habitat_1 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -2863,7 +2746,7 @@ spritelayout spritelayout_luxury_tower_habitat_1 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 258 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2880,7 +2763,7 @@ spritelayout spritelayout_luxury_tower_habitat_1 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 258 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2897,7 +2780,7 @@ spritelayout spritelayout_luxury_tower_habitat_1 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 258 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2914,7 +2797,7 @@ spritelayout spritelayout_luxury_tower_habitat_1 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 258 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -2939,7 +2822,7 @@ spritelayout spritelayout_luxury_tower_habitat_2 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -2956,7 +2839,7 @@ spritelayout spritelayout_luxury_tower_habitat_2 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -2973,7 +2856,7 @@ spritelayout spritelayout_luxury_tower_habitat_2 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -2990,7 +2873,7 @@ spritelayout spritelayout_luxury_tower_habitat_2 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -3007,7 +2890,7 @@ spritelayout spritelayout_luxury_tower_habitat_2 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 258 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -3024,7 +2907,7 @@ spritelayout spritelayout_luxury_tower_habitat_2 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 258 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -3041,7 +2924,7 @@ spritelayout spritelayout_luxury_tower_habitat_2 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 258 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -3058,7 +2941,7 @@ spritelayout spritelayout_luxury_tower_habitat_2 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 258 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -3083,7 +2966,7 @@ spritelayout spritelayout_luxury_tower_habitat_3 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -3100,7 +2983,7 @@ spritelayout spritelayout_luxury_tower_habitat_3 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -3117,7 +3000,7 @@ spritelayout spritelayout_luxury_tower_habitat_3 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -3134,7 +3017,7 @@ spritelayout spritelayout_luxury_tower_habitat_3 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 1;
   }
   building {
@@ -3151,7 +3034,7 @@ spritelayout spritelayout_luxury_tower_habitat_3 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 258 ||
-   nearby_tile_house_class(0,-2) >= 512 ||
+	  nearby_tile_house_class(0,-2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -3168,7 +3051,7 @@ spritelayout spritelayout_luxury_tower_habitat_3 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 258 ||
-   nearby_tile_house_class(-2,0) >= 512 ||
+	  nearby_tile_house_class(-2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -3185,7 +3068,7 @@ spritelayout spritelayout_luxury_tower_habitat_3 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 258 ||
-   nearby_tile_house_class(0,2) >= 512 ||
+	  nearby_tile_house_class(0,2) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -3202,7 +3085,7 @@ spritelayout spritelayout_luxury_tower_habitat_3 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 258 ||
-   nearby_tile_house_class(2,0) >= 512 ||
+	  nearby_tile_house_class(2,0) >= 512 ||
       construction_state < 2;
   }
   building {
@@ -3235,14 +3118,14 @@ item (FEAT_HOUSES, item_luxury_tower_habitat) {
     mail_multiplier: 64;
     availability_mask: [bitmask(TOWNZONE_CENTRE), ALL_CLIMATES | bitmask(ABOVE_SNOWLINE)];
     building_class: 2; // Walkway levels.
- accepted_cargos: [[PASS, 8], [FOOD, 8], [GOOD, 4]];
- removal_cost_multiplier: 200;
- local_authority_impact: 200;
+	accepted_cargos: [[PASS, 8], [FOOD, 8], [GOOD, 4]];
+	removal_cost_multiplier: 200;
+	local_authority_impact: 200;
   }
 
   graphics { default: random_luxury_tower_habitat; }
 }
-# 25 "ogfx-mars-houses-remod.pnml" 2
+# 1 "ogfx-mars-houses-remod.pnml" 17
 # 1 "parks.pnml" 1
 //  OpenGFX Mars Houses
 //
@@ -3260,23 +3143,7 @@ item (FEAT_HOUSES, item_luxury_tower_habitat) {
 //  with this program; if not, write to the Free Software Foundation, Inc.,
 //  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-# 1 "templates.pnml" 1
-//  OpenGFX Mars Houses
-//
-//  This program is free software; you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation; either version 2 of the License, or
-//  (at your option) any later version.
-//
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
-//
-//  You should have received a copy of the GNU General Public License along
-//  with this program; if not, write to the Free Software Foundation, Inc.,
-//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-# 18 "parks.pnml" 2
+//#include "templates.pnml"
 
 
 
@@ -3353,14 +3220,14 @@ item (FEAT_HOUSES, item_park) {
     years_available: [2040, -1];
     minimum_lifetime: 20;
     availability_mask: [bitmask(TOWNZONE_EDGE, TOWNZONE_OUTSKIRT, TOWNZONE_OUTER_SUBURB), ALL_CLIMATES | bitmask(ABOVE_SNOWLINE)];
- accepted_cargos: [[PASS, 4]];
- removal_cost_multiplier: 100;
- local_authority_impact: 200;
+	accepted_cargos: [[PASS, 4]];
+	removal_cost_multiplier: 100;
+	local_authority_impact: 200;
   }
 
   graphics { default: random_park; }
 }
-# 26 "ogfx-mars-houses-remod.pnml" 2
+# 1 "ogfx-mars-houses-remod.pnml" 17
 # 1 "tall_parks.pnml" 1
 //  OpenGFX Mars Houses
 //
@@ -3378,40 +3245,8 @@ item (FEAT_HOUSES, item_park) {
 //  with this program; if not, write to the Free Software Foundation, Inc.,
 //  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-# 1 "templates.pnml" 1
-//  OpenGFX Mars Houses
-//
-//  This program is free software; you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation; either version 2 of the License, or
-//  (at your option) any later version.
-//
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
-//
-//  You should have received a copy of the GNU General Public License along
-//  with this program; if not, write to the Free Software Foundation, Inc.,
-//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-# 18 "tall_parks.pnml" 2
-# 1 "passageways.pnml" 1
-//  OpenGFX Mars Houses
-//
-//  This program is free software; you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation; either version 2 of the License, or
-//  (at your option) any later version.
-//
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
-//
-//  You should have received a copy of the GNU General Public License along
-//  with this program; if not, write to the Free Software Foundation, Inc.,
-//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-# 19 "tall_parks.pnml" 2
+//#include "templates.pnml"
+//#include "passageways.pnml"
 
 
 
@@ -3451,7 +3286,7 @@ spritelayout spritelayout_tall_park_0 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) > 512 ||
+	  nearby_tile_house_class(0,-2) > 512 ||
       construction_state < 2;
   }
   building {
@@ -3468,7 +3303,7 @@ spritelayout spritelayout_tall_park_0 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) > 512 ||
+	  nearby_tile_house_class(-2,0) > 512 ||
       construction_state < 2;
   }
   building {
@@ -3485,7 +3320,7 @@ spritelayout spritelayout_tall_park_0 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) > 512 ||
+	  nearby_tile_house_class(0,2) > 512 ||
       construction_state < 2;
   }
   building {
@@ -3502,7 +3337,7 @@ spritelayout spritelayout_tall_park_0 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) > 512 ||
+	  nearby_tile_house_class(2,0) > 512 ||
       construction_state < 2;
   }
   building {
@@ -3527,7 +3362,7 @@ spritelayout spritelayout_tall_park_1 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) > 512 ||
+	  nearby_tile_house_class(0,-2) > 512 ||
       construction_state < 2;
   }
   building {
@@ -3544,7 +3379,7 @@ spritelayout spritelayout_tall_park_1 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) > 512 ||
+	  nearby_tile_house_class(-2,0) > 512 ||
       construction_state < 2;
   }
   building {
@@ -3561,7 +3396,7 @@ spritelayout spritelayout_tall_park_1 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) > 512 ||
+	  nearby_tile_house_class(0,2) > 512 ||
       construction_state < 2;
   }
   building {
@@ -3578,7 +3413,7 @@ spritelayout spritelayout_tall_park_1 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) > 512 ||
+	  nearby_tile_house_class(2,0) > 512 ||
       construction_state < 2;
   }
   building {
@@ -3603,7 +3438,7 @@ spritelayout spritelayout_tall_park_2 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) > 512 ||
+	  nearby_tile_house_class(0,-2) > 512 ||
       construction_state < 3;
   }
   building {
@@ -3620,7 +3455,7 @@ spritelayout spritelayout_tall_park_2 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) > 512 ||
+	  nearby_tile_house_class(-2,0) > 512 ||
       construction_state < 3;
   }
   building {
@@ -3637,7 +3472,7 @@ spritelayout spritelayout_tall_park_2 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) > 512 ||
+	  nearby_tile_house_class(0,2) > 512 ||
       construction_state < 3;
   }
   building {
@@ -3654,7 +3489,7 @@ spritelayout spritelayout_tall_park_2 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) > 512 ||
+	  nearby_tile_house_class(2,0) > 512 ||
       construction_state < 3;
   }
   building {
@@ -3679,7 +3514,7 @@ spritelayout spritelayout_tall_park_3 {
       nearby_tile_slope(0,-2) > 0 ||
       nearby_tile_house_class(0,-1) >= 0 ||
       nearby_tile_house_class(0,-2) < 257 ||
-   nearby_tile_house_class(0,-2) > 512 ||
+	  nearby_tile_house_class(0,-2) > 512 ||
       construction_state < 2;
   }
   building {
@@ -3696,7 +3531,7 @@ spritelayout spritelayout_tall_park_3 {
       nearby_tile_slope(-2,0) > 0 ||
       nearby_tile_house_class(-1,0) >= 0 ||
       nearby_tile_house_class(-2,0) < 257 ||
-   nearby_tile_house_class(-2,0) > 512 ||
+	  nearby_tile_house_class(-2,0) > 512 ||
       construction_state < 2;
   }
   building {
@@ -3713,7 +3548,7 @@ spritelayout spritelayout_tall_park_3 {
       nearby_tile_slope(0,2) > 0 ||
       nearby_tile_house_class(0,1) >= 0 ||
       nearby_tile_house_class(0,2) < 257 ||
-   nearby_tile_house_class(0,2) > 512 ||
+	  nearby_tile_house_class(0,2) > 512 ||
       construction_state < 2;
   }
   building {
@@ -3730,7 +3565,7 @@ spritelayout spritelayout_tall_park_3 {
       nearby_tile_slope(2,0) > 0 ||
       nearby_tile_house_class(1,0) >= 0 ||
       nearby_tile_house_class(2,0) < 257 ||
-   nearby_tile_house_class(2,0) > 512 ||
+	  nearby_tile_house_class(2,0) > 512 ||
       construction_state < 2;
   }
   building {
@@ -3761,11 +3596,11 @@ item (FEAT_HOUSES, item_tall_park) {
     minimum_lifetime: 20;
     availability_mask: [bitmask(TOWNZONE_INNER_SUBURB, TOWNZONE_CENTRE), ALL_CLIMATES | bitmask(ABOVE_SNOWLINE)];
     building_class: 1; // Walkway levels.
- accepted_cargos: [[PASS, 8], [FOOD, 6]];
- removal_cost_multiplier: 160;
- local_authority_impact: 300;
+	accepted_cargos: [[PASS, 8], [FOOD, 6]];
+	removal_cost_multiplier: 160;
+	local_authority_impact: 300;
   }
 
   graphics { default: random_tall_park; }
 }
-# 26 "ogfx-mars-houses-remod.pnml" 2
+# 1 "ogfx-mars-houses-remod.pnml" 17
