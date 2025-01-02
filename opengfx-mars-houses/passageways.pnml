@@ -22,34 +22,34 @@
 /* Passageway spritesets. */
 spriteset(spriteset_passageway_nw, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
   // left top width height x y
-  [   612, 4,   72,   128, -9, -76]
-  [   612, 4,   72,   128, -9, -76]
-  [   612, 4,   72,   128, -9, -76]
-  [   612, 4,   72,   128, -9, -76]
+  [   612, 4,   72,   128, -9, -77]
+  [   612, 4,   72,   128, -9, -77]
+  [   612, 4,   72,   128, -9, -77]
+  [   612, 4,   72,   128, -9, -77]
 }
 
 spriteset(spriteset_passageway_ne, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
   // left top width height x y
-  [   612,136,   72,   128, -65, -76]
-  [   612,136,   72,   128, -65, -76]
-  [   612,136,   72,   128, -65, -76]
-  [   612,136,   72,   128, -65, -76]
+  [   612,136,   72,   128, -63, -76]
+  [   612,136,   72,   128, -63, -76]
+  [   612,136,   72,   128, -63, -76]
+  [   612,136,   72,   128, -63, -76]
 }
 
 spriteset(spriteset_passageway_se, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
   // left top width height x y
-  [   612,268,   72,   128, -57, -96]
-  [   612,268,   72,   128, -57, -96]
-  [   612,268,   72,   128, -57, -96]
-  [   612,268,   72,   128, -57, -96]
+  [   612,268,   72,   128, -55, -96]
+  [   612,268,   72,   128, -55, -96]
+  [   612,268,   72,   128, -55, -96]
+  [   612,268,   72,   128, -55, -96]
 }
 
 spriteset(spriteset_passageway_sw, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
   // left top width height x y
-  [   612,400,   72,   128, -17, -96]
-  [   612,400,   72,   128, -17, -96]
-  [   612,400,   72,   128, -17, -96]
-  [   612,400,   72,   128, -17, -96]
+  [   612,400,   72,   128, -15, -96]
+  [   612,400,   72,   128, -15, -96]
+  [   612,400,   72,   128, -15, -96]
+  [   612,400,   72,   128, -15, -96]
 }
 
 
