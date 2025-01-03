@@ -3,8 +3,8 @@
 ##gender fp map f mnp m n np
 ##case acc nom loc big voc ins dat small gen
 
-STR_GRF_NAME :OpenGFX Marsovské bydlení {VERSION}
-STR_GRF_DESC :{ORANGE}Marťanské bydlení{}Bydlení pro prostředí Marsu{}{BLACK}Grafika: {SILVER}Zephyris{}{BLACK}Naprogramováno: {SILVER}Elyon
+STR_GRF_NAME :reHabs - OpenGFX Marsovské bydlení: Budoucí budovy {VERSION}
+STR_GRF_DESC :{ORANGE}Marťanské bydlení{}Bydlení pro prostředí Marsu{}{BLACK}Grafika: {SILVER}Zephyris{}{BLACK}Naprogramováno: {SILVER}Elyon{}{BLACK}Aktualizace kódu: {SILVER}Gadg8eer
 STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
 
 STR_NAME_HABITAT :Bydlení

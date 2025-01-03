@@ -2,8 +2,8 @@
 ##plural 11
 ##gender m f
 
-STR_GRF_NAME :OpenGFX 화성 기후 건물 {VERSION}
-STR_GRF_DESC : {ORANGE}화성인 거주지{}화성 기후를 위한 화성 거주지{}{BLACK}그래픽 제작: {SILVER}Zephyris{}{BLACK}프로그래머: {SILVER}Elyon
+STR_GRF_NAME :reHabs: 미래의 건물들 - OpenGFX 화성 기후 건물 {VERSION}
+STR_GRF_DESC : {ORANGE}화성인 거주지{}화성 기후를 위한 화성 거주지{}{BLACK}그래픽 제작: {SILVER}Zephyris{}{BLACK}프로그래머: {SILVER}Elyon{}{BLACK}코드 업데이트: {SILVER}Gadg8eer
 STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
 
 STR_NAME_HABITAT :거주지

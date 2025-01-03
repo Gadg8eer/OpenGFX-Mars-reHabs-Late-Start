@@ -3,8 +3,8 @@
 ##gender m f n mp fp np
 ##case abl acc dat gen
 
-STR_GRF_NAME :OpenGFX Domi Martiae {VERSION}
-STR_GRF_DESC :{ORANGE}Habitationes Martiae{}{BLACK}Graphica: {SILVER}Zephyris{}{BLACK}Programmatio: {SILVER}Elyon
+STR_GRF_NAME :reHabs - OpenGFX Domi Martiae: Future Aedificiorum {VERSION}
+STR_GRF_DESC :{ORANGE}Habitationes Martiae{}{BLACK}Graphica: {SILVER}Zephyris{}{BLACK}Programmatio: {SILVER}Elyon{}{BLACK}Code renovatio: {SILVER}Gadg8eer
 STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
 
 STR_NAME_HABITAT :Habitatio

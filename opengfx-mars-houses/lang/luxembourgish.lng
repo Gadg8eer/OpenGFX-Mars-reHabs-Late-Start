@@ -1,8 +1,8 @@
 ##grflangid 0x23
 ##plural 0
 
-STR_GRF_NAME :OpenGFX Mars Haiser {VERSION}
-STR_GRF_DESC :{ORANGE}Haiser vum Mars{}Haiser fir eng Mars Landschaft{}{BLACK}Grafik: {SILVER}Zephyris{}{BLACK}Programméirung: {SILVER}Elyon
+STR_GRF_NAME :reHabs - OpenGFX Mars Haiser: Zukunft Gebaier {VERSION}
+STR_GRF_DESC :{ORANGE}Haiser vum Mars{}Haiser fir eng Mars Landschaft{}{BLACK}Grafik: {SILVER}Zephyris{}{BLACK}Programméirung: {SILVER}Elyon{}{BLACK}Code update: {SILVER}Gadg8eer
 STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
 
 STR_NAME_HABITAT :Haus

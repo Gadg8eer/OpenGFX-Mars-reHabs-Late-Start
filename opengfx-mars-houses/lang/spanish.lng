@@ -2,8 +2,8 @@
 ##plural 0
 ##gender m f
 
-STR_GRF_NAME :OpenGFX Mars Habitats_Hábitats de Marte {VERSION}
-STR_GRF_DESC :{ORANGE}Hábitats de Marte{}Hábitats para el entorno Marciano{}{BLACK}Gráficos: {SILVER} Zephyris{}{BLACK}Programación {SILVER}Elyon
+STR_GRF_NAME :reHabs - OpenGFX Mars Habitats: Edificios del futuro {VERSION}
+STR_GRF_DESC :{ORANGE}Hábitats de Marte{}Hábitats para el entorno Marciano{}{BLACK}Gráficos: {SILVER} Zephyris{}{BLACK}Programación {SILVER}Elyon{}{BLACK}Actualización de código: {SILVER}Gadg8eer
 STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
 
 STR_NAME_HABITAT :Hábitat

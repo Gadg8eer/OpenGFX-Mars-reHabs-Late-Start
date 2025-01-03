@@ -1,8 +1,8 @@
 ##grflangid 0x56
 ##plural 1
 
-STR_GRF_NAME :OpenGFX 火星栖境套件{VERSION}
-STR_GRF_DESC :{ORANGE}火星栖境套件{}为您打造梦幻的火星场景{}{BLACK}绘图: {SILVER}Zephyris{}{BLACK}编程: {SILVER}Elyon
+STR_GRF_NAME :reHabs - OpenGFX 火星栖境套件:未来建筑{VERSION}
+STR_GRF_DESC :{ORANGE}火星栖境套件{}为您打造梦幻的火星场景{}{BLACK}绘图: {SILVER}Zephyris{}{BLACK}编程: {SILVER}Elyon{}{BLACK}代码更新: {SILVER}Gadg8eer
 STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
 
 STR_NAME_HABITAT :住宅

@@ -1,8 +1,8 @@
 ##grflangid 0x1f
 ##plural 0
 
-STR_GRF_NAME :OpenGFX Mars-leefomgevingen {VERSION}
-STR_GRF_DESC :{ORANGE}Mars leefomgevingen{}Leefomgevingen voor wonen op de planeet Mars{}{BLACK}Grafisch: {SILVER}Zephyris{}{BLACK}Programma: {SILVER}Elyon
+STR_GRF_NAME :reHabs - OpenGFX Mars-leefomgevingen: Toekomstige gebouwen {VERSION}
+STR_GRF_DESC :{ORANGE}Mars leefomgevingen{}Leefomgevingen voor wonen op de planeet Mars{}{BLACK}Grafisch: {SILVER}Zephyris{}{BLACK}Programma: {SILVER}Elyon{}{BLACK}Code-update: {SILVER}Gadg8eer
 STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
 
 STR_NAME_HABITAT :Leefomgeving

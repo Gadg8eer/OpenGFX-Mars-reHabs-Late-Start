@@ -3,8 +3,8 @@
 ##gender masculine feminine neuter
 ##case small
 
-STR_GRF_NAME :OpenGFX Mars Hus {VERSION}
-STR_GRF_DESC :{ORANGE}Mars Habitat{}Habitat for ett 'Mars miljø'{}{BLACK}Grafikk: {SILVER}Zephyris{}{BLACK}Programmering: {SILVER}Elyon
+STR_GRF_NAME :reHabs - OpenGFX Mars Hus: Fremtidige bygninger {VERSION}
+STR_GRF_DESC :{ORANGE}Mars Habitat{}Habitat for ett 'Mars miljø'{}{BLACK}Grafikk: {SILVER}Zephyris{}{BLACK}Programmering: {SILVER}Elyon{}{BLACK}Kodeoppdatering: {SILVER}Gadg8eer
 STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
 
 STR_NAME_HABITAT :Habitat

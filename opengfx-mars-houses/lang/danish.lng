@@ -1,8 +1,8 @@
 ##grflangid 0x2d
 ##plural 0
 
-STR_GRF_NAME :OpenGFX Mars-huse
-STR_GRF_DESC :{ORANGE}Martian-levesteder{}{BLACK}Grafik: {SILVER}Zephyris{}{BLACK}Programmering: {SILVER}Elyon
+STR_GRF_NAME :reHabs - OpenGFX Mars-huse: Fremtidige bygninger
+STR_GRF_DESC :{ORANGE}Martian-levesteder{}{BLACK}Grafik: {SILVER}Zephyris{}{BLACK}Programmering: {SILVER}Elyon{}{BLACK}Kodeopdatering: {SILVER}Gadg8eer
 STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
 
 STR_NAME_HABITAT :Levested
