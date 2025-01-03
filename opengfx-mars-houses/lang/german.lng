@@ -2,7 +2,7 @@
 ##plural 0
 ##gender m w n p
 
-STR_GRF_NAME :OpenGFX Mars Houses (Häuser) {VERSION}
+STR_GRF_NAME :reHabs - OpenGFX Mars Houses (Häuser): Gebäude der Zukunft {VERSION}
 STR_GRF_DESC :{ORANGE}Mars-Habitate{}Habitate für eine Mars-Landschaft{}{BLACK}Graphik: {SILVER}Zephyris{}{BLACK}Programmierung: {SILVER}Elyon{}{BLACK}Code-Aktualisierung: {SILVER}Gadg8eer
 STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
 
