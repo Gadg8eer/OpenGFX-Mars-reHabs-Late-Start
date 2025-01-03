@@ -1,8 +1,8 @@
 ##grflangid 0x01
 
-STR_GRF_NAME :OpenGFX Mars Habitats - reMOD Late Start {VERSION}
-STR_GRF_DESC :{ORANGE}Martian Habitats{}Habitats for a Martian environment{}{BLACK}Graphics: {SILVER}Zephyris{}{BLACK}Programming: {SILVER}Elyon
-STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
+STR_GRF_NAME :OpenGFX Mars Habitats - Late Start {VERSION}
+STR_GRF_DESC :{ORANGE}Martian Habitats{}Habitats for a Martian/future environment{}{BLACK}Graphics: {SILVER}Zephyris{}{BLACK}Programming: {SILVER}Elyon{}{BLACK}Code update: {SILVER}Gadg8eer
+STR_GRF_URL :https://github.com/Gadg8eer/OpenGFX-Mars-reMOD-Late-Start
 
 STR_NAME_HABITAT :Habitat
 STR_NAME_LARGE_HABITAT :Large habitat

@@ -17,8 +17,8 @@ Contents:
 
 This NewGRF provides Houses for the Martian Environment
 
-Name of this Repo:  OpenGFX Mars Houses - reMOD Late Start
-Repository version: 0
+Name of this Repo:  OpenHabs - OpenGFX Mars Houses: Late Start
+Repository version: 11
 
 
 
@@ -49,7 +49,7 @@ The complete source code is available as mercurial checkout via
 
 Author:   Elyon
 Graphics: Zephyris
-
+Code update: Gadg8eer
 
 
 ---------

@@ -1,6 +1,6 @@
-VERSION        :noRev
-VERSION_STRING :noRev
-TITLE          :OpenGFX Mars Houses - reMOD Late Start noRev
-FILENAME       :ogfx-mars-houses-remod.grf
+VERSION        :1.1
+VERSION_STRING :1.1
+TITLE          :OpenHabs - OpenGFX Mars Habitats: Late Start
+FILENAME       :ogfx-mars-houses-fixed.grf
 REPO_HASH      :
-NEWGRF_VERSION :0
+NEWGRF_VERSION :11
