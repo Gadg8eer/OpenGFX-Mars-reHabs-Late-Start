@@ -1,0 +1,6 @@
+VERSION        :
+VERSION_STRING :
+TITLE          :OpenGFX Mars houses 
+FILENAME       :ogfx-mars-houses.grf
+REPO_HASH      :
+NEWGRF_VERSION :
