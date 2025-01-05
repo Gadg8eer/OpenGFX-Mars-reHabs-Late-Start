@@ -4,10 +4,10 @@ STR_GRF_NAME :reHabs - OpenGFX Mars Habitats: Late Start {VERSION}
 STR_GRF_DESC :{ORANGE}Martian Habitats{}Habitats for a Martian/future environment, with re-aligned sprites for use with OpenGFX{}{BLACK}Graphics: {SILVER}Zephyris{}{BLACK}Programming: {SILVER}Elyon{}{BLACK}Code update: {SILVER}Gadg8eer
 STR_GRF_URL :https://github.com/Gadg8eer/OpenGFX-Mars-reHabs-Late-Start
 
-STR_NAME_HABITAT :Habitat
-STR_NAME_LARGE_HABITAT :Large habitat
-STR_NAME_TALL_HABITAT :Tall habitat
-STR_NAME_TOWER_HABITAT :Tower habitat
-STR_NAME_LUXURY_TOWER_HABITAT :Luxury tower habitat
-STR_NAME_PARK :Park
-STR_NAME_TALL_PARK :Tall park
+STR_NAME_HABITAT :inHab Housing Module
+STR_NAME_LARGE_HABITAT :inHab ApartModule
+STR_NAME_TALL_HABITAT :inHab CondoModule
+STR_NAME_TOWER_HABITAT :inHab Tower Module
+STR_NAME_LUXURY_TOWER_HABITAT :LuxureHab Arcology Module
+STR_NAME_PARK :inHab Plaza Module
+STR_NAME_TALL_PARK :LuxureHab Hotel Module
