@@ -1,0 +1,226 @@
+##grflangid 0x1f
+##plural 0
+
+STR_GRF_DESC                                                                    :{ORANGE}reMOTIS - Realigned Martian One Tile Industry Set{}{BLACK}Originally brought to you by: GarryG and Quast65.{}Inspired by: Other single-tile industry sets and FIRS.{}Credits: andytheNorth, FooBar, planetmaker, Terkhen, Yexo, and many many others.{}{}Also, Gadg8eer coded the graphics but did not create them, they are obtained from other GPL v2 licensed NewGRFs.{}{SILVER}See readme for more information.{}{BLACK}License: GPL v2.
+STR_GRF_WEBSITE									:https://www.tt-forums.net/viewtopic.php?f=26&t=88584
+
+STR_PARAM_DESC_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maximum distance of fishing grounds, oil rigs and dredging sites from the coast in tiles.
+STR_PARAM_NAME_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maximum coastal distance of marine industries in tiles
+STR_PARAM_VALUE_SECONDARY_NEVER_CLOSE_0                                         :No limit
+STR_PARAM_DESC_NO_OPENINGS                                                      :By default, new industries will open during the game.{}{}If 'prevent opening' is turned on industries will not open during game, and players will not be able to fund or prospect for industries.
+STR_PARAM_NAME_NO_OPENINGS                                                      :Prevent industries opening during gameplay
+
+STR_INDUSTRY_EXTRA_TEXT                                         :{}Goods produced this month: {YELLOW}{SIGNED_WORD}
+
+STR_CARGO_NAME_ALCOHOL                                                          :Alcohol
+STR_CARGO_NAME_BUILDING_MATERIALS                                               :Bouw Materialen
+STR_CARGO_NAME_CEMENT                                                           :Cement
+STR_CARGO_NAME_CLAY                                                             :Klei
+STR_CARGO_NAME_COPPER                                                           :Koper
+STR_CARGO_NAME_FISH                                                             :Vis
+STR_CARGO_NAME_FODDER		                                                :Veevoer
+STR_CARGO_NAME_FRUITS                                                           :Fruit
+STR_CARGO_NAME_GLASS                                                            :Glas
+STR_CARGO_NAME_LIMESTONE                                                        :Kalksteen
+STR_CARGO_NAME_TIMBER                                                           :Gezaagd Hout
+STR_CARGO_NAME_PARCELS								:Pakketjes
+STR_CARGO_NAME_METAL                                                            :Metaal
+STR_CARGO_NAME_MILK                                                             :Melk
+STR_CARGO_NAME_FUEL                                                             :Aardgas
+STR_CARGO_NAME_SAND                                                             :Zand
+STR_CARGO_NAME_SCRAP_METAL                                                      :Schroot
+STR_CARGO_NAME_STONE                                                            :Grind
+STR_CARGO_NAME_WOOL                                                             :Wol
+STR_CARGO_NAME_COTTON								:Katoen
+STR_CARGO_NAME_VEGETABLES							:Groentes
+STR_CARGO_NAME_WORKERS								:Arbeiders
+STR_CARGO_NAME_TOURISTS								:Touristen
+STR_CARGO_NAME_COPPER_ORE							:Kopererts
+STR_CARGO_NAME_WASTE								:Afval
+STR_CARGO_NAME_URANIUM								:Uranium
+STR_CARGO_NAME_VALUABLES							:Kostbaarheden
+STR_CARGO_NAME_BAUXITE								:Bauxiet
+STR_CARGO_NAME_MANGANESE							:Mangaan
+STR_CARGO_NAME_NICKEL								:Nikkel
+STR_CARGO_NAME_SULPHUR								:Zwavel
+STR_CARGO_NAME_VEHICLES								:Auto's
+STR_CARGO_NAME_FLOUR								:Bloem
+STR_CARGO_NAME_PIPE								:Buizen
+STR_CARGO_NAME_OYSTERS								:Zeevruchten
+STR_CARGO_NAME_MEAT								:Vlees
+STR_CARGO_NAME_CHEESE								:Kaas
+STR_CARGO_NAME_FURNITURE							:Meubels
+STR_CARGO_NAME_TEXTILE								:Textiel
+STR_CARGO_NAME_SEED								:Zaden
+STR_CARGO_NAME_FERTILIZER							:Kunstmest
+STR_CARGO_NAME_EXPLOSIVES							:Explosieven
+STR_CARGO_NAME_ACID								:Zuren
+STR_CARGO_NAME_CHLORINE								:Chloor
+STR_CARGO_NAME_SLAG								:Metaalslak
+STR_CARGO_NAME_TROPIC_WOOD							:Tropisch Hardhout
+STR_CARGO_NAME_MARINE_SUPPLIES							:Maritieme Benodigdheden
+STR_CARGO_NAME_PETROL								:Benzine
+STR_CARGO_NAME_WATER								:Drinkwater
+STR_CARGO_NAME_POTATO								:Aardappelen
+STR_CARGO_NAME_ELECTRICAL_PARTS							:Elektrische Machines
+STR_CARGO_NAME_MACHINE_PARTS							:Machine Onderdelen
+STR_CARGO_NAME_SEWAGE								:Rioolwater
+
+STR_NAME_ELECTRICITY								:Elektriciteit
+STR_SHORT_KWH									:{COMMA} kWh
+STR_UNITS_ELECTRICITY								:{COMMA} kWh elektriciteit
+STR_TINY_ELECTRICITY								:{TINYFONT}EL
+
+STR_CARGO_UNIT_ALCOHOL                                                          :{VOLUME} alcohol
+STR_CARGO_UNIT_BUILDING_MATERIALS                                               :{SIGNED_WORD} pallets bouw materialen
+STR_CARGO_UNIT_CEMENT                                                           :{WEIGHT} cement
+STR_CARGO_UNIT_CLAY                                                             :{WEIGHT} klei
+STR_CARGO_UNIT_COPPER                                                           :{WEIGHT} koper
+STR_CARGO_UNIT_FISH                                                             :{WEIGHT} vis
+STR_CARGO_UNIT_FODDER                                                           :{WEIGHT} veevoer
+STR_CARGO_UNIT_FRUITS                                                           :{WEIGHT} fruit
+STR_CARGO_UNIT_VEGETABLES							:{WEIGHT} groentes
+STR_CARGO_UNIT_GLASS                                                            :{WEIGHT} glas
+STR_CARGO_UNIT_LIME                                                             :{WEIGHT} kalksteen
+STR_CARGO_UNIT_TIMBER                                                           :{WEIGHT} gezaagd hout
+STR_CARGO_UNIT_PARCELS								:{SIGNED_WORD} pakketjes
+STR_CARGO_UNIT_MANGANESE							:{WEIGHT} mangaan
+STR_CARGO_UNIT_METAL                                                            :{WEIGHT} metaal
+STR_CARGO_UNIT_MILK                                                             :{VOLUME} melk
+STR_CARGO_UNIT_NICKEL								:{WEIGHT} nikkel
+STR_CARGO_UNIT_SAND                                                             :{WEIGHT} zand
+STR_CARGO_UNIT_SCRAP_METAL                                                      :{WEIGHT} schroot
+STR_CARGO_UNIT_STONE                                                            :{WEIGHT} grind
+STR_CARGO_UNIT_WOOL                                                             :{SIGNED_WORD} balen wol
+STR_CARGO_UNIT_COTTON								:{SIGNED_WORD} balen katoen
+STR_CARGO_UNIT_WORKERS								:{SIGNED_WORD} arbeiders
+STR_CARGO_UNIT_TOURISTS								:{SIGNED_WORD} toeristen
+STR_CARGO_UNIT_COPPER_ORE							:{WEIGHT} kopererts
+STR_CARGO_UNIT_WASTE								:{WEIGHT} afval
+STR_CARGO_UNIT_URANIUM								:{WEIGHT} uranium
+STR_CARGO_UNIT_VALUABLES							:{SIGNED_WORD} zakken kostbaarheden
+STR_CARGO_UNIT_BAUXITE								:{WEIGHT} bauxiet
+STR_CARGO_UNIT_SULPHUR								:{WEIGHT} zwavel
+STR_CARGO_UNIT_VEHICLES								:{SIGNED_WORD} auto's
+STR_QUANTITY_FLOUR								:{WEIGHT} bloem
+STR_CARGO_UNIT_PIPE								:{SIGNED_WORD} buizen
+STR_CARGO_UNIT_OYSTERS								:{WEIGHT} zeevruchten
+STR_CARGO_UNIT_MEAT								:{WEIGHT} vlees
+STR_CARGO_UNIT_CHEESE								:{WEIGHT} kaas
+STR_CARGO_UNIT_FURNITURE							:{SIGNED_WORD} pallets meubels
+STR_CARGO_UNIT_TEXTILE								:{WEIGHT} textiel
+STR_CARGO_UNIT_SEED								:{WEIGHT} zaden
+STR_CARGO_UNIT_FERTILIZER							:{WEIGHT} kunstmest
+STR_CARGO_UNIT_EXPLOSIVES							:{WEIGHT} explosieven
+STR_CARGO_UNIT_ACID								:{VOLUME} zuren
+STR_CARGO_UNIT_CHLORINE								:{VOLUME} chloor
+STR_CARGO_UNIT_SLAG                                                             :{WEIGHT} metaalslak
+STR_CARGO_UNIT_TROPIC_WOOD							:{WEIGHT} tropisch hardhout
+STR_CARGO_UNIT_MARINE								:{SIGNED_WORD} pallets maritieme benodigdheden
+STR_CARGO_UNIT_FUEL                                                             :{VOLUME} aardgas
+STR_CARGO_UNIT_PETROL								:{VOLUME} benzine
+STR_CARGO_UNIT_WATER								:{VOLUME} drinkwater
+STR_CARGO_UNIT_POTATO								:{WEIGHT} aardappelen
+STR_CARGO_UNIT_ELECTRICAL_PARTS							:{SIGNED_WORD} elektrische machines
+STR_CARGO_UNIT_MACHINE_PARTS							:{SIGNED_WORD} pallets machine onderdelen
+STR_CARGO_UNIT_SEWAGE								:{VOLUME} rioolwater
+STR_CARGO_UNIT_OIL								:{VOLUME} olie
+
+
+# it seems that using 2 chars for these is a convention not a limit, I tested 4 chars and OpenTTD renders it fine - May 2020
+
+STR_CID_ALCOHOL                                                                 :{TINYFONT}AL
+STR_CID_BUILDING_MATERIALS                                                      :{TINYFONT}BM
+STR_CID_CEMENT                                                                  :{TINYFONT}CE
+STR_CID_CLAY                                                                    :{TINYFONT}CY
+STR_CID_COPPER                                                                  :{TINYFONT}CR
+STR_CID_COPPER_ORE								:{TINYFONT}CO
+STR_CID_FODDER		                                                        :{TINYFONT}FD
+STR_CID_FISH                                                                    :{TINYFONT}FI
+STR_CID_GLASS                                                                   :{TINYFONT}GL
+STR_CID_LIMESTONE                                                               :{TINYFONT}LS
+STR_CID_TIMBER                                                                  :{TINYFONT}LU
+STR_CID_MANGANESE								:{TINYFONT}MG
+STR_CID_METAL                                                                   :{TINYFONT}MT
+STR_CID_MILK                                                                    :{TINYFONT}MK
+STR_CID_FUEL                                                                    :{TINYFONT}NG
+STR_CID_FRUITS									:{TINYFONT}FR
+STR_CID_SAND                                                                    :{TINYFONT}SA
+STR_CID_SCRAP_METAL                                                             :{TINYFONT}SM
+STR_CID_STONE                                                                   :{TINYFONT}ST
+STR_CID_SULPHUR									:{TINYFONT}SU
+STR_CID_WOOL                                                                    :{TINYFONT}WL
+STR_CID_PARCELS									:{TINYFONT}PC
+STR_CID_WORKERS									:{TINYFONT}YI
+STR_CID_TOURISTS								:{TINYFONT}TT
+STR_CID_WASTE									:{TINYFONT}WS
+STR_CID_URANIUM									:{TINYFONT}UR
+STR_CID_VALUABLES								:{TINYFONT}VA
+STR_CID_VEGETABLES								:{TINYFONT}VG
+STR_CID_COTTON									:{TINYFONT}CN
+STR_CID_BAUXITE									:{TINYFONT}BX
+STR_CID_NICKEL									:{TINYFONT}NC
+STR_CID_VEHICLES								:{TINYFONT}RV
+STR_CID_PIPE									:{TINYFONT}PP
+STR_CID_FLOUR									:{TINYFONT}FO
+STR_CID_OYSTERS									:{TINYFONT}OY
+STR_CID_MEAT									:{TINYFONT}ME
+STR_CID_CHEESE									:{TINYFONT}CS
+STR_CID_FURNITURE								:{TINYFONT}FN
+STR_CID_TEXTILE									:{TINYFONT}TX
+STR_CID_SEED									:{TINYFONT}SD
+STR_CID_FERTILIZER								:{TINYFONT}FZ
+STR_CID_EXPLOSIVES								:{TINYFONT}EX
+STR_CID_ACID									:{TINYFONT}AC
+STR_CID_CHLORINE								:{TINYFONT}CH
+STR_CID_SLAG                                                                    :{TINYFONT}SG
+STR_CID_TROPIC_WOOD								:{TINYFONT}TW
+STR_CID_MARINE_SUPPLIES								:{TINYFONT}MS
+STR_CID_PETROL									:{TINYFONT}PT
+STR_CID_WATER									:{TINYFONT}WT
+STR_CID_POTATO									:{TINYFONT}PO
+STR_CID_ELECTRICAL_PARTS							:{TINYFONT}EP
+STR_CID_MACHINE_PARTS								:{TINYFONT}MP
+STR_CID_SEWAGE									:{TINYFONT}SW
+
+STR_ERR_OPENTTD_VERSION                                                         :{ORANGE}E00: FIRS requires OpenTTD 1.7.0 (or for those using trunk builds, r27769)
+STR_ERR_INCOMPATIBLE_SET                                                        :{ORANGE}E01: {YELLOW}Incompatible set: {ORANGE}{STRING} {YELLOW}Consult FIRS ReadMe:
+
+STR_IND_Shopping_Centres							:Winkels & Horeca
+STR_IND_Manufacturing_Ind							:Producerende Bedrijven
+STR_IND_Heavy_Ind								:Zware Industrieën
+STR_IND_RESIDENTIAL								:Woonwijken
+STR_IND_Mines_and_Quarries							:Mijnen & Steengroeves
+STR_IND_FARMS									:Boerderijen
+STR_IND_Utility_Comp								:NUTS Bedrijven
+STR_IND_Fishing_Offshore							:Visgronden & Offshore
+
+
+STR_EXTRA_Shopping_Centres                                                      :{BLACK}Verkopen spullen.
+STR_EXTRA_Manufacturing_Ind							:{BLACK}Produceren spullen.
+STR_EXTRA_Heavy_Ind								:{BLACK}Verwerken ruwe materialen.
+STR_EXTRA_RESIDENTIAL								:{BLACK}Consumeren spullen.
+STR_EXTRA_Mines_and_Quarries							:{BLACK}Produceren ruwe materialen.
+STR_EXTRA_FARMS									:{BLACK}Produceren natuurlijke materialen.
+STR_EXTRA_Utility_Comp								:{BLACK}Verwerken afval & leveren voorzieningen.
+STR_EXTRA_Fishing_Offshore							:{BLACK}Produceren natuurlijke en/of ruwe materialen.
+
+STR_TOWN                                                                        :{STRING}
+STR_STATION                                                                     :{STRING} {STRING}
+
+
+STR_STATION_SHOPPING_CENTRES							:Winkels & Horeca
+STR_STATION_MANUFACTURING_IND							:Bedrijventerrein
+STR_STATION_HEAVY_IND								:Industriegebied
+STR_STATION_RESIDENTIAL								:Woonwijken
+STR_STATION_MINES_AND_QUARRIES							:Mijnen & Steengroeves
+STR_STATION_FARMS								:Boerderijen
+STR_STATION_UTILITY_COMP							:NUTS Bedrijven
+STR_STATION_FISHING_OFFSHORE							:Visgronden & Offshore
+STR_STATION_WATER								:Zandbanken
+
+
+STR_GRF_NAME                                                    :OTIS - One Tile Industry Set
+STR_GRF_DOCS_URL                                                :https://www.tt-forums.net/viewtopic.php?f=26&t=88584
+
+STR_EMPTY   		:
