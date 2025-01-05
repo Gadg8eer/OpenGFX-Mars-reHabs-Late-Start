@@ -1,0 +1,2840 @@
+# 1 "ogfx-mars-obj.pnml"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "ogfx-mars-obj.pnml"
+//  OpenGFX Mars Houses
+//
+//  This program is free software; you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation; either version 2 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License along
+//  with this program; if not, write to the Free Software Foundation, Inc.,
+//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# 1 "src/header.pnml" 1
+//  OpenGFX Mars Houses
+//
+//  This program is free software; you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation; either version 2 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License along
+//  with this program; if not, write to the Free Software Foundation, Inc.,
+//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+
+
+/* NewGRF definition. */
+grf {
+  grfid: "OGM\F";
+  name: string(STR_GRF_NAME);
+  desc: string(STR_GRF_DESC);
+  version: 1;
+  min_compatible_version: 1;
+}
+# 18 "ogfx-mars-obj.pnml" 2
+# 1 "src/templates.pnml" 1
+//  OpenGFX Mars Houses
+//
+//  This program is free software; you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation; either version 2 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License along
+//  with this program; if not, write to the Free Software Foundation, Inc.,
+//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+
+
+
+
+
+/* Templates. */
+template template_object(n) {
+  // left top width height x y
+  [4 + 64 * n + 4 * n, 4, 64, 64, -31, -32]
+}
+template template_tall_object(n) {
+  // left top width height x y
+  [4 + 72 * n + 4 * n, 4, 72, 128, -35, -96]
+}
+# 19 "ogfx-mars-obj.pnml" 2
+# 1 "src/passageways.pnml" 1
+//  OpenGFX Mars Houses
+//
+//  This program is free software; you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation; either version 2 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License along
+//  with this program; if not, write to the Free Software Foundation, Inc.,
+//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+
+
+
+
+
+/* Passageway spritesets. */
+spriteset(spriteset_passageway_nw, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
+  // left top width height x y
+  [ 612, 4, 72, 128, -8, -75]
+  [ 612, 4, 72, 128, -8, -75]
+  [ 612, 4, 72, 128, -8, -75]
+  [ 612, 4, 72, 128, -8, -75]
+}
+
+spriteset(spriteset_passageway_ne, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
+  // left top width height x y
+  [ 612,136, 72, 128, -64, -75]
+  [ 612,136, 72, 128, -64, -75]
+  [ 612,136, 72, 128, -64, -75]
+  [ 612,136, 72, 128, -64, -75]
+}
+
+spriteset(spriteset_passageway_se, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
+  // left top width height x y
+  [ 612,268, 72, 128, -56, -95]
+  [ 612,268, 72, 128, -56, -95]
+  [ 612,268, 72, 128, -56, -95]
+  [ 612,268, 72, 128, -56, -95]
+}
+
+spriteset(spriteset_passageway_sw, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
+  // left top width height x y
+  [ 612,400, 72, 128, -16, -95]
+  [ 612,400, 72, 128, -16, -95]
+  [ 612,400, 72, 128, -16, -95]
+  [ 612,400, 72, 128, -16, -95]
+}
+# 20 "ogfx-mars-obj.pnml" 2
+# 1 "src/concrete.pnml" 1
+//  OpenGFX Mars Houses
+//
+//  This program is free software; you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation; either version 2 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License along
+//  with this program; if not, write to the Free Software Foundation, Inc.,
+//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+
+
+
+
+
+/* Concrete spriteset. */
+spriteset(spriteset_concrete, "../graphics/Terrain/ConcreteGroundTile_8bpp.png") {
+  [1, 1, 64, 31, -31, 0]
+}
+# 21 "ogfx-mars-obj.pnml" 2
+
+# 1 "src/habitats.pnml" 1
+//  OpenGFX Mars Houses
+//
+//  This program is free software; you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation; either version 2 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License along
+//  with this program; if not, write to the Free Software Foundation, Inc.,
+//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+/* Habitat spritesets. */
+spriteset(spriteset_habitat_0, "../graphics/Buildings/TownBuildings_Habitats_8bpp.png") {
+  template_object(0)
+}
+
+spriteset(spriteset_habitat_1, "../graphics/Buildings/TownBuildings_Habitats_8bpp.png") {
+  template_object(1)
+}
+
+spriteset(spriteset_habitat_2, "../graphics/Buildings/TownBuildings_Habitats_8bpp.png") {
+  template_object(2)
+}
+
+spriteset(spriteset_habitat_3, "../graphics/Buildings/TownBuildings_Habitats_8bpp.png") {
+  template_object(3)
+}
+
+spriteset(spriteset_habitat_4, "../graphics/Buildings/TownBuildings_Habitats_8bpp.png") {
+  template_object(4)
+}
+
+spriteset(spriteset_habitat_5, "../graphics/Buildings/TownBuildings_Habitats_8bpp.png") {
+  template_object(5)
+}
+
+spriteset(spriteset_habitat_6, "../graphics/Buildings/TownBuildings_Habitats_8bpp.png") {
+  template_object(6)
+}
+
+spriteset(spriteset_habitat_7, "../graphics/Buildings/TownBuildings_Habitats_8bpp.png") {
+  template_object(7)
+}
+
+
+
+/* Habitat spritelayouts. */
+spritelayout spritelayout_habitat_0 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_habitat_0;
+    zextent: 12;
+  }
+}
+
+spritelayout spritelayout_habitat_1 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_habitat_1;
+    zextent: 12;
+  }
+}
+
+spritelayout spritelayout_habitat_2 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_habitat_2;
+    zextent: 24;
+  }
+}
+
+spritelayout spritelayout_habitat_3 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_habitat_3;
+    zextent: 12;
+  }
+}
+
+spritelayout spritelayout_habitat_4 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_habitat_4;
+    zextent: 12;
+  }
+}
+
+spritelayout spritelayout_habitat_5 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_habitat_5;
+    zextent: 12;
+  }
+}
+
+spritelayout spritelayout_habitat_6 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_habitat_6;
+    zextent: 12;
+  }
+}
+
+spritelayout spritelayout_habitat_7 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_habitat_7;
+    zextent: 24;
+  }
+}
+
+/* Large habitat spritesets. */
+spriteset(spriteset_large_habitat_0, "../graphics/Buildings/TownBuildings_Habitats_Large_8bpp.png") {
+  template_object(0)
+}
+
+spriteset(spriteset_large_habitat_1, "../graphics/Buildings/TownBuildings_Habitats_Large_8bpp.png") {
+  template_object(1)
+}
+
+spriteset(spriteset_large_habitat_2, "../graphics/Buildings/TownBuildings_Habitats_Large_8bpp.png") {
+  template_object(2)
+}
+
+spriteset(spriteset_large_habitat_3, "../graphics/Buildings/TownBuildings_Habitats_Large_8bpp.png") {
+  template_object(3)
+}
+
+spriteset(spriteset_large_habitat_4, "../graphics/Buildings/TownBuildings_Habitats_Large_8bpp.png") {
+  template_object(4)
+}
+
+spriteset(spriteset_large_habitat_5, "../graphics/Buildings/TownBuildings_Habitats_Large_8bpp.png") {
+  template_object(5)
+}
+
+spriteset(spriteset_large_habitat_6, "../graphics/Buildings/TownBuildings_Habitats_Large_8bpp.png") {
+  template_object(6)
+}
+
+spriteset(spriteset_large_habitat_7, "../graphics/Buildings/TownBuildings_Habitats_Large_8bpp.png") {
+  template_object(7)
+}
+
+
+
+/* Large habitat spritelayouts. */
+spritelayout spritelayout_large_habitat_0 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_large_habitat_0;
+    zextent: 12;
+  }
+}
+
+spritelayout spritelayout_large_habitat_1 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_large_habitat_1;
+    zextent: 24;
+  }
+}
+
+spritelayout spritelayout_large_habitat_2 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_large_habitat_2;
+    zextent: 24;
+  }
+}
+
+spritelayout spritelayout_large_habitat_3 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_large_habitat_3;
+    zextent: 24;
+  }
+}
+
+spritelayout spritelayout_large_habitat_4 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_large_habitat_4;
+    zextent: 24;
+  }
+}
+
+spritelayout spritelayout_large_habitat_5 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_large_habitat_5;
+    zextent: 24;
+  }
+}
+
+spritelayout spritelayout_large_habitat_6 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_large_habitat_6;
+    zextent: 24;
+  }
+}
+
+spritelayout spritelayout_large_habitat_7 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_large_habitat_7;
+    zextent: 24;
+  }
+}
+
+/* Park spritesets. */
+spriteset(spriteset_park_0, "../graphics/Buildings/TownBuildings_Parks_8bpp.png") {
+  template_object(0)
+}
+
+spriteset(spriteset_park_1, "../graphics/Buildings/TownBuildings_Parks_8bpp.png") {
+  template_object(1)
+}
+
+spriteset(spriteset_park_2, "../graphics/Buildings/TownBuildings_Parks_8bpp.png") {
+  template_object(2)
+}
+
+spriteset(spriteset_park_3, "../graphics/Buildings/TownBuildings_Parks_8bpp.png") {
+  template_object(3)
+}
+
+
+
+/* Park spritelayouts. */
+spritelayout spritelayout_park_0 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_park_0;
+    zextent: 24;
+  }
+}
+
+spritelayout spritelayout_park_1 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_park_1;
+    zextent: 24;
+  }
+}
+
+spritelayout spritelayout_park_2 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_park_2;
+    zextent: 24;
+  }
+}
+
+spritelayout spritelayout_park_3 {
+  ground { sprite: terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : terrain_type == TILETYPE_SNOW ? GROUNDSPRITE_SNOW : GROUNDSPRITE_NORMAL; }
+  building {
+    sprite: spriteset_park_3;
+    zextent: 24;
+  }
+}
+//same but concrete
+spritelayout spritelayout_park_0_a {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_park_0;
+    zextent: 24;
+  }
+}
+
+spritelayout spritelayout_park_1_a {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_park_1;
+    zextent: 24;
+  }
+}
+
+spritelayout spritelayout_park_2_a {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_park_2;
+    zextent: 24;
+  }
+}
+
+spritelayout spritelayout_park_3_a {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_park_3;
+    zextent: 24;
+  }
+}
+
+/* Random park selection. */
+random_switch(FEAT_OBJECTS, SELF, random_park) {
+  1: spritelayout_park_0;
+  1: spritelayout_park_1;
+  1: spritelayout_park_2;
+  1: spritelayout_park_3;
+}
+random_switch(FEAT_OBJECTS, SELF, random_park_a) {
+  1: spritelayout_park_0_a;
+  1: spritelayout_park_1_a;
+  1: spritelayout_park_2_a;
+  1: spritelayout_park_3_a;
+}
+
+/* Random large habitat selection. */
+random_switch(FEAT_OBJECTS, SELF, random_large_habitat) {
+  1: spritelayout_large_habitat_0;
+  1: spritelayout_large_habitat_1;
+  1: spritelayout_large_habitat_2;
+  1: spritelayout_large_habitat_3;
+  1: spritelayout_large_habitat_4;
+  1: spritelayout_large_habitat_5;
+  1: spritelayout_large_habitat_6;
+  1: spritelayout_large_habitat_7;
+}
+
+/* Random habitat selection. */
+random_switch(FEAT_OBJECTS, SELF, random_habitat) {
+  1: spritelayout_habitat_0;
+  1: spritelayout_habitat_1;
+  1: spritelayout_habitat_2;
+  1: spritelayout_habitat_3;
+  1: spritelayout_habitat_4;
+  1: spritelayout_habitat_5;
+  1: spritelayout_habitat_6;
+  1: spritelayout_habitat_7;
+}
+switch(FEAT_OBJECTS, SELF, random_houses_1, view) {
+ 0: random_habitat;
+ 1: random_large_habitat;
+ 2: random_park;
+ 3: random_park_a;
+}
+
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_1) {
+  property {
+ class: "GFXM";
+ classname: string(STR_NAME_MARSHOUSES);
+ name: string(STR_NAME_HABITAT);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_1; }
+}
+# 23 "ogfx-mars-obj.pnml" 2
+# 1 "src/tall_habitats.pnml" 1
+//  OpenGFX Mars Houses
+//
+//  This program is free software; you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation; either version 2 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License along
+//  with this program; if not, write to the Free Software Foundation, Inc.,
+//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# 1 "src/templates.pnml" 1
+//  OpenGFX Mars Houses
+//
+//  This program is free software; you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation; either version 2 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License along
+//  with this program; if not, write to the Free Software Foundation, Inc.,
+//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+# 18 "src/tall_habitats.pnml" 2
+# 1 "src/passageways.pnml" 1
+//  OpenGFX Mars Houses
+//
+//  This program is free software; you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation; either version 2 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License along
+//  with this program; if not, write to the Free Software Foundation, Inc.,
+//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+# 19 "src/tall_habitats.pnml" 2
+# 1 "src/concrete.pnml" 1
+//  OpenGFX Mars Houses
+//
+//  This program is free software; you can redistribute it and/or modify
+//  it under the terms of the GNU General Public License as published by
+//  the Free Software Foundation; either version 2 of the License, or
+//  (at your option) any later version.
+//
+//  This program is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//  GNU General Public License for more details.
+//
+//  You should have received a copy of the GNU General Public License along
+//  with this program; if not, write to the Free Software Foundation, Inc.,
+//  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+# 20 "src/tall_habitats.pnml" 2
+
+
+
+/* Tall habitat spritesets. */
+spriteset(spriteset_tall_habitat_0, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
+  template_tall_object(0)
+}
+
+spriteset(spriteset_tall_habitat_1, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
+  template_tall_object(1)
+}
+
+spriteset(spriteset_tall_habitat_2, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
+  template_tall_object(2)
+}
+
+spriteset(spriteset_tall_habitat_3, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
+  template_tall_object(3)
+}
+
+spriteset(spriteset_tall_habitat_4, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
+  template_tall_object(4)
+}
+
+spriteset(spriteset_tall_habitat_5, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
+  template_tall_object(5)
+}
+
+spriteset(spriteset_tall_habitat_6, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
+  template_tall_object(6)
+}
+
+spriteset(spriteset_tall_habitat_7, "../graphics/Buildings/TownBuildings_TallBuildings_8bpp.png") {
+  template_tall_object(7)
+}
+
+
+/* Tall habitat spritelayouts. */
+spritelayout spritelayout_tall_habitat_0 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tall_habitat_0;
+    zextent: 48;
+  }
+}
+
+spritelayout spritelayout_tall_habitat_1 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tall_habitat_1;
+    zextent: 60;
+  }
+}
+
+spritelayout spritelayout_tall_habitat_2 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tall_habitat_2;
+    zextent: 48;
+  }
+}
+
+spritelayout spritelayout_tall_habitat_3 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tall_habitat_3;
+    zextent: 36;
+  }
+}
+
+spritelayout spritelayout_tall_habitat_4 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tall_habitat_4;
+    zextent: 60;
+  }
+}
+
+spritelayout spritelayout_tall_habitat_5 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tall_habitat_5;
+    zextent: 36;
+  }
+}
+
+spritelayout spritelayout_tall_habitat_6 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tall_habitat_6;
+    zextent: 48;
+  }
+}
+
+spritelayout spritelayout_tall_habitat_7 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tall_habitat_7;
+    zextent: 48;
+  }
+}
+
+/* Tower habitat spritesets. */
+spriteset(spriteset_tower_habitat_0, "../graphics/Buildings/TownBuildings_TowerBuildings_8bpp.png") {
+  template_tall_object(0)
+}
+
+spriteset(spriteset_tower_habitat_1, "../graphics/Buildings/TownBuildings_TowerBuildings_8bpp.png") {
+  template_tall_object(1)
+}
+
+spriteset(spriteset_tower_habitat_2, "../graphics/Buildings/TownBuildings_TowerBuildings_8bpp.png") {
+  template_tall_object(2)
+}
+
+spriteset(spriteset_tower_habitat_3, "../graphics/Buildings/TownBuildings_TowerBuildings_8bpp.png") {
+  template_tall_object(3)
+}
+
+spriteset(spriteset_tower_habitat_4, "../graphics/Buildings/TownBuildings_TowerBuildings_8bpp.png") {
+  template_tall_object(4)
+}
+
+spriteset(spriteset_tower_habitat_5, "../graphics/Buildings/TownBuildings_TowerBuildings_8bpp.png") {
+  template_tall_object(5)
+}
+
+spriteset(spriteset_tower_habitat_6, "../graphics/Buildings/TownBuildings_TowerBuildings_8bpp.png") {
+  template_tall_object(6)
+}
+
+spriteset(spriteset_tower_habitat_7, "../graphics/Buildings/TownBuildings_TowerBuildings_8bpp.png") {
+  template_tall_object(7)
+}
+
+
+
+/* Tower habitat spritelayouts. */
+spritelayout spritelayout_tower_habitat_0 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tower_habitat_0;
+    zextent: 48;
+  }
+}
+
+spritelayout spritelayout_tower_habitat_1 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tower_habitat_1;
+    zextent: 48;
+  }
+}
+
+spritelayout spritelayout_tower_habitat_2 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tower_habitat_2;
+    zextent: 48;
+  }
+}
+
+spritelayout spritelayout_tower_habitat_3 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tower_habitat_3;
+    zextent: 48;
+  }
+}
+spritelayout spritelayout_tower_habitat_4 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tower_habitat_4;
+    zextent: 48;
+  }
+}
+spritelayout spritelayout_tower_habitat_5 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tower_habitat_5;
+    zextent: 48;
+  }
+}
+spritelayout spritelayout_tower_habitat_6 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tower_habitat_6;
+    zextent: 48;
+  }
+}
+
+spritelayout spritelayout_tower_habitat_7 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tower_habitat_7;
+    zextent: 48;
+  }
+}
+
+/* Tower habitat spritesets. */
+spriteset(spriteset_luxury_tower_habitat_0, "../graphics/Buildings/TownBuildings_LuxuryTowerBuildings_8bpp.png") {
+  template_tall_object(0)
+}
+
+spriteset(spriteset_luxury_tower_habitat_1, "../graphics/Buildings/TownBuildings_LuxuryTowerBuildings_8bpp.png") {
+  template_tall_object(1)
+}
+
+spriteset(spriteset_luxury_tower_habitat_2, "../graphics/Buildings/TownBuildings_LuxuryTowerBuildings_8bpp.png") {
+  template_tall_object(2)
+}
+
+spriteset(spriteset_luxury_tower_habitat_3, "../graphics/Buildings/TownBuildings_LuxuryTowerBuildings_8bpp.png") {
+  template_tall_object(3)
+}
+
+
+
+/* Luxury tower habitat spritelayouts. */
+spritelayout spritelayout_luxury_tower_habitat_0 {
+  ground { sprite: spriteset_concrete; }
+
+  building {
+    sprite: spriteset_luxury_tower_habitat_0;
+    zextent: 48;
+  }
+}
+
+spritelayout spritelayout_luxury_tower_habitat_1 {
+  ground { sprite: spriteset_concrete; }
+
+  building {
+    sprite: spriteset_luxury_tower_habitat_1;
+    zextent: 48;
+  }
+}
+
+spritelayout spritelayout_luxury_tower_habitat_2 {
+  ground { sprite: spriteset_concrete; }
+
+  building {
+    sprite: spriteset_luxury_tower_habitat_2;
+    zextent: 48;
+  }
+}
+
+spritelayout spritelayout_luxury_tower_habitat_3 {
+  ground { sprite: spriteset_concrete; }
+
+  building {
+    sprite: spriteset_luxury_tower_habitat_3;
+    zextent: 48;
+  }
+}
+
+/* Tall park spritesets. */
+spriteset(spriteset_tall_park_0, "../graphics/Buildings/TownBuildings_TallParks_8bpp.png") {
+  template_tall_object(0)
+}
+
+spriteset(spriteset_tall_park_1, "../graphics/Buildings/TownBuildings_TallParks_8bpp.png") {
+  template_tall_object(1)
+}
+
+spriteset(spriteset_tall_park_2, "../graphics/Buildings/TownBuildings_TallParks_8bpp.png") {
+  template_tall_object(2)
+}
+
+spriteset(spriteset_tall_park_3, "../graphics/Buildings/TownBuildings_TallParks_8bpp.png") {
+  template_tall_object(3)
+}
+
+
+
+/* Tall park spritelayouts. */
+spritelayout spritelayout_tall_park_0 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tall_park_0;
+    zextent: 60;
+  }
+}
+
+spritelayout spritelayout_tall_park_1 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tall_park_1;
+    zextent: 48;
+  }
+}
+
+spritelayout spritelayout_tall_park_2 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tall_park_2;
+    zextent: 60;
+  }
+}
+
+spritelayout spritelayout_tall_park_3 {
+  ground { sprite: spriteset_concrete; }
+  building {
+    sprite: spriteset_tall_park_3;
+    zextent: 48;
+  }
+}
+
+
+
+/* Random tall park selection. */
+random_switch(FEAT_OBJECTS, SELF, random_tall_park) {
+  1: spritelayout_tall_park_0;
+  1: spritelayout_tall_park_1;
+  1: spritelayout_tall_park_2;
+  1: spritelayout_tall_park_3;
+}
+
+/* Random tower habitat selection. */
+random_switch(FEAT_OBJECTS, SELF, random_luxury_tower_habitat) {
+  1: spritelayout_luxury_tower_habitat_0;
+  1: spritelayout_luxury_tower_habitat_1;
+  1: spritelayout_luxury_tower_habitat_2;
+  1: spritelayout_luxury_tower_habitat_3;
+}
+
+/* Random tower habitat selection. */
+random_switch(FEAT_OBJECTS, SELF, random_tower_habitat) {
+  1: spritelayout_tower_habitat_0;
+  1: spritelayout_tower_habitat_1;
+  1: spritelayout_tower_habitat_2;
+  1: spritelayout_tower_habitat_3;
+  1: spritelayout_tower_habitat_4;
+  1: spritelayout_tower_habitat_5;
+  1: spritelayout_tower_habitat_6;
+  1: spritelayout_tower_habitat_7;
+}
+
+/* Random tall habitat selection. */
+random_switch(FEAT_OBJECTS, SELF, random_tall_habitat) {
+  1: spritelayout_tall_habitat_0;
+  1: spritelayout_tall_habitat_1;
+  1: spritelayout_tall_habitat_2;
+  1: spritelayout_tall_habitat_3;
+  1: spritelayout_tall_habitat_4;
+  1: spritelayout_tall_habitat_5;
+  1: spritelayout_tall_habitat_6;
+  1: spritelayout_tall_habitat_7;
+}
+
+
+
+switch(FEAT_OBJECTS, SELF, random_houses_2, view) {
+ 0: random_tall_habitat;
+ 1: random_tower_habitat;
+ 2: random_luxury_tower_habitat;
+ 3: random_tall_park;
+}
+
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_2) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_TALL_HABITAT);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_2; }
+}
+# 24 "ogfx-mars-obj.pnml" 2
+# 1 "src/airmine.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# 1 "src/industry_templates.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+# 37 "src/industry_templates.pnml"
+// // XXX
+// spriteset(chemical_factory_XXX_sprites, "../graphics/Buildings/Industry_ChemicalFactory_8bpp.png") {
+//     SPRITE3(XXX, 140, 72, 4, 64, 64, -33, -32)
+// }
+// SPRITE_LAYOUT(chemical_factory_XXX_sprite_layout, chemical_factory_XXX_sprites, 16)
+// item(FEAT_INDUSTRYTILES, chemical_factory_XXX_tile) {
+//     property {
+//         substitute: 0;
+//         land_shape_flags: bitmask(LSF_ONLY_ON_FLAT_LAND);
+//         accepted_cargos: [[PASS, 1]];
+//     }
+//     graphics { chemical_factory_XXX_sprite_layout; }
+// }
+
+
+
+// vim: syn=cpp sw=4 et sts=4 nospell
+# 20 "src/airmine.pnml" 2
+
+
+// Tower sprite.
+spriteset(airmine_tower_sprites, "../graphics/Buildings/Industry_AirMine_8bpp.png") {
+    [4, 4, 64, 128, -31, -96]
+}
+spritelayout airmine_tower_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 68; sprite: airmine_tower_sprites; } }
+
+// Front of tower sprite
+spriteset(airmine_front_tower_sprites, "../graphics/Buildings/Industry_AirMine_8bpp.png") {
+    [208, 4, 64, 64, -31, -31/**/]
+}
+spritelayout airmine_front_tower_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 22; sprite: airmine_front_tower_sprites; } }
+
+
+// White tank sprites.
+spriteset(airmine_white_tank_sprites, "../graphics/Buildings/Industry_AirMine_8bpp.png") {
+    [72, 4, 64, 64, -33, -31/**/]
+}
+spritelayout airmine_white_tank_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 28; sprite: airmine_white_tank_sprites; } }
+
+
+// Blue tank sprites.
+spriteset(airmine_blue_tank_sprites, "../graphics/Buildings/Industry_AirMine_8bpp.png") {
+    [140, 4, 64, 64, -31, -35]
+}
+spritelayout airmine_blue_tank_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 30; sprite: airmine_blue_tank_sprites; } }
+
+switch(FEAT_OBJECTS, SELF, random_houses_3, view) {
+ 0: airmine_tower_sprite_layout;
+ 1: airmine_front_tower_sprite_layout;
+ 2: airmine_white_tank_sprite_layout;
+ 3: airmine_blue_tank_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_3) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_HABITAT);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_3; }
+}
+# 25 "ogfx-mars-obj.pnml" 2
+# 1 "src/aquiferpump.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+spriteset(aquiferpump_extracter_sprites, "../graphics/Buildings/Industry_AquiferPump_8bpp.png") {
+    [ 4, 4, 64, 64, -31/**/, -33]
+}
+spritelayout aquiferpump_extracter_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset: 0; yoffset: 0; zoffset: 0;
+        xextent: 16; yextent: 16; zextent: 36;
+        sprite: aquiferpump_extracter_sprites;
+    }
+}
+
+spriteset(aquiferpump_storage_sprites, "../graphics/Buildings/Industry_AquiferPump_8bpp.png") {
+    [ 72, 4, 64, 64, -31/**/, -33]
+}
+spritelayout aquiferpump_storage_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset: 0; yoffset: 0; zoffset: 0;
+        xextent: 16; yextent: 16; zextent: 28;
+        sprite: aquiferpump_storage_sprites;
+    }
+}
+
+spriteset(aquiferpump_buildings_sprites, "../graphics/Buildings/Industry_AquiferPump_8bpp.png") {
+    [140, 4, 64, 64, -31/**/, -33]
+}
+spritelayout aquiferpump_buildings_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset: 0; yoffset: 0; zoffset: 0;
+        xextent: 16; yextent: 16; zextent: 31;
+        sprite: aquiferpump_buildings_sprites;
+    }
+}
+
+
+// Blue storage tanks
+spriteset(chemical_factory_storage_sprites, "../graphics/Buildings/Industry_ChemicalFactory_8bpp.png") {
+    [276, 4, 64, 64, -31, -34]
+}
+spritelayout chemical_factory_storage_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 24; sprite: chemical_factory_storage_sprites; } }
+
+
+switch(FEAT_OBJECTS, SELF, random_houses_4, view) {
+ 0: aquiferpump_extracter_sprite_layout;
+ 1: aquiferpump_storage_sprite_layout;
+ 2: aquiferpump_buildings_sprite_layout;
+ 3: chemical_factory_storage_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_4) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_AQUIFER);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_4; }
+}
+
+
+// vim: sw=4 et sts=4 nospell
+# 26 "ogfx-mars-obj.pnml" 2
+# 1 "src/chemicalfactory.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# 1 "src/industry_templates.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+# 20 "src/chemicalfactory.pnml" 2
+
+// Low fan.
+spriteset(chemical_factory_low_fan_sprites, "../graphics/Buildings/Industry_ChemicalFactory_8bpp.png") {
+    [4, 4, 64, 64, -31, -34]
+}
+spritelayout chemical_factory_low_fan_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 16; sprite: chemical_factory_low_fan_sprites; } }
+
+// Electrical power
+spriteset(chemical_factory_power_sprites, "../graphics/Buildings/Industry_ChemicalFactory_8bpp.png") {
+    [72, 4, 64, 64, -31, -34]
+}
+spritelayout chemical_factory_power_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 24; sprite: chemical_factory_power_sprites; } }
+
+// Small round tanks
+spriteset(chemical_factory_white_tanks_sprites, "../graphics/Buildings/Industry_ChemicalFactory_8bpp.png") {
+    [140, 4, 64, 64, -31, -34]
+}
+spritelayout chemical_factory_white_tanks_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 16; sprite: chemical_factory_white_tanks_sprites; } }
+
+// Tubes across the factory
+spriteset(chemical_factory_tubes_sprites, "../graphics/Buildings/Industry_ChemicalFactory_8bpp.png") {
+    [208, 4, 64, 64, -31, -34]
+}
+spritelayout chemical_factory_tubes_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 20; sprite: chemical_factory_tubes_sprites; } }
+
+
+// High fan
+spriteset(chemical_factory_high_fan_sprites, "../graphics/Buildings/Industry_ChemicalFactory_8bpp.png") {
+    [344, 4, 64, 64, -31, -34]
+}
+spritelayout chemical_factory_high_fan_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 28; sprite: chemical_factory_high_fan_sprites; } }
+
+
+switch(FEAT_OBJECTS, SELF, random_houses_5, view) {
+ 0: chemical_factory_low_fan_sprite_layout;
+ 1: chemical_factory_power_sprite_layout;
+ 2: chemical_factory_white_tanks_sprite_layout;
+ 3: chemical_factory_tubes_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_5) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_CHEMISTRY);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_5; }
+}
+# 27 "ogfx-mars-obj.pnml" 2
+# 1 "src/electrolysisplant.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+spriteset(electrolysis_power_sprites, "../graphics/Buildings/Industry_HydrolysisPlant_8bpp.png") {
+    [ 4, 4, 64, 64, -31/**/, -33]
+}
+spritelayout electrolysis_power_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset: 0; yoffset: 0; zoffset: 0;
+        xextent: 16; yextent: 16; zextent: 26;
+        sprite: electrolysis_power_sprites;
+    }
+}
+spriteset(electrolysis_storage_sprites, "../graphics/Buildings/Industry_HydrolysisPlant_8bpp.png") {
+    [ 72, 4, 64, 64, -31/**/, -33]
+}
+spritelayout electrolysis_storage_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset: 0; yoffset: 0; zoffset: 0;
+        xextent: 16; yextent: 16; zextent: 32;
+        sprite: electrolysis_storage_sprites;
+    }
+}
+spriteset(electrolysis_plant_sprites, "../graphics/Buildings/Industry_HydrolysisPlant_8bpp.png") {
+    [138, 4, 64, 64, -31/**/, -33]
+}
+spritelayout electrolysis_plant_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset: 0; yoffset: 0; zoffset: 0;
+        xextent: 16; yextent: 16; zextent: 41;
+        sprite: electrolysis_plant_sprites;
+    }
+}
+
+spriteset(electrolysis_building_sprites, "../graphics/Buildings/Industry_HydrolysisPlant_8bpp.png") {
+    [206, 4, 64, 64, -31/**/, -33]
+}
+spritelayout electrolysis_building_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset: 0; yoffset: 6; zoffset: 0;
+        xextent: 16; yextent: 10; zextent: 12;
+        sprite: electrolysis_building_sprites;
+    }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_6, view) {
+ 0: electrolysis_power_sprite_layout;
+ 1: electrolysis_storage_sprite_layout;
+ 2: electrolysis_plant_sprite_layout;
+ 3: electrolysis_building_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_6) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_ELECTROLYSIS);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_6; }
+}
+# 28 "ogfx-mars-obj.pnml" 2
+# 1 "src/farm.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+spriteset(farm_small_building_sprites, "../graphics/Buildings/Industry_Farm_8bpp.png") {
+    [ 4, 4, 64, 64, -31/**/, -33]
+}
+spritelayout farm_small_building_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset: 0; yoffset: 0; zoffset: 0;
+        xextent: 16; yextent: 16; zextent: 20;
+        sprite: farm_small_building_sprites;
+    }
+}
+
+spriteset(farm_silo_sprites, "../graphics/Buildings/Industry_Farm_8bpp.png") {
+    [ 72, 4, 64, 64, -31/**/, -33]
+}
+spritelayout farm_silo_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset: 0; yoffset: 0; zoffset: 0;
+        xextent: 16; yextent: 16; zextent: 37;
+        sprite: farm_silo_sprites;
+    }
+}
+
+spriteset(farm_big_building_sprites, "../graphics/Buildings/Industry_Farm_8bpp.png") {
+    [140, 4, 64, 64, -31/**/, -33]
+}
+spritelayout farm_big_building_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset: 0; yoffset: 0; zoffset: 0;
+        xextent: 16; yextent: 16; zextent: 20;
+        sprite: farm_big_building_sprites;
+    }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_7, view) {
+ 0: farm_small_building_sprite_layout;
+ 1: farm_silo_sprite_layout;
+ 2: farm_big_building_sprite_layout;
+ 3: chemical_factory_high_fan_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_7) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_FARM);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_7; }
+}
+# 29 "ogfx-mars-obj.pnml" 2
+# 1 "src/fusionpowerplant.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# 1 "src/industry_templates.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+# 20 "src/fusionpowerplant.pnml" 2
+
+
+// Large round tank
+spriteset(fusion_plant_round_tank_sprites, "../graphics/Buildings/Industry_FusionPlant_8bpp.png") {
+    [4, 4, 64, 64, -31, -33]
+}
+spritelayout fusion_plant_round_tank_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 26; sprite: fusion_plant_round_tank_sprites; } }
+
+// Back building
+spriteset(fusion_plant_back_building_sprites, "../graphics/Buildings/Industry_FusionPlant_8bpp.png") {
+    [72, 4, 64, 64, -31, -33]
+}
+spritelayout fusion_plant_back_building_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 14; sprite: fusion_plant_back_building_sprites; } }
+
+
+// Front building
+spriteset(fusion_plant_front_building_sprites, "../graphics/Buildings/Industry_FusionPlant_8bpp.png") {
+    [140, 4, 64, 64, -31, -33]
+}
+spritelayout fusion_plant_front_building_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 14; sprite: fusion_plant_front_building_sprites; } }
+// Sphere tank
+spriteset(fusion_plant_sphere_tank_sprites, "../graphics/Buildings/Industry_FusionPlant_8bpp.png") {
+    [208, 4, 64, 64, -33, -35]
+}
+spritelayout fusion_plant_sphere_tank_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 18; sprite: fusion_plant_sphere_tank_sprites; } }
+// Power grid
+spriteset(fusion_plant_power_sprites, "../graphics/Buildings/Industry_FusionPlant_8bpp.png") {
+    [276, 4, 64, 64, -31, -33]
+}
+spritelayout fusion_plant_power_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 26; sprite: fusion_plant_power_sprites; } }
+
+switch(FEAT_OBJECTS, SELF, random_houses_8, view) {
+ 0: fusion_plant_round_tank_sprite_layout;
+ 1: fusion_plant_back_building_sprite_layout;
+ 2: fusion_plant_front_building_sprite_layout;
+ 3: fusion_plant_sphere_tank_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_8) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_FUSION);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_8; }
+}
+# 30 "ogfx-mars-obj.pnml" 2
+# 1 "src/goodsfactory.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# 1 "src/industry_templates.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+# 20 "src/goodsfactory.pnml" 2
+
+// Back
+spriteset(goods_factory_back_sprites, "../graphics/Buildings/Industry_GoodsFactory_8bpp.png") {
+    [4, 4, 64, 64, -31, -34]
+}
+spritelayout goods_factory_back_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 23; sprite: goods_factory_back_sprites; } }
+
+// Low middle
+spriteset(goods_factory_low_middle_sprites, "../graphics/Buildings/Industry_GoodsFactory_8bpp.png") {
+    [72, 4, 64, 64, -31, -34]
+}
+spritelayout goods_factory_low_middle_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 36; sprite: goods_factory_low_middle_sprites; } }
+
+// Middle
+spriteset(goods_factory_middle_sprites, "../graphics/Buildings/Industry_GoodsFactory_8bpp.png") {
+    [140, 4, 64, 64, -31, -34]
+}
+spritelayout goods_factory_middle_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 36; sprite: goods_factory_middle_sprites; } }
+
+// Front
+spriteset(goods_factory_front_sprites, "../graphics/Buildings/Industry_GoodsFactory_8bpp.png") {
+    [208, 4, 64, 64, -31, -34]
+}
+spritelayout goods_factory_front_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 23; sprite: goods_factory_front_sprites; } }
+
+switch(FEAT_OBJECTS, SELF, random_houses_9, view) {
+ 0: goods_factory_back_sprite_layout;
+ 1: goods_factory_low_middle_sprite_layout;
+ 2: goods_factory_middle_sprite_layout;
+ 3: goods_factory_front_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_9) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_GOOD);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_9; }
+}
+# 31 "ogfx-mars-obj.pnml" 2
+# 1 "src/icemine.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# 1 "src/industry_templates.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+# 20 "src/icemine.pnml" 2
+
+// Corner sprites.
+spriteset(ice_mine_back_corner_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [443, 284, 64, 31, -31/**/, 0] // Non-snowy version
+//    [443, 128, 64, 3, -31/**/, 01] // Snowy version
+}
+spriteset(ice_mine_left_corner_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [443, 243, 64, 31, -31/**/, 0] // Non-snowy version
+//    [443,  87, 64, 31, -31/**/, 0] // Snowy version
+}
+spriteset(ice_mine_right_corner_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [443, 161, 64, 31, -31/**/, 0] // Non-snowy version
+//    [443,   5, 64, 31, -31/**/, 0] // Snowy version
+}
+spriteset(ice_mine_front_corner_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [443, 202, 64, 31, -31/**/, 0] // Non-snowy version
+//    [443,  46, 64, 31, -31/**/, 0] // Snowy version
+}
+
+spritelayout ice_mine_back_corner_sprite_layout {
+    ground {
+        sprite: ice_mine_back_corner_sprites;
+    }
+}
+spritelayout ice_mine_left_corner_sprite_layout {
+    ground {
+        sprite: ice_mine_left_corner_sprites;
+    }
+}
+spritelayout ice_mine_right_corner_sprite_layout {
+    ground {
+        sprite: ice_mine_right_corner_sprites;
+    }
+}
+spritelayout ice_mine_front_corner_sprite_layout {
+    ground {
+        sprite: ice_mine_front_corner_sprites;
+    }
+}
+
+// 'point' at 1,1
+spriteset(ice_mine_left_point_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [378, 161, 64, 31, -31/**/, 0] // Non-snowy version
+//    [378,  46, 64, 3, -31/**/, 0] // Snowy version
+}
+spriteset(ice_mine_back_point_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [378, 202, 64, 31, -31/**/, 0] // Non-snowy version
+//    [378,  46, 64, 3, -31/**/, 0] // Snowy version
+}
+spriteset(ice_mine_right_point_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [378, 243, 64, 31, -31/**/, 0] // Non-snowy version
+//    [378,  46, 64, 3, -31/**/, 0] // Snowy version
+}
+spriteset(ice_mine_front_point_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [378, 284, 64, 31, -31/**/, 0] // Non-snowy version
+//    [378,  46, 64, 3, -31/**/, 0] // Snowy version
+}
+spritelayout ice_mine_left_point_sprite_layout {
+    ground {
+        sprite: ice_mine_left_point_sprites;
+    }
+}
+spritelayout ice_mine_back_point_sprite_layout {
+    ground {
+        sprite: ice_mine_back_point_sprites;
+    }
+}
+spritelayout ice_mine_right_point_sprite_layout {
+    ground {
+        sprite: ice_mine_right_point_sprites;
+    }
+}
+spritelayout ice_mine_front_point_sprite_layout {
+    ground {
+        sprite: ice_mine_front_point_sprites;
+    }
+}
+// Straight edges.
+spriteset(ice_mine_straight_nw_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [313, 202, 64, 31, -31/**/, 0] // Non-snowy version
+//    [313,  46, 64, 31, -31/**/, 0] // Snowy version
+}
+spriteset(ice_mine_double_straight_nw_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [313, 202, 64, 31, -31/**/, 0] // Non-snowy version
+}
+spriteset(ice_mine_straight_ne_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [248, 202, 64, 31, -31/**/, 0] // Non-snowy version
+}
+spriteset(ice_mine_straight_se_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [313, 161, 64, 31, -31/**/, 0] // Non-snowy version
+//    [313,  5, 64, 31, -31/**/, 0] // Snowy version
+}
+spriteset(ice_mine_double_straight_se_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [313, 161, 64, 31, -31/**/, 0] // Non-snowy version
+}
+spriteset(ice_mine_straight_sw_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [248, 161, 64, 31, -31/**/, 0] // Non-snowy version
+//    [248,  5, 64, 31, -31/**/, 0] // Snowy version
+}
+spritelayout ice_mine_straight_ne_sprite_layout {
+    ground {
+        sprite: ice_mine_straight_ne_sprites;
+    }
+}
+spritelayout ice_mine_straight_nw_sprite_layout {
+    ground {
+        sprite: ice_mine_straight_nw_sprites;
+    }
+}
+spritelayout ice_mine_straight_se_sprite_layout {
+    ground {
+        sprite: ice_mine_straight_se_sprites;
+    }
+}
+spritelayout ice_mine_straight_sw_sprite_layout {
+    ground {
+        sprite: ice_mine_straight_sw_sprites;
+    }
+}
+
+// Water tile.
+spriteset(ice_mine_water_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [248, 284, 64, 31, -31/**/, 0]
+}
+spritelayout ice_mine_water_sprite_layout {
+    ground {
+        sprite: ice_mine_water_sprites;
+    }
+}
+// Water extractors.
+spriteset(ice_mine_back_extractor_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [ 4, 208, 64, 64, -29, -31/**/]
+}
+spriteset(ice_mine_front_extractor_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [ 4, 72, 64, 64, -29, -35]
+}
+spritelayout ice_mine_back_extractor_sprite_layout {
+    ground {
+        sprite: ice_mine_double_straight_nw_sprites;
+    }
+    building {
+        xoffset: 0; yoffset: 0; zoffset: 0;
+        xextent: 16; yextent: 16; zextent: 22;
+        sprite: ice_mine_back_extractor_sprites;
+    }
+}
+spritelayout ice_mine_front_extractor_sprite_layout {
+    ground {
+        sprite: ice_mine_double_straight_se_sprites;
+    }
+    building {
+        xoffset: 0; yoffset: 0; zoffset: 0;
+        xextent: 16; yextent: 16; zextent: 20;
+        sprite: ice_mine_front_extractor_sprites;
+    }
+}
+// Storage tanks
+spriteset(ice_mine_storage_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [140, 4, 64, 64, -31, -33]
+}
+spritelayout ice_mine_storage_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 32; sprite: ice_mine_storage_sprites; } }
+
+switch(FEAT_OBJECTS, SELF, random_houses_A, view) {
+ 0: ice_mine_back_corner_sprite_layout;
+ 1: ice_mine_left_corner_sprite_layout;
+ 2: ice_mine_right_corner_sprite_layout;
+ 3: ice_mine_front_corner_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_A) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_ICE);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_A; }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_B, view) {
+ 0: ice_mine_straight_nw_sprite_layout;
+ 1: ice_mine_straight_ne_sprite_layout;
+ 2: ice_mine_straight_sw_sprite_layout;
+ 3: ice_mine_straight_se_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_B) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_ICE);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_B; }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_C, view) {
+ 0: ice_mine_left_point_sprite_layout;
+ 1: ice_mine_back_point_sprite_layout;
+ 2: ice_mine_right_point_sprite_layout;
+ 3: ice_mine_front_point_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_C) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_ICE);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_C; }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_D, view) {
+ 0: ice_mine_water_sprite_layout;
+ 1: ice_mine_back_extractor_sprite_layout;
+ 2: ice_mine_front_extractor_sprite_layout;
+ 3: ice_mine_storage_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_D) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_ICE);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_D; }
+}
+# 32 "ogfx-mars-obj.pnml" 2
+# 1 "src/lifesupport.pnml" 1
+// 	OpenGFX Industries
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# 1 "src/industry_templates.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+# 20 "src/lifesupport.pnml" 2
+
+spriteset(life_support_main_sprites, "../graphics/Buildings/Industry_LifeSupport_8bpp.png") {
+    [4, 4, 64, 128, -31/**/, -98]
+}
+spritelayout life_support_main_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 60; sprite: life_support_main_sprites; } }
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_E) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_LIFESUPPORT);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 1;
+  }
+  graphics { default: life_support_main_sprite_layout; }
+}
+# 33 "ogfx-mars-obj.pnml" 2
+# 1 "src/metalworks.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# 1 "src/industry_templates.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+# 20 "src/metalworks.pnml" 2
+
+// Encased power (SW, NE).
+spriteset(metal_works_encased_power_sprites, "../graphics/Buildings/Industry_MetalWorks_8bpp.png") {
+    [4, 4, 64, 128, -31/**/, -98]
+}
+spritelayout metal_works_encased_power_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 60; sprite: metal_works_encased_power_sprites; } }
+
+// Open power (SE, NW).
+spriteset(metal_works_open_power_sprites, "../graphics/Buildings/Industry_MetalWorks_8bpp.png") {
+    [72, 4, 64, 128, -31/**/, -98]
+}
+spritelayout metal_works_open_power_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 60; sprite: metal_works_open_power_sprites; } }
+
+// Central power grid.
+spriteset(metal_works_power_grid_sprites, "../graphics/Buildings/Industry_MetalWorks_8bpp.png") {
+    [140, 4, 64, 64, -33, -31/**/]
+}
+spritelayout metal_works_power_grid_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 36; sprite: metal_works_power_grid_sprites; } }
+
+switch(FEAT_OBJECTS, SELF, random_houses_F, view) {
+ 0: metal_works_encased_power_sprite_layout;
+ 1: metal_works_open_power_sprite_layout;
+ 2: metal_works_power_grid_sprite_layout;
+ 3: fusion_plant_power_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_F) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_METAL);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_F; }
+}
+# 34 "ogfx-mars-obj.pnml" 2
+# 1 "src/oremine.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# 1 "src/industry_templates.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+# 20 "src/oremine.pnml" 2
+
+// Tower
+spriteset(ore_mine_tower_sprites, "../graphics/Buildings/Industry_OreMine_8bpp.png") {
+    [4, 4, 64, 128, -33, -97]
+}
+spritelayout ore_mine_tower_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 81; sprite: ore_mine_tower_sprites; } }
+
+// Processing building
+spriteset(ore_mine_processing_sprites, "../graphics/Buildings/Industry_OreMine_8bpp.png") {
+    [140, 4, 64, 64, -33, -33]
+}
+spritelayout ore_mine_processing_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 23; sprite: ore_mine_processing_sprites; } }
+
+// Processing building rotated
+spriteset(ore_mine_processing_rotated_sprites, "../graphics/Buildings/Industry_OreMine_8bpp.png") {
+    [72, 4, 64, 64, -33, -33]
+}
+spritelayout ore_mine_processing_rotated_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 23; sprite: ore_mine_processing_rotated_sprites; } }
+
+// Left conveyor
+spriteset(ore_mine_left_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [ 72, 208, 64, 64, -43, -38]
+}
+spritelayout ore_mine_left_conveyor_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset: 0; yoffset: 5; zoffset: 0;
+        xextent: 12; yextent: 11; zextent: 8;
+        sprite: ore_mine_left_conveyor_sprites;
+    }
+}
+
+// Right conveyor
+spriteset(ore_mine_right_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [ 72, 276, 64, 64, -25, -37]
+}
+spritelayout ore_mine_right_conveyor_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset: 5; yoffset: 0; zoffset: 0;
+        xextent: 11; yextent: 12; zextent: 8;
+        sprite: ore_mine_right_conveyor_sprites;
+    }
+}
+
+// Top conveyor
+spriteset(ore_mine_top_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [ 72, 344, 64, 64, -43, -38]
+}
+spritelayout ore_mine_top_conveyor_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset: 0; yoffset: 5; zoffset: 0;
+        xextent: 12; yextent: 11; zextent: 8;
+        sprite: ore_mine_top_conveyor_sprites;
+    }
+}
+
+// Bottom conveyor
+spriteset(ore_mine_bottom_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [ 72, 412, 64, 64, -25, -37]
+}
+spritelayout ore_mine_bottom_conveyor_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset: 4; yoffset: 0; zoffset: 0;
+        xextent: 11; yextent: 12; zextent: 8;
+        sprite: ore_mine_bottom_conveyor_sprites;
+    }
+}
+
+// sw conveyor
+spriteset(ore_mine_sw_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [ 4, 208, 64, 64, -21, -37]
+}
+spritelayout ore_mine_sw_conveyor_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset: 5; yoffset: 0; zoffset: 0;
+        xextent: 11; yextent: 12; zextent: 8;
+        sprite: ore_mine_sw_conveyor_sprites;
+    }
+}
+// ne conveyor
+spriteset(ore_mine_ne_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [ 4, 276, 64, 64, -21, -37]
+}
+spritelayout ore_mine_ne_conveyor_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset: 5; yoffset: 0; zoffset: 0;
+        xextent: 11; yextent: 12; zextent: 8;
+        sprite: ore_mine_ne_conveyor_sprites;
+    }
+}
+// sw conveyor
+spriteset(ore_mine_sw_sl_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [ 140, 208, 64, 64, -21, -37]
+}
+spritelayout ore_mine_sw_sl_conveyor_sprite_layout {
+    ground { sprite: 3993; }
+    building {
+        xoffset: 5; yoffset: -1; zoffset: 8;
+        xextent: 11; yextent: 12; zextent: 8;
+        sprite: ore_mine_sw_sl_conveyor_sprites;
+    }
+}
+// ne conveyor
+spriteset(ore_mine_ne_sl_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [ 140, 276, 64, 64, -21, -37]
+}
+spritelayout ore_mine_ne_sl_conveyor_sprite_layout {
+    ground { sprite: 3990; }
+    building {
+        xoffset: 5; yoffset: 0; zoffset: 0;
+        xextent: 11; yextent: 12; zextent: 8;
+        sprite: ore_mine_ne_sl_conveyor_sprites;
+    }
+}
+
+
+switch(FEAT_OBJECTS, SELF, random_houses_G, view) {
+ 0: ore_mine_tower_sprite_layout;
+ 1: ore_mine_processing_sprite_layout;
+ 2: ore_mine_processing_rotated_sprite_layout;
+ 3: ore_mine_processing_rotated_sprite_layout;//same
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_G) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_ORE);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_G; }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_H, view) {
+ 0: ore_mine_left_conveyor_sprite_layout;
+ 1: ore_mine_right_conveyor_sprite_layout;
+ 2: ore_mine_top_conveyor_sprite_layout;
+ 3: ore_mine_bottom_conveyor_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_H) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_ORE);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_H; }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_I, view) {
+ 0: ore_mine_sw_conveyor_sprite_layout;
+ 1: ore_mine_ne_conveyor_sprite_layout;
+ 2: ore_mine_sw_sl_conveyor_sprite_layout;
+ 3: ore_mine_ne_sl_conveyor_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_I) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_ORE);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_NO_FOUNDATIONS,OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_I; }
+}
+# 35 "ogfx-mars-obj.pnml" 2
+# 1 "src/regolithmine.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# 1 "src/industry_templates.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+# 20 "src/regolithmine.pnml" 2
+
+// Outer corners of the mine.
+spriteset(regolith_mine_back_corner_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [443, 128, 64, 31, -31/**/, 0]
+}
+spriteset(regolith_mine_left_corner_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [443, 87, 64, 31, -31/**/, 0]
+}
+spriteset(regolith_mine_front_corner_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [443, 46, 64, 31, -31/**/, 0]
+}
+spriteset(regolith_mine_right_corner_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [443, 5, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_back_corner_sprite_layout {
+    ground {
+        sprite: regolith_mine_back_corner_sprites;
+    }
+}
+spritelayout regolith_mine_left_corner_sprite_layout {
+    ground {
+        sprite: regolith_mine_left_corner_sprites;
+    }
+}
+spritelayout regolith_mine_right_corner_sprite_layout {
+    ground {
+        sprite: regolith_mine_right_corner_sprites;
+    }
+}
+spritelayout regolith_mine_front_corner_sprite_layout {
+    ground {
+        sprite: regolith_mine_front_corner_sprites;
+    }
+}
+
+
+// Floor of the mine.
+spriteset(regolith_mine_floor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [248, 128, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_floor_sprite_layout {
+    ground {
+        sprite: regolith_mine_floor_sprites;
+    }
+}
+
+// Edge up at NW
+spriteset(regolith_mine_nw_edge_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [313, 46, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_nw_edge_sprite_layout {
+    ground {
+        sprite: regolith_mine_nw_edge_sprites;
+    }
+}
+
+// Edge up at NE
+spriteset(regolith_mine_ne_edge_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [248, 46, 64, 31, -31/**/, 0]
+}
+
+spritelayout regolith_mine_ne_edge_sprite_layout {
+    ground {
+        sprite: regolith_mine_ne_edge_sprites;
+    }
+}
+
+spriteset(regolith_mine_up_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [140, 208, 64, 64, -42, -40]
+}
+spritelayout regolith_mine_ne_edge_conveyor_sprite_layout {
+    ground {
+        sprite: regolith_mine_ne_edge_sprites;
+    }
+    building {
+        xoffset: 0; yoffset: 5; zoffset: 0;
+        xextent: 17; yextent: 7; zextent: 14;
+        sprite: regolith_mine_up_conveyor_sprites;
+    }
+}
+spriteset(regolith_mine_up_2_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [140, 276, 64, 64, -42, -32]
+}
+spritelayout regolith_mine_nw_edge_conveyor_sprite_layout {
+    ground {
+        sprite: regolith_mine_nw_edge_sprites;
+    }
+    building {
+        xoffset: 0; yoffset: 5; zoffset: 0;
+        xextent: 17; yextent: 7; zextent: 14;
+        sprite: regolith_mine_up_2_conveyor_sprites;
+    }
+}
+
+// Edge up at SW
+spriteset(regolith_mine_sw_edge_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [248, 5, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_sw_edge_sprite_layout {
+    ground {
+        sprite: regolith_mine_sw_edge_sprites;
+    }
+}
+
+// Edge up at SE
+spriteset(regolith_mine_se_edge_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [313, 5, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_se_edge_sprite_layout {
+    ground {
+        sprite: regolith_mine_se_edge_sprites;
+    }
+}
+
+// Raised point at E
+spriteset(regolith_mine_point_e_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [378, 87, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_point_e_sprite_layout {
+    ground {
+        sprite: regolith_mine_point_e_sprites;
+    }
+}
+
+// Raised point at S
+spriteset(regolith_mine_point_s_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [378, 128, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_point_s_sprite_layout {
+    ground {
+        sprite: regolith_mine_point_s_sprites;
+    }
+}
+
+// Raised point at N
+spriteset(regolith_mine_point_n_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [378, 46, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_point_n_sprite_layout {
+    ground {
+        sprite: regolith_mine_point_n_sprites;
+    }
+}
+
+// Raised point at W
+spriteset(regolith_mine_point_w_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [378, 5, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_point_w_sprite_layout {
+    ground {
+        sprite: regolith_mine_point_w_sprites;
+    }
+}
+
+//Regolith mine buildings
+spriteset(regolith_mine_building_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [4, 4, 64, 64, -34, -34]
+}
+spritelayout regolith_mine_building_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 26; sprite: regolith_mine_building_sprites; } }
+
+spriteset(regolith_mine_building_rotated_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [72, 4, 64, 64, -34, -34]
+}
+spritelayout regolith_mine_building_rotated_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 26; sprite: regolith_mine_building_rotated_sprites; } }
+
+
+switch(FEAT_OBJECTS, SELF, random_houses_J, view) {
+ 0: regolith_mine_back_corner_sprite_layout;
+ 1: regolith_mine_left_corner_sprite_layout;
+ 2: regolith_mine_right_corner_sprite_layout;
+ 3: regolith_mine_front_corner_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_J) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_REG);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_J; }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_K, view) {
+ 0: regolith_mine_nw_edge_sprite_layout;
+ 1: regolith_mine_ne_edge_sprite_layout;
+ 2: regolith_mine_sw_edge_sprite_layout;
+ 3: regolith_mine_se_edge_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_K) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_REG);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_K; }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_L, view) {
+ 0: regolith_mine_point_e_sprite_layout;
+ 1: regolith_mine_point_n_sprite_layout;
+ 2: regolith_mine_point_w_sprite_layout;
+ 3: regolith_mine_point_s_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_L) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_REG);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_L; }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_M, view) {
+ 0: regolith_mine_ne_edge_conveyor_sprite_layout;
+ 1: regolith_mine_nw_edge_conveyor_sprite_layout;
+ 2: regolith_mine_building_sprite_layout;
+ 3: regolith_mine_building_rotated_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_M) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_REG);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_M; }
+}
+
+// vim: syn=cpp sw=4 et sts=4 nospell
+# 36 "ogfx-mars-obj.pnml" 2
+# 1 "src/regolithprocessing.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# 1 "src/industry_templates.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+# 20 "src/regolithprocessing.pnml" 2
+
+// Building with fan
+spriteset(regolith_processing_fan_sprites, "../graphics/Buildings/Industry_RegolithProcessing_8bpp.png") {
+    [4, 4, 64, 64, -33, -34]
+}
+spritelayout regolith_processing_fan_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 26; sprite: regolith_processing_fan_sprites; } }
+
+// Building with small tanks
+spriteset(regolith_processing_small_tanks_sprites, "../graphics/Buildings/Industry_RegolithProcessing_8bpp.png") {
+    [72, 4, 64, 64, -33, -34]
+}
+spritelayout regolith_processing_small_tanks_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 26; sprite: regolith_processing_small_tanks_sprites; } }
+// Power building
+spriteset(regolith_processing_power_sprites, "../graphics/Buildings/Industry_RegolithProcessing_8bpp.png") {
+    [140, 4, 64, 64, -33, -34]
+}
+spritelayout regolith_processing_power_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 34; sprite: regolith_processing_power_sprites; } }
+
+// NE - SE bend conveyors
+spriteset(regolith_processing_nese_bend_sprites, "../graphics/Buildings/Industry_RegolithProcessing_8bpp.png") {
+    [276, 4, 64, 64, -33, -34]
+}
+spritelayout regolith_processing_nese_bend_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 24; sprite: regolith_processing_nese_bend_sprites; } }
+
+// SE - SW bend conveyors
+spriteset(regolith_processing_sesw_bend_sprites, "../graphics/Buildings/Industry_RegolithProcessing_8bpp.png") {
+    [208, 4, 64, 64, -33, -34]
+}
+spritelayout regolith_processing_sesw_bend_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 24; sprite: regolith_processing_sesw_bend_sprites; } }
+
+// Crossing conveyors
+spriteset(regolith_processing_crossing_sprites, "../graphics/Buildings/Industry_RegolithProcessing_8bpp.png") {
+    [344, 4, 64, 64, -33, -34]
+}
+spritelayout regolith_processing_crossing_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 24; sprite: regolith_processing_crossing_sprites; } }
+
+// Storage tanks
+spriteset(regolith_processing_storage_sprites, "../graphics/Buildings/Industry_RegolithProcessing_8bpp.png") {
+    [412, 4, 64, 132, -33, -101]
+}
+spritelayout regolith_processing_storage_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 60; sprite: regolith_processing_storage_sprites; } }
+
+switch(FEAT_OBJECTS, SELF, random_houses_O, view) {
+ 0: regolith_mine_floor_sprite_layout;
+ 1: regolith_processing_nese_bend_sprite_layout;
+ 2: regolith_processing_sesw_bend_sprite_layout;
+ 3: regolith_processing_crossing_sprite_layout;
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_N, view) {
+ 0: regolith_processing_fan_sprite_layout;
+ 1: regolith_processing_small_tanks_sprite_layout;
+ 2: regolith_processing_power_sprite_layout;
+ 3: regolith_processing_storage_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_O) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_REGP);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_O; }
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_N) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_REGP);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_N; }
+}
+
+// vim: syn=cpp sw=4 et sts=4 nospell
+# 37 "ogfx-mars-obj.pnml" 2
+# 1 "src/terraformingplant.pnml" 1
+// 	OpenGFX Mars Industries
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+# 1 "src/industry_templates.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+# 20 "src/terraformingplant.pnml" 2
+
+
+
+// Green house.
+spriteset(terraforming_plant_green_house_sprites, "../graphics/Buildings/Industry_TerraformingPlant_8bpp.png") {
+    [140, 4, 64, 64, -33, -31/**/]
+}
+spritelayout terraforming_plant_green_house_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 16; sprite: terraforming_plant_green_house_sprites; } }
+
+// Buildings.
+spriteset(terraforming_plant_buildings_sprites, "../graphics/Buildings/Industry_TerraformingPlant_8bpp.png") {
+    [4, 4, 64, 64, -33, -31/**/]
+}
+spritelayout terraforming_plant_buildings_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 20; sprite: terraforming_plant_buildings_sprites; } }
+
+// Fans.
+spriteset(terraforming_plant_fans_sprites, "../graphics/Buildings/Industry_TerraformingPlant_8bpp.png") {
+    [72, 4, 64, 64, -33, -31/**/]
+}
+spritelayout terraforming_plant_fans_sprite_layout { ground { sprite: GROUNDSPRITE_NORMAL; } building { xoffset: 0; yoffset: 0; zoffset: 0; xextent: 16; yextent: 16; zextent: 32; sprite: terraforming_plant_fans_sprites; } }
+
+switch(FEAT_OBJECTS, SELF, random_houses_P, view) {
+ 0: terraforming_plant_green_house_sprite_layout;
+ 1: terraforming_plant_buildings_sprite_layout;
+ 2: terraforming_plant_fans_sprite_layout;
+ 3: terraforming_plant_green_house_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_P) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_TERR);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_P; }
+}
+# 38 "ogfx-mars-obj.pnml" 2
+# 1 "src/stockpiles.pnml" 1
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+# 51 "src/stockpiles.pnml"
+spriteset(stockpile_mixed_ores_sprite11, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [ 25, 15, 16, 5, -8, 7] } spriteset(stockpile_mixed_ores_sprite12, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [151, 13, 24, 8, -12, 5] } spriteset(stockpile_mixed_ores_sprite13, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [276, 12, 30, 11, -15, 3] } spriteset(stockpile_mixed_ores_sprite14, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [ 16, 139, 37, 18, -18, 6] } spriteset(stockpile_mixed_ores_sprite15, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [139, 137, 45, 24, -24, 2] } spriteset(stockpile_mixed_ores_sprite16, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [266, 135, 51, 27, -27, 2] }
+spriteset(stockpile_mixed_ores_sprite21, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [ 27, 61, 9, 9, -4, 7] } spriteset(stockpile_mixed_ores_sprite22, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [154, 59, 13, 12, -6, 5] } spriteset(stockpile_mixed_ores_sprite23, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [279, 57, 20, 17, -10, 3] } spriteset(stockpile_mixed_ores_sprite24, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [ 17, 184, 33, 20, -16, 2] } spriteset(stockpile_mixed_ores_sprite25, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [141, 182, 46, 25, -23, 2] } spriteset(stockpile_mixed_ores_sprite26, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [267, 181, 51, 27, -26, 2] }
+spriteset(stockpile_mixed_ores_sprite31, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [ 26, 109, 17, 6, -8, 7] } spriteset(stockpile_mixed_ores_sprite32, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [151, 108, 24, 8, -12, 5] } spriteset(stockpile_mixed_ores_sprite33, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [278, 106, 30, 12, -15, 3] } spriteset(stockpile_mixed_ores_sprite34, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [ 15, 232, 36, 17, -18, 4] } spriteset(stockpile_mixed_ores_sprite35, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [141, 228, 46, 24, -23, 1] } spriteset(stockpile_mixed_ores_sprite36, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [266, 226, 52, 27, -26, 1] }
+spriteset(stockpile_mixed_ores_sprite41, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [ 92, 107, 9, 9, -4, 7] } spriteset(stockpile_mixed_ores_sprite42, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [219, 105, 13, 13, -6, 5] } spriteset(stockpile_mixed_ores_sprite43, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [345, 103, 20, 16, -10, 3] } spriteset(stockpile_mixed_ores_sprite44, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [ 78, 230, 33, 20, -17, 2] } spriteset(stockpile_mixed_ores_sprite45, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [199, 228, 46, 24, -24, 0] } spriteset(stockpile_mixed_ores_sprite46, "../graphics/Buildings/Stockpiles/Stockpiles_MixedOres_8bpp.png") { [326, 227, 51, 27, -26, 1] }
+
+spriteset(stockpile_regolith_sprite11, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [ 25, 15, 16, 5, -8, 7] } spriteset(stockpile_regolith_sprite12, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [151, 13, 24, 8, -12, 5] } spriteset(stockpile_regolith_sprite13, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [276, 12, 30, 11, -15, 3] } spriteset(stockpile_regolith_sprite14, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [ 16, 139, 37, 18, -18, 6] } spriteset(stockpile_regolith_sprite15, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [139, 137, 45, 24, -24, 2] } spriteset(stockpile_regolith_sprite16, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [266, 135, 51, 27, -27, 2] }
+spriteset(stockpile_regolith_sprite21, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [ 27, 61, 9, 9, -4, 7] } spriteset(stockpile_regolith_sprite22, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [154, 59, 13, 12, -6, 5] } spriteset(stockpile_regolith_sprite23, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [279, 57, 20, 17, -10, 3] } spriteset(stockpile_regolith_sprite24, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [ 17, 184, 33, 20, -16, 2] } spriteset(stockpile_regolith_sprite25, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [141, 182, 46, 25, -23, 2] } spriteset(stockpile_regolith_sprite26, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [267, 181, 51, 27, -26, 2] }
+spriteset(stockpile_regolith_sprite31, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [ 26, 109, 17, 6, -8, 7] } spriteset(stockpile_regolith_sprite32, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [151, 108, 24, 8, -12, 5] } spriteset(stockpile_regolith_sprite33, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [278, 106, 30, 12, -15, 3] } spriteset(stockpile_regolith_sprite34, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [ 15, 232, 36, 17, -18, 4] } spriteset(stockpile_regolith_sprite35, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [141, 228, 46, 24, -23, 1] } spriteset(stockpile_regolith_sprite36, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [266, 226, 52, 27, -26, 1] }
+spriteset(stockpile_regolith_sprite41, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [ 92, 107, 9, 9, -4, 7] } spriteset(stockpile_regolith_sprite42, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [219, 105, 13, 13, -6, 5] } spriteset(stockpile_regolith_sprite43, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [345, 103, 20, 16, -10, 3] } spriteset(stockpile_regolith_sprite44, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [ 78, 230, 33, 20, -17, 2] } spriteset(stockpile_regolith_sprite45, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [199, 228, 46, 24, -24, 0] } spriteset(stockpile_regolith_sprite46, "../graphics/Buildings/Stockpiles/Stockpiles_Regolith_8bpp.png") { [326, 227, 51, 27, -26, 1] }
+# 69 "src/stockpiles.pnml"
+spritelayout stockpile_mixed_ores_sprite_layout11 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite11; } } spritelayout stockpile_mixed_ores_sprite_layout12 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite12; } } spritelayout stockpile_mixed_ores_sprite_layout13 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite13; } } spritelayout stockpile_mixed_ores_sprite_layout14 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite14; } } spritelayout stockpile_mixed_ores_sprite_layout15 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite15; } } spritelayout stockpile_mixed_ores_sprite_layout16 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite16; } }
+spritelayout stockpile_mixed_ores_sprite_layout21 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite21; } } spritelayout stockpile_mixed_ores_sprite_layout22 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite22; } } spritelayout stockpile_mixed_ores_sprite_layout23 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite23; } } spritelayout stockpile_mixed_ores_sprite_layout24 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite24; } } spritelayout stockpile_mixed_ores_sprite_layout25 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite25; } } spritelayout stockpile_mixed_ores_sprite_layout26 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite26; } }
+spritelayout stockpile_mixed_ores_sprite_layout31 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite31; } } spritelayout stockpile_mixed_ores_sprite_layout32 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite32; } } spritelayout stockpile_mixed_ores_sprite_layout33 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite33; } } spritelayout stockpile_mixed_ores_sprite_layout34 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite34; } } spritelayout stockpile_mixed_ores_sprite_layout35 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite35; } } spritelayout stockpile_mixed_ores_sprite_layout36 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite36; } }
+spritelayout stockpile_mixed_ores_sprite_layout41 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite41; } } spritelayout stockpile_mixed_ores_sprite_layout42 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite42; } } spritelayout stockpile_mixed_ores_sprite_layout43 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite43; } } spritelayout stockpile_mixed_ores_sprite_layout44 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite44; } } spritelayout stockpile_mixed_ores_sprite_layout45 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite45; } } spritelayout stockpile_mixed_ores_sprite_layout46 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_mixed_ores_sprite46; } }
+
+spritelayout stockpile_regolith_sprite_layout11 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite11; } } spritelayout stockpile_regolith_sprite_layout12 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite12; } } spritelayout stockpile_regolith_sprite_layout13 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite13; } } spritelayout stockpile_regolith_sprite_layout14 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite14; } } spritelayout stockpile_regolith_sprite_layout15 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite15; } } spritelayout stockpile_regolith_sprite_layout16 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite16; } }
+spritelayout stockpile_regolith_sprite_layout21 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite21; } } spritelayout stockpile_regolith_sprite_layout22 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite22; } } spritelayout stockpile_regolith_sprite_layout23 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite23; } } spritelayout stockpile_regolith_sprite_layout24 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite24; } } spritelayout stockpile_regolith_sprite_layout25 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite25; } } spritelayout stockpile_regolith_sprite_layout26 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite26; } }
+spritelayout stockpile_regolith_sprite_layout31 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite31; } } spritelayout stockpile_regolith_sprite_layout32 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite32; } } spritelayout stockpile_regolith_sprite_layout33 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite33; } } spritelayout stockpile_regolith_sprite_layout34 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite34; } } spritelayout stockpile_regolith_sprite_layout35 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite35; } } spritelayout stockpile_regolith_sprite_layout36 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite36; } }
+spritelayout stockpile_regolith_sprite_layout41 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite41; } } spritelayout stockpile_regolith_sprite_layout42 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite42; } } spritelayout stockpile_regolith_sprite_layout43 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite43; } } spritelayout stockpile_regolith_sprite_layout44 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite44; } } spritelayout stockpile_regolith_sprite_layout45 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite45; } } spritelayout stockpile_regolith_sprite_layout46 { ground { sprite: GROUNDSPRITE_NORMAL; } childsprite { sprite: stockpile_regolith_sprite46; } }
+
+random_switch(FEAT_OBJECTS, SELF, random_houses_Q1) {
+ 1: stockpile_mixed_ores_sprite_layout16;
+ 1: stockpile_mixed_ores_sprite_layout11;
+ 1: stockpile_mixed_ores_sprite_layout12;
+ 1: stockpile_mixed_ores_sprite_layout13;
+ 1: stockpile_mixed_ores_sprite_layout14;
+ 1: stockpile_mixed_ores_sprite_layout15;
+ 1: stockpile_mixed_ores_sprite_layout21;
+ 1: stockpile_mixed_ores_sprite_layout22;
+ 1: stockpile_mixed_ores_sprite_layout23;
+ 1: stockpile_mixed_ores_sprite_layout24;
+ 1: stockpile_mixed_ores_sprite_layout25;
+ 1: stockpile_mixed_ores_sprite_layout26;
+}
+random_switch(FEAT_OBJECTS, SELF, random_houses_Q2) {
+ 1: stockpile_mixed_ores_sprite_layout36;
+ 1: stockpile_mixed_ores_sprite_layout31;
+ 1: stockpile_mixed_ores_sprite_layout32;
+ 1: stockpile_mixed_ores_sprite_layout33;
+ 1: stockpile_mixed_ores_sprite_layout34;
+ 1: stockpile_mixed_ores_sprite_layout35;
+ 1: stockpile_mixed_ores_sprite_layout41;
+ 1: stockpile_mixed_ores_sprite_layout42;
+ 1: stockpile_mixed_ores_sprite_layout43;
+ 1: stockpile_mixed_ores_sprite_layout44;
+ 1: stockpile_mixed_ores_sprite_layout45;
+ 1: stockpile_mixed_ores_sprite_layout46;
+}
+random_switch(FEAT_OBJECTS, SELF, random_houses_Q3) {
+ 1: stockpile_regolith_sprite_layout16;
+ 1: stockpile_regolith_sprite_layout11;
+ 1: stockpile_regolith_sprite_layout12;
+ 1: stockpile_regolith_sprite_layout13;
+ 1: stockpile_regolith_sprite_layout14;
+ 1: stockpile_regolith_sprite_layout15;
+ 1: stockpile_regolith_sprite_layout21;
+ 1: stockpile_regolith_sprite_layout22;
+ 1: stockpile_regolith_sprite_layout23;
+ 1: stockpile_regolith_sprite_layout24;
+ 1: stockpile_regolith_sprite_layout25;
+ 1: stockpile_regolith_sprite_layout26;
+}
+random_switch(FEAT_OBJECTS, SELF, random_houses_Q4) {
+ 1: stockpile_regolith_sprite_layout36;
+ 1: stockpile_regolith_sprite_layout31;
+ 1: stockpile_regolith_sprite_layout32;
+ 1: stockpile_regolith_sprite_layout33;
+ 1: stockpile_regolith_sprite_layout34;
+ 1: stockpile_regolith_sprite_layout35;
+ 1: stockpile_regolith_sprite_layout41;
+ 1: stockpile_regolith_sprite_layout42;
+ 1: stockpile_regolith_sprite_layout43;
+ 1: stockpile_regolith_sprite_layout44;
+ 1: stockpile_regolith_sprite_layout45;
+ 1: stockpile_regolith_sprite_layout46;
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_Q, view) {
+ 0: random_houses_Q1;
+ 1: random_houses_Q2;
+ 2: random_houses_Q3;
+ 3: random_houses_Q4;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_Q) {
+  property {
+ class: "GFXM";
+ name: string(STR_NAME_STOCK);
+ climates_available: ALL_CLIMATES;
+ object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+ height: 6;
+ size: [1,1];
+ num_views: 4;
+  }
+  graphics { default: random_houses_Q; }
+}
+
+// vim: syn=cpp sw=4 et sts=4 nospell
+# 38 "ogfx-mars-obj.pnml" 2
