@@ -1,0 +1,6 @@
+VERSION        :noRev
+VERSION_STRING :noRev
+TITLE          :OpenGFX Mars Trains  noRev
+FILENAME       :ogfx-mars-trains.grf
+REPO_HASH      :
+NEWGRF_VERSION :0

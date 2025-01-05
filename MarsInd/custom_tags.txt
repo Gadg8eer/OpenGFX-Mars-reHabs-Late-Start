@@ -1,0 +1,6 @@
+VERSION        :noRev
+VERSION_STRING :noRev
+TITLE          :OpenGFX Mars Industries noRev
+FILENAME       :ogfx-mars-industries.grf
+REPO_HASH      :
+NEWGRF_VERSION :0
