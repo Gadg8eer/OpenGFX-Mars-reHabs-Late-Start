@@ -5,7 +5,7 @@
 
 STR_GRF_NAME :reHabs - OpenGFX marsovski habitati: Buduće zgrade {VERSION}
 STR_GRF_DESC :{ORANGE}Marsovski habitati{}Habitati za marsovski okoliš{}{BLACK}Grafika: {SILVER}Zephyris{}{BLACK}Programiranje: {SILVER}Elyon{}{BLACK}Ažuriranje koda: {SILVER}Gadg8eer
-STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
+STR_GRF_URL :https://github.com/Gadg8eer/OpenGFX-Mars-reHabs-Late-Start
 
 STR_NAME_HABITAT :Habitat
 STR_NAME_LARGE_HABITAT :Veliki habitat

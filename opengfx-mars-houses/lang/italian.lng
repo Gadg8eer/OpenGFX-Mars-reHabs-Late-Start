@@ -5,7 +5,7 @@
 
 STR_GRF_NAME :reHabs - Ambientazione marziana OpenGFX: Edifici futuri {VERSION}
 STR_GRF_DESC :{ORANGE}Ambientazione marziana{}Elementi per la creazione di un ambiente marziano{}{BLACK}Grafica: {SILVER}Zephyris{}{BLACK}Programmazione: {SILVER}Elyon{}{BLACK}Aggiornamento del codice: {SILVER}Gadg8eer
-STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
+STR_GRF_URL :https://github.com/Gadg8eer/OpenGFX-Mars-reHabs-Late-Start
 
 STR_NAME_HABITAT :Abitazione
 STR_NAME_LARGE_HABITAT :Abitazione grande

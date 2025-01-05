@@ -4,7 +4,7 @@
 
 STR_GRF_NAME :reHabs - OpenGFX Habitatges de Mart: Edificis Futurs {VERSION}
 STR_GRF_DESC :{ORANGE}Habitatges Marcians{}Habitatges per a un entorn marcià{BLACK}Gràfics: {SILVER}Zephyris{}{BLACK}Programació: {SILVER}Elyon{}{BLACK}Actualització del codi: {SILVER}Gadg8eer
-STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
+STR_GRF_URL :https://github.com/Gadg8eer/OpenGFX-Mars-reHabs-Late-Start
 
 STR_NAME_HABITAT :Habitatge
 STR_NAME_LARGE_HABITAT :Habitatge gran

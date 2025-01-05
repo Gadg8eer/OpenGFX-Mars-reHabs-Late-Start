@@ -3,7 +3,7 @@
 
 STR_GRF_NAME :reHabs - OpenGFX Mars-huse: Fremtidige bygninger
 STR_GRF_DESC :{ORANGE}Martian-levesteder{}{BLACK}Grafik: {SILVER}Zephyris{}{BLACK}Programmering: {SILVER}Elyon{}{BLACK}Kodeopdatering: {SILVER}Gadg8eer
-STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
+STR_GRF_URL :https://github.com/Gadg8eer/OpenGFX-Mars-reHabs-Late-Start
 
 STR_NAME_HABITAT :Levested
 STR_NAME_LARGE_HABITAT :Stort levested

@@ -3,7 +3,7 @@
 
 STR_GRF_NAME :reHabs - OpenGFX Mars Haiser: Zukunft Gebaier {VERSION}
 STR_GRF_DESC :{ORANGE}Haiser vum Mars{}Haiser fir eng Mars Landschaft{}{BLACK}Grafik: {SILVER}Zephyris{}{BLACK}Programméirung: {SILVER}Elyon{}{BLACK}Code update: {SILVER}Gadg8eer
-STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
+STR_GRF_URL :https://github.com/Gadg8eer/OpenGFX-Mars-reHabs-Late-Start
 
 STR_NAME_HABITAT :Haus
 STR_NAME_LARGE_HABITAT :Grousst Haus

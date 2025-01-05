@@ -3,7 +3,7 @@
 
 STR_GRF_NAME :reHabs - OpenGFX Mars Habitats: Tulevaisuuden rakennukset {VERSION}
 STR_GRF_DESC :{ORANGE}Marsilainen elinympäristö{}Marsilaisten olosuhteiden elinympäristö{}{BLACK}Grafiikka: {SILVER}Zephyris{}{BLACK}Ohjelmointi: {SILVER}Elyon{}{BLACK}Koodin päivitys: {SILVER}Gadg8eer
-STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
+STR_GRF_URL :https://github.com/Gadg8eer/OpenGFX-Mars-reHabs-Late-Start
 
 STR_NAME_HABITAT :Talo
 STR_NAME_LARGE_HABITAT :Suuri talo

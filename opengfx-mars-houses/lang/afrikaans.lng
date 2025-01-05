@@ -4,7 +4,7 @@
 
 STR_GRF_NAME :reHabs - OpenGFX Mars Huise: Toekomstige geboue {VERSION}
 STR_GRF_DESC :{ORANGE}Mars Habitat{}Habitat vir 'n Mars Landskap{}{BLACK}Grafika: {SILVER}Zephyris{}{BLACK}Geprogrameer: {SILVER}Elyon{}{BLACK}Kode opdatering: {SILVER}Gadg8eer
-STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
+STR_GRF_URL :https://github.com/Gadg8eer/OpenGFX-Mars-reHabs-Late-Start
 
 STR_NAME_HABITAT :Habitat
 STR_NAME_LARGE_HABITAT :Groot habitat

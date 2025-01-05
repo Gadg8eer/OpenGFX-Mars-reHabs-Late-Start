@@ -3,7 +3,7 @@
 
 STR_GRF_NAME :reHabs - OpenGFX Mars Habitats: Future Buildings {VERSION}
 STR_GRF_DESC :{ORANGE}Martian Habitats{}火星の環境のための住居{}{BLACK}グラフィック: {SILVER}Zephyris{}{BLACK}プログラミング: {SILVER}Elyon{}{BLACK}コードの更新: {SILVER}Gadg8eer
-STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
+STR_GRF_URL :https://github.com/Gadg8eer/OpenGFX-Mars-reHabs-Late-Start
 
 STR_NAME_HABITAT :住居
 STR_NAME_LARGE_HABITAT :大きい住居

@@ -5,7 +5,7 @@
 
 STR_GRF_NAME :reHabs - Taighean Cuirg OpenGFX: Togalaichean san àm ri teachd {VERSION}
 STR_GRF_DESC :{ORANGE}Taighean Cuirg{}Àiteachan-còmhnaidh Corgach{}{BLACK}Grafaigeachd: {SILVER}Zephyris{}{BLACK}Prògramachadh: {SILVER}Elyon{}{BLACK}Còd a chur a-nuas: {SILVER}Gadg8eer
-STR_GRF_URL :http://dev.openttdcoop.org/projects/opengfx-mars-houses
+STR_GRF_URL :https://github.com/Gadg8eer/OpenGFX-Mars-reHabs-Late-Start
 
 STR_NAME_HABITAT :Àite-còmhnaidh
 STR_NAME_LARGE_HABITAT :Àite-còmhnaidh mòr
