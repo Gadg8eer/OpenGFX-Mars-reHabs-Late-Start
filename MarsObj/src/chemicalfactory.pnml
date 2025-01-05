@@ -1,0 +1,72 @@
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+//#include "industry_templates.pnml"
+
+// Low fan.
+spriteset(chemical_factory_low_fan_sprites, "../graphics/Buildings/Industry_ChemicalFactory_8bpp.png") {
+    SPRITE3(4, 140, 72, 4, 64, 64, -31, -34)
+}
+SPRITE_LAYOUT(chemical_factory_low_fan_sprite_layout, chemical_factory_low_fan_sprites, 16)
+
+// Electrical power
+spriteset(chemical_factory_power_sprites, "../graphics/Buildings/Industry_ChemicalFactory_8bpp.png") {
+    SPRITE3(72, 140, 72, 4, 64, 64, -31, -34)
+}
+SPRITE_LAYOUT(chemical_factory_power_sprite_layout, chemical_factory_power_sprites, 24)
+
+// Small round tanks
+spriteset(chemical_factory_white_tanks_sprites, "../graphics/Buildings/Industry_ChemicalFactory_8bpp.png") {
+    SPRITE3(140, 140, 72, 4, 64, 64, -31, -34)
+}
+SPRITE_LAYOUT(chemical_factory_white_tanks_sprite_layout, chemical_factory_white_tanks_sprites, 16)
+
+// Tubes across the factory
+spriteset(chemical_factory_tubes_sprites, "../graphics/Buildings/Industry_ChemicalFactory_8bpp.png") {
+    SPRITE3(208, 140, 72, 4, 64, 64, -31, -34)
+}
+SPRITE_LAYOUT(chemical_factory_tubes_sprite_layout, chemical_factory_tubes_sprites, 20)
+
+
+// High fan
+spriteset(chemical_factory_high_fan_sprites, "../graphics/Buildings/Industry_ChemicalFactory_8bpp.png") {
+    SPRITE3(344, 140, 72, 4, 64, 64, -31, -34)
+}
+SPRITE_LAYOUT(chemical_factory_high_fan_sprite_layout, chemical_factory_high_fan_sprites, 28)
+
+
+switch(FEAT_OBJECTS, SELF, random_houses_5, view) {
+	0: chemical_factory_low_fan_sprite_layout;
+	1: chemical_factory_power_sprite_layout;
+	2: chemical_factory_white_tanks_sprite_layout;
+	3: chemical_factory_tubes_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_5) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_CHEMISTRY);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 4;
+  }
+  graphics { default: random_houses_5; }
+}

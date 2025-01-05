@@ -1,0 +1,84 @@
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+spriteset(electrolysis_power_sprites, "../graphics/Buildings/Industry_HydrolysisPlant_8bpp.png") {
+    [  4,   4, 64, 64, -31/**/, -33]
+}
+spritelayout electrolysis_power_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset:  0; yoffset:  0; zoffset:  0;
+        xextent: 16; yextent: 16; zextent: 26;
+        sprite: electrolysis_power_sprites;
+    }
+}
+spriteset(electrolysis_storage_sprites, "../graphics/Buildings/Industry_HydrolysisPlant_8bpp.png") {
+    [ 72,   4, 64, 64, -31/**/, -33]
+}
+spritelayout electrolysis_storage_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset:  0; yoffset:  0; zoffset:  0;
+        xextent: 16; yextent: 16; zextent: 32;
+        sprite: electrolysis_storage_sprites;
+    }
+}
+spriteset(electrolysis_plant_sprites, "../graphics/Buildings/Industry_HydrolysisPlant_8bpp.png") {
+    [138,   4, 64, 64, -31/**/, -33]
+}
+spritelayout electrolysis_plant_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset:  0; yoffset:  0; zoffset:  0;
+        xextent: 16; yextent: 16; zextent: 41;
+        sprite: electrolysis_plant_sprites;
+    }
+}
+
+spriteset(electrolysis_building_sprites, "../graphics/Buildings/Industry_HydrolysisPlant_8bpp.png") {
+    [206,   4, 64, 64, -31/**/, -33]
+}
+spritelayout electrolysis_building_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset:  0; yoffset:  6; zoffset:  0;
+        xextent: 16; yextent: 10; zextent: 12;
+        sprite: electrolysis_building_sprites;
+    }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_6, view) {
+	0: electrolysis_power_sprite_layout;
+	1: electrolysis_storage_sprite_layout;
+	2: electrolysis_plant_sprite_layout;
+	3: electrolysis_building_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_6) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_ELECTROLYSIS);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 4;
+  }
+  graphics { default: random_houses_6; }
+}

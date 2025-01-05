@@ -1,0 +1,270 @@
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+//#include "industry_templates.pnml"
+
+// Outer corners of the mine.
+spriteset(regolith_mine_back_corner_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [443, 128, 64, 31, -31/**/, 0]
+}
+spriteset(regolith_mine_left_corner_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [443, 87, 64, 31, -31/**/, 0]
+}
+spriteset(regolith_mine_front_corner_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [443, 46, 64, 31, -31/**/, 0]
+}
+spriteset(regolith_mine_right_corner_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [443, 5, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_back_corner_sprite_layout {
+    ground {
+        sprite: regolith_mine_back_corner_sprites;
+    }
+}
+spritelayout regolith_mine_left_corner_sprite_layout {
+    ground {
+        sprite: regolith_mine_left_corner_sprites;
+    }
+}
+spritelayout regolith_mine_right_corner_sprite_layout {
+    ground {
+        sprite: regolith_mine_right_corner_sprites;
+    }
+}
+spritelayout regolith_mine_front_corner_sprite_layout {
+    ground {
+        sprite: regolith_mine_front_corner_sprites;
+    }
+}
+
+
+// Floor of the mine.
+spriteset(regolith_mine_floor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [248, 128, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_floor_sprite_layout {
+    ground {
+        sprite: regolith_mine_floor_sprites;
+    }
+}
+
+// Edge up at NW
+spriteset(regolith_mine_nw_edge_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [313,  46, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_nw_edge_sprite_layout {
+    ground {
+        sprite: regolith_mine_nw_edge_sprites;
+    }
+}
+
+// Edge up at NE
+spriteset(regolith_mine_ne_edge_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [248,  46, 64, 31, -31/**/, 0]
+}
+
+spritelayout regolith_mine_ne_edge_sprite_layout {
+    ground {
+        sprite: regolith_mine_ne_edge_sprites;
+    }
+}
+
+spriteset(regolith_mine_up_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [140, 208, 64, 64, -42, -40]
+}
+spritelayout regolith_mine_ne_edge_conveyor_sprite_layout {
+    ground {
+        sprite: regolith_mine_ne_edge_sprites;
+    }
+    building {
+        xoffset:  0; yoffset: 5; zoffset: 0;
+        xextent: 17; yextent: 7; zextent: 14;
+        sprite: regolith_mine_up_conveyor_sprites;
+    }
+}
+spriteset(regolith_mine_up_2_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [140, 276, 64, 64, -42, -32]
+}
+spritelayout regolith_mine_nw_edge_conveyor_sprite_layout {
+    ground {
+        sprite: regolith_mine_nw_edge_sprites;
+    }
+    building {
+        xoffset:  0; yoffset: 5; zoffset: 0;
+        xextent: 17; yextent: 7; zextent: 14;
+        sprite: regolith_mine_up_2_conveyor_sprites;
+    }
+}
+
+// Edge up at SW
+spriteset(regolith_mine_sw_edge_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [248,  5, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_sw_edge_sprite_layout {
+    ground {
+        sprite: regolith_mine_sw_edge_sprites;
+    }
+}
+
+// Edge up at SE
+spriteset(regolith_mine_se_edge_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [313,  5, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_se_edge_sprite_layout {
+    ground {
+        sprite: regolith_mine_se_edge_sprites;
+    }
+}
+
+// Raised point at E
+spriteset(regolith_mine_point_e_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [378,  87, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_point_e_sprite_layout {
+    ground {
+        sprite: regolith_mine_point_e_sprites;
+    }
+}
+
+// Raised point at S
+spriteset(regolith_mine_point_s_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [378, 128, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_point_s_sprite_layout {
+    ground {
+        sprite: regolith_mine_point_s_sprites;
+    }
+}
+
+// Raised point at N
+spriteset(regolith_mine_point_n_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [378,  46, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_point_n_sprite_layout {
+    ground {
+        sprite: regolith_mine_point_n_sprites;
+    }
+}
+
+// Raised point at W
+spriteset(regolith_mine_point_w_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [378,   5, 64, 31, -31/**/, 0]
+}
+spritelayout regolith_mine_point_w_sprite_layout {
+    ground {
+        sprite: regolith_mine_point_w_sprites;
+    }
+}
+
+//Regolith mine buildings
+spriteset(regolith_mine_building_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    SPRITE3(4, 140, 72, 4, 64, 64, -34, -34)
+}
+SPRITE_LAYOUT(regolith_mine_building_sprite_layout, regolith_mine_building_sprites, 26)
+
+spriteset(regolith_mine_building_rotated_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    SPRITE3(72, 140, 72, 4, 64, 64, -34, -34)
+}
+SPRITE_LAYOUT(regolith_mine_building_rotated_sprite_layout, regolith_mine_building_rotated_sprites, 26)
+
+
+switch(FEAT_OBJECTS, SELF, random_houses_J, view) {
+	0: regolith_mine_back_corner_sprite_layout;
+	1: regolith_mine_left_corner_sprite_layout;
+	2: regolith_mine_right_corner_sprite_layout;
+	3: regolith_mine_front_corner_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_J) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_REG);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 4;
+  }
+  graphics { default: random_houses_J; }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_K, view) {
+	0: regolith_mine_nw_edge_sprite_layout;
+	1: regolith_mine_ne_edge_sprite_layout;
+	2: regolith_mine_sw_edge_sprite_layout;
+	3: regolith_mine_se_edge_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_K) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_REG);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 4;
+  }
+  graphics { default: random_houses_K; }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_L, view) {
+	0: regolith_mine_point_e_sprite_layout;
+	1: regolith_mine_point_n_sprite_layout;
+	2: regolith_mine_point_w_sprite_layout;
+	3: regolith_mine_point_s_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_L) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_REG);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 4;
+  }
+  graphics { default: random_houses_L; }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_M, view) {
+	0: regolith_mine_ne_edge_conveyor_sprite_layout;
+	1: regolith_mine_nw_edge_conveyor_sprite_layout;
+	2: regolith_mine_building_sprite_layout;
+	3: regolith_mine_building_rotated_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_M) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_REG);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 4;
+  }
+  graphics { default: random_houses_M; }
+}
+
+// vim: syn=cpp sw=4 et sts=4 nospell

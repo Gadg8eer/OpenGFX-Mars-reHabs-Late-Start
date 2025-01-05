@@ -1,0 +1,104 @@
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+//#include "industry_templates.pnml"
+
+// Building with fan
+spriteset(regolith_processing_fan_sprites, "../graphics/Buildings/Industry_RegolithProcessing_8bpp.png") {
+    SPRITE2(4, 70, 4, 64, 64, -33, -34)
+}
+SPRITE_LAYOUT(regolith_processing_fan_sprite_layout, regolith_processing_fan_sprites, 26)
+
+// Building with small tanks
+spriteset(regolith_processing_small_tanks_sprites, "../graphics/Buildings/Industry_RegolithProcessing_8bpp.png") {
+    SPRITE2(72, 72, 4, 64, 64, -33, -34)
+}
+SPRITE_LAYOUT(regolith_processing_small_tanks_sprite_layout, regolith_processing_small_tanks_sprites, 26)
+// Power building
+spriteset(regolith_processing_power_sprites, "../graphics/Buildings/Industry_RegolithProcessing_8bpp.png") {
+    SPRITE2(140, 72, 4, 64, 64, -33, -34)
+}
+SPRITE_LAYOUT(regolith_processing_power_sprite_layout, regolith_processing_power_sprites, 34)
+
+// NE - SE bend conveyors
+spriteset(regolith_processing_nese_bend_sprites, "../graphics/Buildings/Industry_RegolithProcessing_8bpp.png") {
+    SPRITE2(276, 72, 4, 64, 64, -33, -34)
+}
+SPRITE_LAYOUT(regolith_processing_nese_bend_sprite_layout, regolith_processing_nese_bend_sprites, 24)
+
+// SE - SW bend conveyors
+spriteset(regolith_processing_sesw_bend_sprites, "../graphics/Buildings/Industry_RegolithProcessing_8bpp.png") {
+    SPRITE2(208, 72, 4, 64, 64, -33, -34)
+}
+SPRITE_LAYOUT(regolith_processing_sesw_bend_sprite_layout, regolith_processing_sesw_bend_sprites, 24)
+
+// Crossing conveyors
+spriteset(regolith_processing_crossing_sprites, "../graphics/Buildings/Industry_RegolithProcessing_8bpp.png") {
+    SPRITE2(344, 72, 4, 64, 64, -33, -34)
+}
+SPRITE_LAYOUT(regolith_processing_crossing_sprite_layout, regolith_processing_crossing_sprites, 24)
+
+// Storage tanks
+spriteset(regolith_processing_storage_sprites, "../graphics/Buildings/Industry_RegolithProcessing_8bpp.png") {
+    SPRITE2(412, 140, 4, 64, 132, -33, -101)
+}
+SPRITE_LAYOUT(regolith_processing_storage_sprite_layout, regolith_processing_storage_sprites, 60)
+
+switch(FEAT_OBJECTS, SELF, random_houses_O, view) {
+	0: regolith_mine_floor_sprite_layout;
+	1: regolith_processing_nese_bend_sprite_layout;
+	2: regolith_processing_sesw_bend_sprite_layout;
+	3: regolith_processing_crossing_sprite_layout;
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_N, view) {
+	0: regolith_processing_fan_sprite_layout;
+	1: regolith_processing_small_tanks_sprite_layout;
+	2: regolith_processing_power_sprite_layout;
+	3: regolith_processing_storage_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_O) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_REGP);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 4;
+  }
+  graphics { default: random_houses_O; }
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_N) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_REGP);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 4;
+  }
+  graphics { default: random_houses_N; }
+}
+
+// vim: syn=cpp sw=4 et sts=4 nospell

@@ -1,0 +1,264 @@
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+//#include "industry_templates.pnml"
+
+// Corner sprites.
+spriteset(ice_mine_back_corner_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [443, 284, 64, 31, -31/**/, 0] // Non-snowy version
+//    [443, 128, 64, 3, -31/**/, 01] // Snowy version
+}
+spriteset(ice_mine_left_corner_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [443, 243, 64, 31, -31/**/, 0] // Non-snowy version
+//    [443,  87, 64, 31, -31/**/, 0] // Snowy version
+}
+spriteset(ice_mine_right_corner_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [443, 161, 64, 31, -31/**/, 0] // Non-snowy version
+//    [443,   5, 64, 31, -31/**/, 0] // Snowy version
+}
+spriteset(ice_mine_front_corner_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [443, 202, 64, 31, -31/**/, 0] // Non-snowy version
+//    [443,  46, 64, 31, -31/**/, 0] // Snowy version
+}
+
+spritelayout ice_mine_back_corner_sprite_layout {
+    ground {
+        sprite: ice_mine_back_corner_sprites;
+    }
+}
+spritelayout ice_mine_left_corner_sprite_layout {
+    ground {
+        sprite: ice_mine_left_corner_sprites;
+    }
+}
+spritelayout ice_mine_right_corner_sprite_layout {
+    ground {
+        sprite: ice_mine_right_corner_sprites;
+    }
+}
+spritelayout ice_mine_front_corner_sprite_layout {
+    ground {
+        sprite: ice_mine_front_corner_sprites;
+    }
+}
+
+// 'point' at 1,1
+spriteset(ice_mine_left_point_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [378, 161, 64, 31, -31/**/, 0] // Non-snowy version
+//    [378,  46, 64, 3, -31/**/, 0] // Snowy version
+}
+spriteset(ice_mine_back_point_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [378, 202, 64, 31, -31/**/, 0] // Non-snowy version
+//    [378,  46, 64, 3, -31/**/, 0] // Snowy version
+}
+spriteset(ice_mine_right_point_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [378, 243, 64, 31, -31/**/, 0] // Non-snowy version
+//    [378,  46, 64, 3, -31/**/, 0] // Snowy version
+}
+spriteset(ice_mine_front_point_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [378, 284, 64, 31, -31/**/, 0] // Non-snowy version
+//    [378,  46, 64, 3, -31/**/, 0] // Snowy version
+}
+spritelayout ice_mine_left_point_sprite_layout {
+    ground {
+        sprite: ice_mine_left_point_sprites;
+    }
+}
+spritelayout ice_mine_back_point_sprite_layout {
+    ground {
+        sprite: ice_mine_back_point_sprites;
+    }
+}
+spritelayout ice_mine_right_point_sprite_layout {
+    ground {
+        sprite: ice_mine_right_point_sprites;
+    }
+}
+spritelayout ice_mine_front_point_sprite_layout {
+    ground {
+        sprite: ice_mine_front_point_sprites;
+    }
+}
+// Straight edges.
+spriteset(ice_mine_straight_nw_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [313, 202, 64, 31, -31/**/, 0] // Non-snowy version
+//    [313,  46, 64, 31, -31/**/, 0] // Snowy version
+}
+spriteset(ice_mine_double_straight_nw_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [313, 202, 64, 31, -31/**/, 0] // Non-snowy version
+}
+spriteset(ice_mine_straight_ne_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [248, 202, 64, 31, -31/**/, 0] // Non-snowy version
+}
+spriteset(ice_mine_straight_se_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [313, 161, 64, 31, -31/**/, 0] // Non-snowy version
+//    [313,  5, 64, 31, -31/**/, 0] // Snowy version
+}
+spriteset(ice_mine_double_straight_se_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [313, 161, 64, 31, -31/**/, 0] // Non-snowy version
+}
+spriteset(ice_mine_straight_sw_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [248, 161, 64, 31, -31/**/, 0] // Non-snowy version
+//    [248,  5, 64, 31, -31/**/, 0] // Snowy version
+}
+spritelayout ice_mine_straight_ne_sprite_layout {
+    ground {
+        sprite: ice_mine_straight_ne_sprites;
+    }
+}
+spritelayout ice_mine_straight_nw_sprite_layout {
+    ground {
+        sprite: ice_mine_straight_nw_sprites;
+    }
+}
+spritelayout ice_mine_straight_se_sprite_layout {
+    ground {
+        sprite: ice_mine_straight_se_sprites;
+    }
+}
+spritelayout ice_mine_straight_sw_sprite_layout {
+    ground {
+        sprite: ice_mine_straight_sw_sprites;
+    }
+}
+
+// Water tile.
+spriteset(ice_mine_water_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [248, 284, 64, 31, -31/**/, 0]
+}
+spritelayout ice_mine_water_sprite_layout {
+    ground {
+        sprite: ice_mine_water_sprites;
+    }
+}
+// Water extractors.
+spriteset(ice_mine_back_extractor_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [  4, 208, 64, 64, -29, -31/**/]
+}
+spriteset(ice_mine_front_extractor_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [  4,  72, 64, 64, -29, -35]
+}
+spritelayout ice_mine_back_extractor_sprite_layout {
+    ground {
+        sprite: ice_mine_double_straight_nw_sprites;
+    }
+    building {
+        xoffset:  0; yoffset:  0; zoffset:  0;
+        xextent: 16; yextent: 16; zextent: 22;
+        sprite: ice_mine_back_extractor_sprites;
+    }
+}
+spritelayout ice_mine_front_extractor_sprite_layout {
+    ground {
+        sprite: ice_mine_double_straight_se_sprites;
+    }
+    building {
+        xoffset:  0; yoffset:  0; zoffset:  0;
+        xextent: 16; yextent: 16; zextent: 20;
+        sprite: ice_mine_front_extractor_sprites;
+    }
+}
+// Storage tanks
+spriteset(ice_mine_storage_sprites, "../graphics/Buildings/Industry_IceMine_8bpp.png") {
+    [140,   4, 64, 64, -31, -33]
+}
+SPRITE_LAYOUT(ice_mine_storage_sprite_layout, ice_mine_storage_sprites, 32)
+
+switch(FEAT_OBJECTS, SELF, random_houses_A, view) {
+	0: ice_mine_back_corner_sprite_layout;
+	1: ice_mine_left_corner_sprite_layout;
+	2: ice_mine_right_corner_sprite_layout;
+	3: ice_mine_front_corner_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_A) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_ICE);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 4;
+  }
+  graphics { default: random_houses_A; }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_B, view) {
+	0: ice_mine_straight_nw_sprite_layout;
+	1: ice_mine_straight_ne_sprite_layout;
+	2: ice_mine_straight_sw_sprite_layout;
+	3: ice_mine_straight_se_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_B) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_ICE);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 4;
+  }
+  graphics { default: random_houses_B; }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_C, view) {
+	0: ice_mine_left_point_sprite_layout;
+	1: ice_mine_back_point_sprite_layout;
+	2: ice_mine_right_point_sprite_layout;
+	3: ice_mine_front_point_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_C) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_ICE);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 4;
+  }
+  graphics { default: random_houses_C; }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_D, view) {
+	0: ice_mine_water_sprite_layout;
+	1: ice_mine_back_extractor_sprite_layout;
+	2: ice_mine_front_extractor_sprite_layout;
+	3: ice_mine_storage_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_D) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_ICE);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 4;
+  }
+  graphics { default: random_houses_D; }
+}

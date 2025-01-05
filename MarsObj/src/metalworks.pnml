@@ -1,0 +1,58 @@
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+//#include "industry_templates.pnml"
+
+// Encased power (SW, NE).
+spriteset(metal_works_encased_power_sprites, "../graphics/Buildings/Industry_MetalWorks_8bpp.png") {
+    SPRITE3(4, 268, 136, 4, 64, 128, -31/**/, -98)
+}
+SPRITE_LAYOUT(metal_works_encased_power_sprite_layout, metal_works_encased_power_sprites, 60)
+
+// Open power (SE, NW).
+spriteset(metal_works_open_power_sprites, "../graphics/Buildings/Industry_MetalWorks_8bpp.png") {
+    SPRITE3(72, 268, 136, 4, 64, 128, -31/**/, -98)
+}
+SPRITE_LAYOUT(metal_works_open_power_sprite_layout, metal_works_open_power_sprites, 60)
+
+// Central power grid.
+spriteset(metal_works_power_grid_sprites, "../graphics/Buildings/Industry_MetalWorks_8bpp.png") {
+    SPRITE3(140, 140, 72, 4, 64, 64, -33, -31/**/)
+}
+SPRITE_LAYOUT(metal_works_power_grid_sprite_layout, metal_works_power_grid_sprites, 36)
+
+switch(FEAT_OBJECTS, SELF, random_houses_F, view) {
+	0: metal_works_encased_power_sprite_layout;
+	1: metal_works_open_power_sprite_layout;
+	2: metal_works_power_grid_sprite_layout;
+	3: fusion_plant_power_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_F) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_METAL);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 4;
+  }
+  graphics { default: random_houses_F; }
+}

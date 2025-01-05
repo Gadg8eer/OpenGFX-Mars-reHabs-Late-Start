@@ -1,0 +1,85 @@
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+spriteset(aquiferpump_extracter_sprites, "../graphics/Buildings/Industry_AquiferPump_8bpp.png") {
+    [  4,   4, 64, 64, -31/**/, -33]
+}
+spritelayout aquiferpump_extracter_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset:  0; yoffset:  0; zoffset:  0;
+        xextent: 16; yextent: 16; zextent: 36;
+        sprite: aquiferpump_extracter_sprites;
+    }
+}
+
+spriteset(aquiferpump_storage_sprites, "../graphics/Buildings/Industry_AquiferPump_8bpp.png") {
+    [ 72,   4, 64, 64, -31/**/, -33]
+}
+spritelayout aquiferpump_storage_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset:  0; yoffset:  0; zoffset:  0;
+        xextent: 16; yextent: 16; zextent: 28;
+        sprite: aquiferpump_storage_sprites;
+    }
+}
+
+spriteset(aquiferpump_buildings_sprites, "../graphics/Buildings/Industry_AquiferPump_8bpp.png") {
+    [140,   4, 64, 64, -31/**/, -33]
+}
+spritelayout aquiferpump_buildings_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset:  0; yoffset:  0; zoffset:  0;
+        xextent: 16; yextent: 16; zextent: 31;
+        sprite: aquiferpump_buildings_sprites;
+    }
+}
+
+
+// Blue storage tanks
+spriteset(chemical_factory_storage_sprites, "../graphics/Buildings/Industry_ChemicalFactory_8bpp.png") {
+    SPRITE3(276, 140, 72, 4, 64, 64, -31, -34)
+}
+SPRITE_LAYOUT(chemical_factory_storage_sprite_layout, chemical_factory_storage_sprites, 24)
+
+
+switch(FEAT_OBJECTS, SELF, random_houses_4, view) {
+	0: aquiferpump_extracter_sprite_layout;
+	1: aquiferpump_storage_sprite_layout;
+	2: aquiferpump_buildings_sprite_layout;
+	3: chemical_factory_storage_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_4) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_AQUIFER);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 4;
+  }
+  graphics { default: random_houses_4; }
+}
+
+
+// vim: sw=4 et sts=4 nospell

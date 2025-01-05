@@ -1,0 +1,24 @@
+##grflangid 0x01
+
+STR_GRF_NAME :OpenGFX Mars Objects {VERSION}
+STR_GRF_DESC :{ORANGE}Martian Objects{}Objects for a Martian environment{}{BLACK}Graphics: {SILVER}Zephyris{}{BLACK}Programming: {SILVER}Erato
+
+STR_NAME_MARSHOUSES :OpenGFX Mars
+
+STR_NAME_HABITAT :Habitat
+STR_NAME_TALL_HABITAT :Tall habitat
+STR_NAME_AIRMINE :Air Mine
+STR_NAME_AQUIFER :Aquifer Pump
+STR_NAME_CHEMISTRY :Chemical Factory
+STR_NAME_ELECTROLYSIS :Electrolysis Plant
+STR_NAME_FARM :Farm
+STR_NAME_FUSION :Fusion Power Plant
+STR_NAME_GOOD :Goods Factory
+STR_NAME_ICE :Ice Mine
+STR_NAME_LIFESUPPORT :Life Support Centre
+STR_NAME_METAL :Metal Works
+STR_NAME_ORE :Ore Mine
+STR_NAME_REG :Regolith Mine
+STR_NAME_REGP :Regolith Processing
+STR_NAME_TERR :Terraforming Plant
+STR_NAME_STOCK :Stockpiles

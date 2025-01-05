@@ -1,0 +1,38 @@
+// 	OpenGFX Industries
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+//#include "industry_templates.pnml"
+
+spriteset(life_support_main_sprites, "../graphics/Buildings/Industry_LifeSupport_8bpp.png") {
+    SPRITE3(4, 268, 136, 4, 64, 128, -31/**/, -98)
+}
+SPRITE_LAYOUT(life_support_main_sprite_layout, life_support_main_sprites, 60)
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_E) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_LIFESUPPORT);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 1;
+  }
+  graphics { default: life_support_main_sprite_layout; }
+}

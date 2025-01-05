@@ -1,0 +1,6 @@
+VERSION        :
+VERSION_STRING :
+TITLE          :OpenGFX Mars objects 
+FILENAME       :ogfx-mars-obj.grf
+REPO_HASH      :
+NEWGRF_VERSION :

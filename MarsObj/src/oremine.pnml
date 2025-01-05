@@ -1,0 +1,202 @@
+// 	OpenGFX Mars Landscape and Trees
+// 	Copyright (C) 2014 Zephyris, and others
+// 	Contact: planetmaker@openttd.org
+//
+// 	This program is free software; you can redistribute it and/or modify
+// 	it under the terms of the GNU General Public License as published by
+// 	the Free Software Foundation; either version 2 of the License, or
+// 	(at your option) any later version.
+//
+// 	This program is distributed in the hope that it will be useful,
+// 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+// 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// 	GNU General Public License for more details.
+//
+// 	You should have received a copy of the GNU General Public License along
+// 	with this program; if not, write to the Free Software Foundation, Inc.,
+// 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+//#include "industry_templates.pnml"
+
+// Tower
+spriteset(ore_mine_tower_sprites, "../graphics/Buildings/Industry_OreMine_8bpp.png") {
+    SPRITE3(4, 266, 136, 4, 64, 128, -33, -97)
+}
+SPRITE_LAYOUT(ore_mine_tower_sprite_layout, ore_mine_tower_sprites, 81)
+
+// Processing building
+spriteset(ore_mine_processing_sprites, "../graphics/Buildings/Industry_OreMine_8bpp.png") {
+    SPRITE3(140, 140, 72, 4, 64, 64, -33, -33)
+}
+SPRITE_LAYOUT(ore_mine_processing_sprite_layout, ore_mine_processing_sprites, 23)
+
+// Processing building rotated
+spriteset(ore_mine_processing_rotated_sprites, "../graphics/Buildings/Industry_OreMine_8bpp.png") {
+    SPRITE3(72, 140, 72, 4, 64, 64, -33, -33)
+}
+SPRITE_LAYOUT(ore_mine_processing_rotated_sprite_layout, ore_mine_processing_rotated_sprites, 23)
+
+// Left conveyor
+spriteset(ore_mine_left_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [ 72, 208, 64, 64, -43, -38]
+}
+spritelayout ore_mine_left_conveyor_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset:  0; yoffset:  5; zoffset: 0;
+        xextent: 12; yextent: 11; zextent: 8;
+        sprite: ore_mine_left_conveyor_sprites;
+    }
+}
+
+// Right conveyor
+spriteset(ore_mine_right_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [ 72, 276, 64, 64, -25, -37]
+}
+spritelayout ore_mine_right_conveyor_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset:  5; yoffset:  0; zoffset: 0;
+        xextent: 11; yextent: 12; zextent: 8;
+        sprite: ore_mine_right_conveyor_sprites;
+    }
+}
+
+// Top conveyor
+spriteset(ore_mine_top_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [ 72, 344, 64, 64, -43, -38]
+}
+spritelayout ore_mine_top_conveyor_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset:  0; yoffset:  5; zoffset: 0;
+        xextent: 12; yextent: 11; zextent: 8;
+        sprite: ore_mine_top_conveyor_sprites;
+    }
+}
+
+// Bottom conveyor
+spriteset(ore_mine_bottom_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [ 72, 412, 64, 64, -25, -37]
+}
+spritelayout ore_mine_bottom_conveyor_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset:  4; yoffset:  0; zoffset: 0;
+        xextent: 11; yextent: 12; zextent: 8;
+        sprite: ore_mine_bottom_conveyor_sprites;
+    }
+}
+
+// sw conveyor
+spriteset(ore_mine_sw_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [ 4, 208, 64, 64, -21, -37]
+}
+spritelayout ore_mine_sw_conveyor_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset:  5; yoffset:  0; zoffset: 0;
+        xextent: 11; yextent: 12; zextent: 8;
+        sprite: ore_mine_sw_conveyor_sprites;
+    }
+}
+// ne conveyor
+spriteset(ore_mine_ne_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [ 4, 276, 64, 64, -21, -37]
+}
+spritelayout ore_mine_ne_conveyor_sprite_layout {
+    ground { sprite: GROUNDSPRITE_NORMAL; }
+    building {
+        xoffset:  5; yoffset:  0; zoffset: 0;
+        xextent: 11; yextent: 12; zextent: 8;
+        sprite: ore_mine_ne_conveyor_sprites;
+    }
+}
+// sw conveyor
+spriteset(ore_mine_sw_sl_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [ 140, 208, 64, 64, -21, -37]
+}
+spritelayout ore_mine_sw_sl_conveyor_sprite_layout {
+    ground { sprite: 3993; }
+    building {
+        xoffset:  5; yoffset:  -1; zoffset: 8;
+        xextent: 11; yextent: 12; zextent: 8;
+        sprite: ore_mine_sw_sl_conveyor_sprites;
+    }
+}
+// ne conveyor
+spriteset(ore_mine_ne_sl_conveyor_sprites, "../graphics/Buildings/Industry_RegolithMine_8bpp.png") {
+    [ 140, 276, 64, 64, -21, -37]
+}
+spritelayout ore_mine_ne_sl_conveyor_sprite_layout {
+    ground { sprite: 3990; }
+    building {
+        xoffset:  5; yoffset:  0; zoffset: 0;
+        xextent: 11; yextent: 12; zextent: 8;
+        sprite: ore_mine_ne_sl_conveyor_sprites;
+    }
+}
+
+
+switch(FEAT_OBJECTS, SELF, random_houses_G, view) {
+	0: ore_mine_tower_sprite_layout;
+	1: ore_mine_processing_sprite_layout;
+	2: ore_mine_processing_rotated_sprite_layout;
+	3: ore_mine_processing_rotated_sprite_layout;//same
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_G) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_ORE);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 4;
+  }
+  graphics { default: random_houses_G; }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_H, view) {
+	0: ore_mine_left_conveyor_sprite_layout;
+	1: ore_mine_right_conveyor_sprite_layout;
+	2: ore_mine_top_conveyor_sprite_layout;
+	3: ore_mine_bottom_conveyor_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_H) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_ORE);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 4;
+  }
+  graphics { default: random_houses_H; }
+}
+
+switch(FEAT_OBJECTS, SELF, random_houses_I, view) {
+	0: ore_mine_sw_conveyor_sprite_layout;
+	1: ore_mine_ne_conveyor_sprite_layout;
+	2: ore_mine_sw_sl_conveyor_sprite_layout;
+	3: ore_mine_ne_sl_conveyor_sprite_layout;
+}
+
+/* Habitat item */
+item (FEAT_OBJECTS, item_houses_I) {
+  property {
+	class: "GFXM";
+	name: string(STR_NAME_ORE);
+	climates_available: ALL_CLIMATES;
+	object_flags: bitmask(OBJ_FLAG_NO_FOUNDATIONS,OBJ_FLAG_ALLOW_BRIDGE,OBJ_FLAG_ANYTHING_REMOVE);
+	height: 6;
+	size: [1,1];
+	num_views: 4;
+  }
+  graphics { default: random_houses_I; }
+}
