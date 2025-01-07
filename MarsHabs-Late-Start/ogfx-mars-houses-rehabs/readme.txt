@@ -1,4 +1,4 @@
-OpenGFX Mars Houses
+reHabs - OpenGFX Mars Houses: Late Start (Future Buildings)
 -------------------
 
 Contents:
@@ -15,9 +15,9 @@ Contents:
 1 About
 -------
 
-This NewGRF provides Houses for the Martian Environment
+This NewGRF provides Houses originally made by Zephyris. Originally meant for the Martian Environment, but can be used in any climate including landscape GRFs such as JP+ and AuzLandscape. 
 
-Name of this Repo:  OpenHabs - OpenGFX Mars Houses: Late Start
+Name of this Repo:  reHabs - OpenGFX Mars Houses: Late Start
 Repository version: 11
 
 
@@ -29,20 +29,25 @@ Repository version: 11
 Just add the NewGRF to the selection of active NewGRFs within the
 configuration window as accessible from the main menu.
 
+Note that OpenGFX Mars itself has alignment issues (fixed in this mod) that means using these or any other GRFs (except the original OpenGFX Mars Habitats and most of its' successor mods) with OpenGFX Mars will lead to graphical glitches caused by OpenGFX Mars, in spite of looking like they should work together.
 
+Using this GRF with any GRFs not directly related to OpenGFX Mars should work just fine, but let Gadg8eer know if anything goes wrong and he'll fix it.
 
 ---------------------------------
 3 Contributing and reporting bugs
 ---------------------------------
 
-The issue tracker is located at the #openttdcoop DevZone at
+The issue tracker was located at the #openttdcoop DevZone at
     http://dev.openttdcoop.org/projects/opengfx-mars-houses
 
-The complete source code is available as mercurial checkout via
+The complete source code was available as mercurial checkout via
     hg clone http://hg.openttdcoop.org/opengfx-mars
 
+These methods seem to now be obsolete due to link rot.
 
-
+The github repository is located at the github page at
+	https://github.com/Gadg8eer/OpenGFX-Mars-reHabs-Late-Start
+	
 ---------
 4 Credits
 ---------
