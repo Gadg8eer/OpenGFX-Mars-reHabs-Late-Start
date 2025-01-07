@@ -2223,7 +2223,7 @@ switch (FEAT_INDUSTRYTILES, SELF, switch_tile_fences, [
             STORE_TEMP(0, 8),
             ]) {
     switch_tile_fences_neighbouring_industry;
-}switch (FEAT_INDUSTRYTILES, SELF, switch_terrain_sprite_normal, [STORE_TEMP(GROUNDSPRITE_NORMAL, 0)]) {
+}switch (FEAT_INDUSTRYTILES, SELF, switch_terrain_sprite_normal, [STORE_TEMP(GROUNDSPRITE_CONCRETE, 0)]) {
     return 1;
 }
 switch (FEAT_INDUSTRYTILES, SELF, switch_terrain_sprite_arctic_full_snow, [STORE_TEMP(GROUNDSPRITE_SNOW_4_4, 0)]) {
@@ -2361,14 +2361,14 @@ START  INDUSTRIES
             }
     spritelayout Shopping_Centres_spritelayout {
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (LOAD_TEMP(13));
                         always_draw: 1;
                     }
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (!LOAD_TEMP(13));
@@ -2525,14 +2525,14 @@ switch (FEAT_INDUSTRIES, SELF, Shopping_Centres_cargo_subtype_display, 1) {
             }
     spritelayout Habs_Shopping_Centres_spritelayout {
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (LOAD_TEMP(13));
                         always_draw: 1;
                     }
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (!LOAD_TEMP(13));
@@ -2671,7 +2671,7 @@ switch (FEAT_INDUSTRIES, SELF, Habs_Shopping_Centres_cargo_subtype_display, 1) {
                     build_prod_change:        randomise_primary_production_on_build;
                     extra_text_industry:      return string(STR_EXTRA_Habs_Shopping_Centres);
                     cargo_subtype_display:    Habs_Shopping_Centres_cargo_subtype_display;
-					available:                date(2030, 01, 01);
+					//available:                date(2030, 01, 01);
 
                 }
             }
@@ -2693,14 +2693,14 @@ switch (FEAT_INDUSTRIES, SELF, Habs_Shopping_Centres_cargo_subtype_display, 1) {
             }
     spritelayout Manufacturing_Ind_spritelayout {
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (LOAD_TEMP(13));
                         always_draw: 1;
                     }
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (!LOAD_TEMP(13));
@@ -2857,14 +2857,14 @@ switch (FEAT_INDUSTRIES, SELF, Manufacturing_Ind_cargo_subtype_display, 1) {
             }
     spritelayout Habs_Manufacturing_Ind_spritelayout {
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (LOAD_TEMP(13));
                         always_draw: 1;
                     }
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (!LOAD_TEMP(13));
@@ -3003,7 +3003,7 @@ switch (FEAT_INDUSTRIES, SELF, Habs_Manufacturing_Ind_cargo_subtype_display, 1) 
                     build_prod_change:        randomise_primary_production_on_build;
                     extra_text_industry:      return string(STR_EXTRA_Habs_Manufacturing_Ind);
                     cargo_subtype_display:    Habs_Manufacturing_Ind_cargo_subtype_display;
-					available:                date(2030, 01, 01);
+					//available:                date(2030, 01, 01);
 
                 }
             }
@@ -3024,14 +3024,14 @@ switch (FEAT_INDUSTRIES, SELF, Habs_Manufacturing_Ind_cargo_subtype_display, 1) 
             }
     spritelayout Heavy_Ind_spritelayout {
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (LOAD_TEMP(13));
                         always_draw: 1;
                     }
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (!LOAD_TEMP(13));
@@ -3170,7 +3170,7 @@ switch (FEAT_INDUSTRIES, SELF, Heavy_Ind_cargo_subtype_display, 1) {
                     build_prod_change:        randomise_primary_production_on_build;
                     extra_text_industry:      return string(STR_EXTRA_Heavy_Ind);
                     cargo_subtype_display:    Heavy_Ind_cargo_subtype_display;
-					available:                date(2030, 01, 01);
+					//available:                date(2030, 01, 01);
 
                 }
             }
@@ -3190,14 +3190,14 @@ switch (FEAT_INDUSTRIES, SELF, Heavy_Ind_cargo_subtype_display, 1) {
             }
     spritelayout Habs_Heavy_Ind_spritelayout {
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (LOAD_TEMP(13));
                         always_draw: 1;
                     }
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (!LOAD_TEMP(13));
@@ -3317,7 +3317,7 @@ switch (FEAT_INDUSTRIES, SELF, Habs_Heavy_Ind_cargo_subtype_display, 1) {
                     spec_flags: bitmask(IND_FLAG_LONG_CARGO_TYPE_LISTS);
                     conflicting_ind_types: [];
                     random_sound_effects: [];
-                    name: string(STR_IND_Habs_Mines_and_Quarries);
+                    name: string(STR_IND_Habs_Heavy_Ind);
                     prob_map_gen: 0;
                     prob_in_game: 0;
                     prospect_chance: 0.75;
@@ -3336,7 +3336,7 @@ switch (FEAT_INDUSTRIES, SELF, Habs_Heavy_Ind_cargo_subtype_display, 1) {
                     build_prod_change:        randomise_primary_production_on_build;
                     extra_text_industry:      return string(STR_EXTRA_Habs_Heavy_Ind);
                     cargo_subtype_display:    Habs_Heavy_Ind_cargo_subtype_display;
-					available:                date(2030, 01, 01);
+					//available:                date(2030, 01, 01);
 
                 }
             }
@@ -3356,14 +3356,14 @@ switch (FEAT_INDUSTRIES, SELF, Habs_Heavy_Ind_cargo_subtype_display, 1) {
             }
     spritelayout Residential_spritelayout {
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (LOAD_TEMP(13));
                         always_draw: 1;
                     }
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (!LOAD_TEMP(13));
@@ -3518,14 +3518,14 @@ switch (FEAT_INDUSTRIES, SELF, Residential_cargo_subtype_display, 1) {
             }
     spritelayout Habs_Residential_spritelayout {
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (LOAD_TEMP(13));
                         always_draw: 1;
                     }
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (!LOAD_TEMP(13));
@@ -3662,7 +3662,7 @@ switch (FEAT_INDUSTRIES, SELF, Habs_Residential_cargo_subtype_display, 1) {
                     build_prod_change:        randomise_primary_production_on_build;
                     extra_text_industry:      return string(STR_EXTRA_RESIDENTIAL);
                     cargo_subtype_display:    Habs_Residential_cargo_subtype_display;
-					available:                date(2030, 01, 01);
+					//available:                date(2030, 01, 01);
 
                 }
             }
@@ -3683,14 +3683,14 @@ switch (FEAT_INDUSTRIES, SELF, Habs_Residential_cargo_subtype_display, 1) {
             }
     spritelayout Mines_and_Quarries_spritelayout {
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (LOAD_TEMP(13));
                         always_draw: 1;
                     }
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (!LOAD_TEMP(13));
@@ -3847,14 +3847,14 @@ switch (FEAT_INDUSTRIES, SELF, Mines_and_Quarries_cargo_subtype_display, 1) {
             }
     spritelayout Habs_Mines_and_Quarries_spritelayout {
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (LOAD_TEMP(13));
                         always_draw: 1;
                     }
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (!LOAD_TEMP(13));
@@ -3993,7 +3993,7 @@ switch (FEAT_INDUSTRIES, SELF, Habs_Mines_and_Quarries_cargo_subtype_display, 1)
                     build_prod_change:        randomise_primary_production_on_build;
                     extra_text_industry:      return string(STR_EXTRA_Habs_Mines_and_Quarries);
                     cargo_subtype_display:    Habs_Mines_and_Quarries_cargo_subtype_display;
-					available:                date(2030, 01, 01);
+					//available:                date(2030, 01, 01);
 
                 }
             }
@@ -4013,14 +4013,14 @@ switch (FEAT_INDUSTRIES, SELF, Habs_Mines_and_Quarries_cargo_subtype_display, 1)
             }
     spritelayout Farms_spritelayout {
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (LOAD_TEMP(13));
                         always_draw: 1;
                     }
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (!LOAD_TEMP(13));
@@ -4177,14 +4177,14 @@ switch (FEAT_INDUSTRIES, SELF, Farms_cargo_subtype_display, 1) {
             }
     spritelayout Habs_Farms_spritelayout {
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (LOAD_TEMP(13));
                         always_draw: 1;
                     }
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (!LOAD_TEMP(13));
@@ -4324,7 +4324,7 @@ switch (FEAT_INDUSTRIES, SELF, Habs_Farms_cargo_subtype_display, 1) {
                     build_prod_change:        randomise_primary_production_on_build;
                     extra_text_industry:      return string(STR_EXTRA_Habs_FARMS);
                     cargo_subtype_display:    Habs_Farms_cargo_subtype_display;
-					available:                date(2030, 01, 01);
+					//available:                date(2030, 01, 01);
 
                 }
             }
@@ -4345,14 +4345,14 @@ switch (FEAT_INDUSTRIES, SELF, Habs_Farms_cargo_subtype_display, 1) {
             }
     spritelayout Utility_Comp_spritelayout {
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (LOAD_TEMP(13));
                         always_draw: 1;
                     }
                     childsprite {
-                        sprite: GROUNDSPRITE_NORMAL;
+                        sprite: GROUNDSPRITE_CONCRETE;
                         recolour_mode: RECOLOUR_REMAP;
                         palette: PALETTE_USE_DEFAULT;
                         hide_sprite: (!LOAD_TEMP(13));
@@ -4542,14 +4542,14 @@ switch (FEAT_INDUSTRIES, SELF, Utility_Comp_cargo_subtype_display, 1) {
 // 	51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
 spriteset(life_support_main_sprites, "../graphics/Buildings/Industry_LifeSupport_8bpp.png") {
-    [4, 268, 64, 128, -31, -98]
-	[4, 136, 64, 128, -31, -98]
-	[4,   4, 64, 128, -31, -98]
+    [4, 268, 64, 128, -31, -97]
+	[4, 136, 64, 128, -31, -97]
+	[4,   4, 64, 128, -31, -97]
 }
 
 spritelayout life_support_main_sprite_layout {
 	ground {
-		sprite: GROUNDSPRITE_NORMAL;
+		sprite: GROUNDSPRITE_CONCRETE;
 	}
 	building {
 		xoffset: 0;
@@ -4610,7 +4610,7 @@ item(FEAT_INDUSTRIES, life_support_industry, 69) {
 		build_prod_change:        randomise_primary_production_on_build;
 		extra_text_industry:      return string(STR_EXTRA_Habs_Utility_Comp);
         cargo_subtype_display:    Habs_Utility_Comp_cargo_subtype_display;
-		available:                date(2030, 01, 01);
+		//available:                date(2030, 01, 01);
 	}
 }
 
@@ -4993,7 +4993,7 @@ switch (FEAT_INDUSTRYTILES, SELF, Habs_Fishing_Offshore_switch_graphics, [switch
 
                     build_prod_change:        randomise_primary_production_on_build;
                     extra_text_industry:      return string(STR_EXTRA_Habs_Fishing_Offshore);
-					available:                CB_RESULT_IND_ALLOW;
+					//available:                date(2030, 01, 01);
 
                 }
             }
