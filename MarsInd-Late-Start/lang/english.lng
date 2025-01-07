@@ -106,7 +106,7 @@ STR_WATER_ABBREVIATION                :{TINYFONT}WT
 STR_REGOLITH_ABBREVIATION             :{TINYFONT}RL
 
 STR_TOWN                              :{STRING}
-STR_STATION                           :{STRING} {STRING}
+STR_STATION                           :{STRING}, {STRING}
 STR_AIR_MINE_STATION_NAME             :Air Mine
 STR_AQUIFER_PUMP_STATION_NAME         :Pumping Station
 STR_FARM_STATION_NAME                 :Farm
