@@ -1,235 +1,288 @@
 ##grflangid 0x01
 ##plural 0
 
-STR_GRF_DESC                                                                    :{ORANGE}reMOTIS - Realigned Martian One Tile Industry Set{}{BLACK}Originally brought to you by: GarryG and Quast65.{}Inspired by: Other single-tile industry sets and FIRS.{}Credits: andytheNorth, FooBar, planetmaker, Terkhen, Yexo, and many many others.{}{}Also, Gadg8eer coded the graphics but did not create them, they are obtained from other GPL v2 licensed NewGRFs.{}{SILVER}See readme for more information.{}{BLACK}License: GPL v2.
-STR_GRF_WEBSITE																	:https://www.tt-forums.net/viewtopic.php?f=26&t=88584
+STR_GRF_DESC                                        :{ORANGE}reMOTIS - Realigned Martian One Tile Industry Set{}{BLACK}Originally brought to you by: GarryG and Quast65.{}Inspired by: Other single-tile industry sets and FIRS.{}Credits: andytheNorth, FooBar, planetmaker, Terkhen, Yexo, and many many others.{}{}Also, Gadg8eer coded the graphics but did not create them, they are obtained from other GPL v2 licensed NewGRFs.{}{SILVER}See readme for more information.{}{BLACK}License: GPL v2.
+STR_GRF_WEBSITE                                     :https://www.tt-forums.net/viewtopic.php?f=26&t=88584
 
-STR_PARAM_DESC_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maximum distance of fishing grounds, oil rigs and dredging sites from the coast in tiles.
-STR_PARAM_NAME_COAST_DISTANCE_MARINE_INDUSTRY                                   :Maximum coastal distance of marine industries in tiles
-STR_PARAM_VALUE_SECONDARY_NEVER_CLOSE_0                                         :No limit
-STR_PARAM_DESC_NO_OPENINGS                                                      :By default, new industries will open during the game.{}{}If 'prevent opening' is turned on industries will not open during game, and players will not be able to fund or prospect for industries.
-STR_PARAM_NAME_NO_OPENINGS                                                      :Prevent industries opening during gameplay
+STR_PARAM_DESC_COAST_DISTANCE_MARINE_INDUSTRY       :Maximum distance of fishing grounds, oil rigs and dredging sites from the coast in tiles.
+STR_PARAM_NAME_COAST_DISTANCE_MARINE_INDUSTRY       :Maximum coastal distance of marine industries in tiles
+STR_PARAM_VALUE_SECONDARY_NEVER_CLOSE_0             :No limit
+STR_PARAM_DESC_NO_OPENINGS                          :By default, new industries will open during the game.{}{}If 'prevent opening' is turned on industries will not open during game, and players will not be able to fund or prospect for industries.
+STR_PARAM_NAME_NO_OPENINGS                          :Prevent industries opening during gameplay
 
-STR_INDUSTRY_EXTRA_TEXT                                         :{}Goods produced this month: {YELLOW}{SIGNED_WORD}
+STR_INDUSTRY_EXTRA_TEXT                             :{}Goods produced this month: {YELLOW}{SIGNED_WORD}
 
-STR_CARGO_NAME_ALCOHOL                                                          :Alcohol
-STR_CARGO_NAME_BUILDING_MATERIALS                                               :Building Materials
-STR_CARGO_NAME_CEMENT                                                           :Cement
-STR_CARGO_NAME_CLAY                                                             :Clay
-STR_CARGO_NAME_COPPER                                                           :Copper
-STR_CARGO_NAME_FISH                                                             :Fish
-STR_CARGO_NAME_FODDER		                                                :Animal Feed
-STR_CARGO_NAME_FRUITS                                                           :Fruit
-STR_CARGO_NAME_GLASS                                                            :Glass
-STR_CARGO_NAME_LIMESTONE                                                        :Limestone
-STR_CARGO_NAME_TIMBER                                                           :Timber
-STR_CARGO_NAME_PARCELS								:Parcels
-STR_CARGO_NAME_METAL                                                            :Metal
-STR_CARGO_NAME_MILK                                                             :Milk
-STR_CARGO_NAME_FUEL                                                             :Natural Gas
-STR_CARGO_NAME_SAND                                                             :Sand
-STR_CARGO_NAME_SCRAP_METAL                                                      :Scrap Metal
-STR_CARGO_NAME_STONE                                                            :Stone
-STR_CARGO_NAME_WOOL                                                             :Wool
-STR_CARGO_NAME_COTTON								:Cotton
-STR_CARGO_NAME_VEGETABLES							:Vegetables
-STR_CARGO_NAME_WORKERS								:Workers
-STR_CARGO_NAME_TOURISTS								:Tourists
-STR_CARGO_NAME_COPPER_ORE							:Copper Ore
-STR_CARGO_NAME_WASTE								:Waste/Garbage
-STR_CARGO_NAME_URANIUM								:Uranium
-STR_CARGO_NAME_VALUABLES							:Valuables
-STR_CARGO_NAME_BAUXITE								:Bauxite
-STR_CARGO_NAME_MANGANESE							:Manganese
-STR_CARGO_NAME_NICKEL								:Nickel
-STR_CARGO_NAME_SULPHUR								:Sulphur
-STR_CARGO_NAME_VEHICLES								:Cars
-STR_CARGO_NAME_FLOUR								:Flour
-STR_CARGO_NAME_PIPE								:Pipes
-STR_CARGO_NAME_OYSTERS								:Oysters
-STR_CARGO_NAME_MEAT								:Meat
-STR_CARGO_NAME_CHEESE								:Cheese
-STR_CARGO_NAME_FURNITURE							:Furniture
-STR_CARGO_NAME_TEXTILE								:Textile
-STR_CARGO_NAME_SEED								:Seed
-STR_CARGO_NAME_FERTILIZER							:Fertilizer
-STR_CARGO_NAME_EXPLOSIVES							:Explosives
-STR_CARGO_NAME_ACID								:Acid
-STR_CARGO_NAME_CHLORINE								:Chlorine
-STR_CARGO_NAME_SLAG								:Slag
-STR_CARGO_NAME_TROPIC_WOOD							:Tropic Wood
-STR_CARGO_NAME_MARINE_SUPPLIES							:Marine Supplies
-STR_CARGO_NAME_PETROL								:Petroleum Fuels
-STR_CARGO_NAME_WATER								:Water
-STR_CARGO_NAME_POTATO								:Potatoes
-STR_CARGO_NAME_ELECTRICAL_PARTS							:Electrical Machines
-STR_CARGO_NAME_MACHINE_PARTS							:Machine Parts
-STR_CARGO_NAME_SEWAGE								:Sewage
+STR_CARGO_NAME_ALCOHOL                              :Alcohol
+STR_CARGO_NAME_BUILDING_MATERIALS                   :Building Materials
+STR_CARGO_NAME_CEMENT                               :Cement
+STR_CARGO_NAME_CLAY                                 :Clay
+STR_CARGO_NAME_COPPER                               :Copper
+STR_CARGO_NAME_FISH                                 :Fish
+STR_CARGO_NAME_FODDER                               :Animal Feed
+STR_CARGO_NAME_FRUITS                               :Fruit
+STR_CARGO_NAME_GLASS                                :Glass
+STR_CARGO_NAME_LIMESTONE                            :Limestone
+STR_CARGO_NAME_TIMBER                               :Timber
+STR_CARGO_NAME_PARCELS                              :Parcels
+STR_CARGO_NAME_METAL                                :Metal
+STR_CARGO_NAME_MILK                                 :Milk
+STR_CARGO_NAME_FUEL                                 :Natural Gas
+STR_CARGO_NAME_SAND                                 :Sand
+STR_CARGO_NAME_SCRAP_METAL                          :Scrap Metal
+STR_CARGO_NAME_STONE                                :Stone
+STR_CARGO_NAME_WOOL                                 :Wool
+STR_CARGO_NAME_COTTON                               :Cotton
+STR_CARGO_NAME_VEGETABLES                           :Vegetables
+STR_CARGO_NAME_WORKERS                              :Commuters
+STR_CARGO_NAME_TOURISTS                             :Tourists
+STR_CARGO_NAME_COPPER_ORE                           :Copper Ore
+STR_CARGO_NAME_WASTE                                :Waste/Garbage
+STR_CARGO_NAME_URANIUM                              :Uranium
+STR_CARGO_NAME_VALUABLES                            :Valuables
+STR_CARGO_NAME_BAUXITE                              :Bauxite
+STR_CARGO_NAME_MANGANESE                            :Manganese
+STR_CARGO_NAME_NICKEL                               :Nickel
+STR_CARGO_NAME_SULPHUR                              :Sulphur
+STR_CARGO_NAME_VEHICLES                             :Cars
+STR_CARGO_NAME_FLOUR                                :Flour
+STR_CARGO_NAME_PIPE                                 :Pipes
+STR_CARGO_NAME_OYSTERS                              :Oysters
+STR_CARGO_NAME_MEAT                                 :Meat
+STR_CARGO_NAME_CHEESE                               :Cheese
+STR_CARGO_NAME_FURNITURE                            :Furniture
+STR_CARGO_NAME_TEXTILE                              :Textile
+STR_CARGO_NAME_SEED                                 :Seed
+STR_CARGO_NAME_FERTILIZER                           :Fertilizer
+STR_CARGO_NAME_EXPLOSIVES                           :Explosives
+STR_CARGO_NAME_ACID                                 :Acid
+STR_CARGO_NAME_CHLORINE                             :Chlorine
+STR_CARGO_NAME_SLAG                                 :Slag
+STR_CARGO_NAME_TROPIC_WOOD                          :Tropic Wood
+STR_CARGO_NAME_MARINE_SUPPLIES                      :Marine Supplies
+STR_CARGO_NAME_PETROL                               :Petroleum Fuels
+STR_CARGO_NAME_WATER                                :Water
+STR_CARGO_NAME_POTATO                               :Potatoes
+STR_CARGO_NAME_ELECTRICAL_PARTS                     :Electrical Machines
+STR_CARGO_NAME_MACHINE_PARTS                        :Machine Parts
+STR_CARGO_NAME_SEWAGE                               :Sewage
 
-STR_NAME_ELECTRICITY								:Electricity
-STR_SHORT_KWH									:{COMMA} kWh
-STR_UNITS_ELECTRICITY								:{COMMA} kWh of electricity
-STR_TINY_ELECTRICITY								:{TINYFONT}EL
+STR_CARGO_SINGULAR_BUILDING_MATERIALS               :Building Material
+STR_CARGO_SINGULAR_PARCELS                          :Parcel
+STR_CARGO_SINGULAR_VEGETABLES                       :Vegetable
+STR_CARGO_SINGULAR_WORKERS                          :Commuter
+STR_CARGO_SINGULAR_TOURISTS                         :Tourist
+STR_CARGO_SINGULAR_VALUABLES                        :Valuable Item
+STR_CARGO_SINGULAR_VEHICLES                         :Car
+STR_CARGO_SINGULAR_PIPE                             :Pipe
+STR_CARGO_SINGULAR_OYSTERS                          :Oyster
+STR_CARGO_SINGULAR_EXPLOSIVES                       :Explosive
+STR_CARGO_SINGULAR_POTATO                           :Potato
+STR_CARGO_SINGULAR_ELECTRICAL_PARTS                 :Electrical Machine
+STR_CARGO_SINGULAR_MACHINE_PARTS                    :Machine Part
 
-STR_CARGO_UNIT_ALCOHOL                                                          :{VOLUME} of alcohol
-STR_CARGO_UNIT_BUILDING_MATERIALS                                               :{SIGNED_WORD} crate{P 0 "" s} of building materials
-STR_CARGO_UNIT_CEMENT                                                           :{WEIGHT} of cement
-STR_CARGO_UNIT_CLAY                                                             :{WEIGHT} of clay
-STR_CARGO_UNIT_COPPER                                                           :{WEIGHT} of copper
-STR_CARGO_UNIT_FISH                                                             :{WEIGHT} of fish
-STR_CARGO_UNIT_FODDER                                                           :{WEIGHT} of animal feed
-STR_CARGO_UNIT_FRUITS                                                           :{WEIGHT} of fruit
-STR_CARGO_UNIT_VEGETABLES							:{WEIGHT} of vegetables
-STR_CARGO_UNIT_GLASS                                                            :{WEIGHT} of glass
-STR_CARGO_UNIT_LIME                                                             :{WEIGHT} of limestone
-STR_CARGO_UNIT_TIMBER                                                           :{WEIGHT} of timber
-STR_CARGO_UNIT_PARCELS								:{SIGNED_WORD} parcels
-STR_CARGO_UNIT_MANGANESE							:{WEIGHT} of manganese
-STR_CARGO_UNIT_METAL                                                            :{WEIGHT} of metal
-STR_CARGO_UNIT_MILK                                                             :{VOLUME} of milk
-STR_CARGO_UNIT_NICKEL								:{WEIGHT} of nickel
-STR_CARGO_UNIT_SAND                                                             :{WEIGHT} of sand
-STR_CARGO_UNIT_SCRAP_METAL                                                      :{WEIGHT} of scrap metal
-STR_CARGO_UNIT_STONE                                                            :{WEIGHT} of stone
-STR_CARGO_UNIT_WOOL                                                             :{SIGNED_WORD} bale{P 0 "" s} of wool
-STR_CARGO_UNIT_COTTON								:{SIGNED_WORD} bale{P 0 "" s} of cotton
-STR_CARGO_UNIT_WORKERS								:{SIGNED_WORD} workers
-STR_CARGO_UNIT_TOURISTS								:{SIGNED_WORD} tourists
-STR_CARGO_UNIT_COPPER_ORE							:{WEIGHT} of copper ore
-STR_CARGO_UNIT_WASTE								:{WEIGHT} of waste
-STR_CARGO_UNIT_URANIUM								:{WEIGHT} of uranium
-STR_CARGO_UNIT_VALUABLES							:{SIGNED_WORD} bag{P 0 "" s} of valuables
-STR_CARGO_UNIT_BAUXITE								:{WEIGHT} of bauxite
-STR_CARGO_UNIT_SULPHUR								:{WEIGHT} of sulphur
-STR_CARGO_UNIT_VEHICLES								:{SIGNED_WORD} cars
-STR_QUANTITY_FLOUR								:{WEIGHT} of flour
-STR_CARGO_UNIT_PIPE								:{SIGNED_WORD} pipes
-STR_CARGO_UNIT_OYSTERS								:{WEIGHT} of oysters
-STR_CARGO_UNIT_MEAT								:{WEIGHT} of meat
-STR_CARGO_UNIT_CHEESE								:{WEIGHT} of cheese
-STR_CARGO_UNIT_FURNITURE							:{SIGNED_WORD} piece{P 0 "" s} of furniture
-STR_CARGO_UNIT_TEXTILE								:{WEIGHT} of textiles
-STR_CARGO_UNIT_SEED								:{WEIGHT} of seed
-STR_CARGO_UNIT_FERTILIZER							:{WEIGHT} of fertilizer
-STR_CARGO_UNIT_EXPLOSIVES							:{WEIGHT} of explosives
-STR_CARGO_UNIT_ACID								:{VOLUME} of acid
-STR_CARGO_UNIT_CHLORINE								:{VOLUME} of chlorine
-STR_CARGO_UNIT_SLAG                                                             :{WEIGHT} of slag
-STR_CARGO_UNIT_TROPIC_WOOD							:{WEIGHT} of tropic wood
-STR_CARGO_UNIT_MARINE								:{SIGNED_WORD} crate{P 0 "" s} of marine supplies
-STR_CARGO_UNIT_FUEL                                                             :{VOLUME} of natural gas
-STR_CARGO_UNIT_PETROL								:{VOLUME} of petroleum fuels
-STR_CARGO_UNIT_WATER								:{VOLUME} of water
-STR_CARGO_UNIT_POTATO								:{WEIGHT} of potatoes
-STR_CARGO_UNIT_ELECTRICAL_PARTS							:{SIGNED_WORD} crate{P 0 "" s} of electrical machines
-STR_CARGO_UNIT_MACHINE_PARTS							:{SIGNED_WORD} crate{P 0 "" s} of machinery parts
-STR_CARGO_UNIT_SEWAGE								:{VOLUME} of sewage
-STR_CARGO_UNIT_OIL								:{VOLUME} of oil
+STR_CARGO_NAME_TRAVELLERS                           :People
+STR_CARGO_SINGULAR_TRAVELLERS                       :Person
+STR_CARGO_ABBREV_TRAVELLERS                         :{TINYFONT}PX
+STR_CARGO_QUANTITY_TRAVELLERS                       :{COMMA} traveller{P "" s}
+
+STR_NAME_ELECTRICITY                                :Electricity
+STR_SHORT_KWH                                       :{COMMA} kWh
+STR_UNITS_ELECTRICITY                               :{COMMA} kWh of electricity
+STR_TINY_ELECTRICITY                                :{TINYFONT}EL
+
+STR_CARGO_UNIT_ALCOHOL                              :{VOLUME} of alcohol
+STR_CARGO_UNIT_BUILDING_MATERIALS                   :{SIGNED_WORD} crate{P 0 "" s} of building materials
+STR_CARGO_UNIT_CEMENT                               :{WEIGHT} of cement
+STR_CARGO_UNIT_CLAY                                 :{WEIGHT} of clay
+STR_CARGO_UNIT_COPPER                               :{WEIGHT} of copper
+STR_CARGO_UNIT_FISH                                 :{WEIGHT} of fish
+STR_CARGO_UNIT_FODDER                               :{WEIGHT} of animal feed
+STR_CARGO_UNIT_FRUITS                               :{WEIGHT} of fruit
+STR_CARGO_UNIT_VEGETABLES                           :{WEIGHT} of vegetables
+STR_CARGO_UNIT_GLASS                                :{WEIGHT} of glass
+STR_CARGO_UNIT_LIME                                 :{WEIGHT} of limestone
+STR_CARGO_UNIT_TIMBER                               :{WEIGHT} of timber
+STR_CARGO_UNIT_PARCELS                              :{SIGNED_WORD} parcels
+STR_CARGO_UNIT_MANGANESE                            :{WEIGHT} of manganese
+STR_CARGO_UNIT_METAL                                :{WEIGHT} of metal
+STR_CARGO_UNIT_MILK                                 :{VOLUME} of milk
+STR_CARGO_UNIT_NICKEL                               :{WEIGHT} of nickel
+STR_CARGO_UNIT_SAND                                 :{WEIGHT} of sand
+STR_CARGO_UNIT_SCRAP_METAL                          :{WEIGHT} of scrap metal
+STR_CARGO_UNIT_STONE                                :{WEIGHT} of stone
+STR_CARGO_UNIT_WOOL                                 :{SIGNED_WORD} bale{P 0 "" s} of wool
+STR_CARGO_UNIT_COTTON                               :{SIGNED_WORD} bale{P 0 "" s} of cotton
+STR_CARGO_UNIT_WORKERS                              :{SIGNED_WORD} commuters
+STR_CARGO_UNIT_TOURISTS                             :{SIGNED_WORD} tourists
+STR_CARGO_UNIT_COPPER_ORE                           :{WEIGHT} of copper ore
+STR_CARGO_UNIT_WASTE                                :{WEIGHT} of waste
+STR_CARGO_UNIT_URANIUM                              :{WEIGHT} of uranium
+STR_CARGO_UNIT_VALUABLES                            :{SIGNED_WORD} bag{P 0 "" s} of valuables
+STR_CARGO_UNIT_BAUXITE                              :{WEIGHT} of bauxite
+STR_CARGO_UNIT_SULPHUR                              :{WEIGHT} of sulphur
+STR_CARGO_UNIT_VEHICLES                             :{SIGNED_WORD} cars
+STR_QUANTITY_FLOUR                                  :{WEIGHT} of flour
+STR_CARGO_UNIT_PIPE                                 :{SIGNED_WORD} pipes
+STR_CARGO_UNIT_OYSTERS                              :{WEIGHT} of oysters
+STR_CARGO_UNIT_MEAT                                 :{WEIGHT} of meat
+STR_CARGO_UNIT_CHEESE                               :{WEIGHT} of cheese
+STR_CARGO_UNIT_FURNITURE                            :{SIGNED_WORD} piece{P 0 "" s} of furniture
+STR_CARGO_UNIT_TEXTILE                              :{WEIGHT} of textiles
+STR_CARGO_UNIT_SEED                                 :{WEIGHT} of seed
+STR_CARGO_UNIT_FERTILIZER                           :{WEIGHT} of fertilizer
+STR_CARGO_UNIT_EXPLOSIVES                           :{WEIGHT} of explosives
+STR_CARGO_UNIT_ACID                                 :{VOLUME} of acid
+STR_CARGO_UNIT_CHLORINE                             :{VOLUME} of chlorine
+STR_CARGO_UNIT_SLAG                                 :{WEIGHT} of slag
+STR_CARGO_UNIT_TROPIC_WOOD                          :{WEIGHT} of tropic wood
+STR_CARGO_UNIT_MARINE                               :{SIGNED_WORD} crate{P 0 "" s} of marine supplies
+STR_CARGO_UNIT_FUEL                                 :{VOLUME} of natural gas
+STR_CARGO_UNIT_PETROL                               :{VOLUME} of petroleum fuels
+STR_CARGO_UNIT_WATER                                :{VOLUME} of water
+STR_CARGO_UNIT_POTATO                               :{WEIGHT} of potatoes
+STR_CARGO_UNIT_ELECTRICAL_PARTS                     :{SIGNED_WORD} crate{P 0 "" s} of electrical machines
+STR_CARGO_UNIT_MACHINE_PARTS                        :{SIGNED_WORD} crate{P 0 "" s} of machinery parts
+STR_CARGO_UNIT_SEWAGE                               :{VOLUME} of sewage
+STR_CARGO_UNIT_OIL                                  :{VOLUME} of oil
 
 
 # it seems that using 2 chars for these is a convention not a limit, I tested 4 chars and OpenTTD renders it fine - May 2020
 
-STR_CID_ALCOHOL                                                                 :{TINYFONT}AL
-STR_CID_BUILDING_MATERIALS                                                      :{TINYFONT}BM
-STR_CID_CEMENT                                                                  :{TINYFONT}CE
-STR_CID_CLAY                                                                    :{TINYFONT}CY
-STR_CID_COPPER                                                                  :{TINYFONT}CR
-STR_CID_COPPER_ORE								:{TINYFONT}CO
-STR_CID_FODDER		                                                        :{TINYFONT}FD
-STR_CID_FISH                                                                    :{TINYFONT}FI
-STR_CID_GLASS                                                                   :{TINYFONT}GL
-STR_CID_LIMESTONE                                                               :{TINYFONT}LS
-STR_CID_TIMBER                                                                  :{TINYFONT}LU
-STR_CID_MANGANESE								:{TINYFONT}MG
-STR_CID_METAL                                                                   :{TINYFONT}MT
-STR_CID_MILK                                                                    :{TINYFONT}MK
-STR_CID_FUEL                                                                    :{TINYFONT}NG
-STR_CID_FRUITS									:{TINYFONT}FR
-STR_CID_SAND                                                                    :{TINYFONT}SA
-STR_CID_SCRAP_METAL                                                             :{TINYFONT}SM
-STR_CID_STONE                                                                   :{TINYFONT}ST
-STR_CID_SULPHUR									:{TINYFONT}SU
-STR_CID_WOOL                                                                    :{TINYFONT}WL
-STR_CID_PARCELS									:{TINYFONT}PC
-STR_CID_WORKERS									:{TINYFONT}YI
-STR_CID_TOURISTS								:{TINYFONT}TT
-STR_CID_WASTE									:{TINYFONT}WS
-STR_CID_URANIUM									:{TINYFONT}UR
-STR_CID_VALUABLES								:{TINYFONT}VA
-STR_CID_VEGETABLES								:{TINYFONT}VG
-STR_CID_COTTON									:{TINYFONT}CN
-STR_CID_BAUXITE									:{TINYFONT}BX
-STR_CID_NICKEL									:{TINYFONT}NC
-STR_CID_VEHICLES								:{TINYFONT}RV
-STR_CID_PIPE									:{TINYFONT}PP
-STR_CID_FLOUR									:{TINYFONT}FO
-STR_CID_OYSTERS									:{TINYFONT}OY
-STR_CID_MEAT									:{TINYFONT}ME
-STR_CID_CHEESE									:{TINYFONT}CS
-STR_CID_FURNITURE								:{TINYFONT}FN
-STR_CID_TEXTILE									:{TINYFONT}TX
-STR_CID_SEED									:{TINYFONT}SD
-STR_CID_FERTILIZER								:{TINYFONT}FZ
-STR_CID_EXPLOSIVES								:{TINYFONT}EX
-STR_CID_ACID									:{TINYFONT}AC
-STR_CID_CHLORINE								:{TINYFONT}CH
-STR_CID_SLAG                                                                    :{TINYFONT}SG
-STR_CID_TROPIC_WOOD								:{TINYFONT}TW
-STR_CID_MARINE_SUPPLIES								:{TINYFONT}MS
-STR_CID_PETROL									:{TINYFONT}PT
-STR_CID_WATER									:{TINYFONT}WT
-STR_CID_POTATO									:{TINYFONT}PO
-STR_CID_ELECTRICAL_PARTS							:{TINYFONT}EP
-STR_CID_MACHINE_PARTS								:{TINYFONT}MP
-STR_CID_SEWAGE										:{TINYFONT}SW
+STR_CID_ALCOHOL                                     :{TINYFONT}AL
+STR_CID_BUILDING_MATERIALS                          :{TINYFONT}BM
+STR_CID_CEMENT                                      :{TINYFONT}CE
+STR_CID_CLAY                                        :{TINYFONT}CY
+STR_CID_COPPER                                      :{TINYFONT}CR
+STR_CID_COPPER_ORE                                  :{TINYFONT}CO
+STR_CID_FODDER                                      :{TINYFONT}FD
+STR_CID_FISH                                        :{TINYFONT}FI
+STR_CID_GLASS                                       :{TINYFONT}GL
+STR_CID_LIMESTONE                                   :{TINYFONT}LS
+STR_CID_TIMBER                                      :{TINYFONT}LU
+STR_CID_MANGANESE                                   :{TINYFONT}MG
+STR_CID_METAL                                       :{TINYFONT}MT
+STR_CID_MILK                                        :{TINYFONT}MK
+STR_CID_FUEL                                        :{TINYFONT}NG
+STR_CID_FRUITS                                      :{TINYFONT}FR
+STR_CID_SAND                                        :{TINYFONT}SA
+STR_CID_SCRAP_METAL                                 :{TINYFONT}SM
+STR_CID_STONE                                       :{TINYFONT}ST
+STR_CID_SULPHUR                                     :{TINYFONT}SU
+STR_CID_WOOL                                        :{TINYFONT}WL
+STR_CID_PARCELS                                     :{TINYFONT}PC
+STR_CID_WORKERS                                     :{TINYFONT}YI
+STR_CID_TOURISTS                                    :{TINYFONT}TT
+STR_CID_WASTE                                       :{TINYFONT}WS
+STR_CID_URANIUM                                     :{TINYFONT}UR
+STR_CID_VALUABLES                                   :{TINYFONT}VA
+STR_CID_VEGETABLES                                  :{TINYFONT}VG
+STR_CID_COTTON                                      :{TINYFONT}CN
+STR_CID_BAUXITE                                     :{TINYFONT}BX
+STR_CID_NICKEL                                      :{TINYFONT}NC
+STR_CID_VEHICLES                                    :{TINYFONT}RV
+STR_CID_PIPE                                        :{TINYFONT}PP
+STR_CID_FLOUR                                       :{TINYFONT}FO
+STR_CID_OYSTERS                                     :{TINYFONT}OY
+STR_CID_MEAT                                        :{TINYFONT}ME
+STR_CID_CHEESE                                      :{TINYFONT}CS
+STR_CID_FURNITURE                                   :{TINYFONT}FN
+STR_CID_TEXTILE                                     :{TINYFONT}TX
+STR_CID_SEED                                        :{TINYFONT}SD
+STR_CID_FERTILIZER                                  :{TINYFONT}FZ
+STR_CID_EXPLOSIVES                                  :{TINYFONT}EX
+STR_CID_ACID                                        :{TINYFONT}AC
+STR_CID_CHLORINE                                    :{TINYFONT}CH
+STR_CID_SLAG                                        :{TINYFONT}SG
+STR_CID_TROPIC_WOOD                                 :{TINYFONT}TW
+STR_CID_MARINE_SUPPLIES                             :{TINYFONT}MS
+STR_CID_PETROL                                      :{TINYFONT}PT
+STR_CID_WATER                                       :{TINYFONT}WT
+STR_CID_POTATO                                      :{TINYFONT}PO
+STR_CID_ELECTRICAL_PARTS                            :{TINYFONT}EP
+STR_CID_MACHINE_PARTS                               :{TINYFONT}MP
+STR_CID_SEWAGE                                      :{TINYFONT}SW
 
-STR_ERR_OPENTTD_VERSION                                                         :{ORANGE}E00: FIRS requires OpenTTD 1.7.0 (or for those using trunk builds, r27769)
-STR_ERR_INCOMPATIBLE_SET                                                        :{ORANGE}E01: {YELLOW}Incompatible set: {ORANGE}{STRING} {YELLOW}Consult FIRS ReadMe:
+STR_ERR_OPENTTD_VERSION                             :{ORANGE}E00: FIRS requires OpenTTD 1.7.0 (or for those using trunk builds, r27769)
+STR_ERR_INCOMPATIBLE_SET                            :{ORANGE}E01: {YELLOW}Incompatible set: {ORANGE}{STRING} {YELLOW}Consult FIRS ReadMe:
 
-STR_IND_Shopping_Centres							:Shopping Centres
-STR_IND_Manufacturing_Ind							:Manufacturing Industries
-STR_IND_Heavy_Ind									:Heavy Industries
-STR_IND_RESIDENTIAL									:Residential Estates
-STR_IND_Mines_and_Quarries							:Mines & Quarries
-STR_IND_FARMS										:Farms
-STR_IND_Utility_Comp								:Utility Companies
-STR_IND_Fishing_Offshore							:Fishing & Offshore
+STR_IND_Shopping_Centres                            :Shopping Centres
+STR_IND_Manufacturing_Ind                           :Manufacturing Industries
+STR_IND_Heavy_Ind                                   :Heavy Industries
+STR_IND_RESIDENTIAL                                 :Residential Estates
+STR_IND_Mines_and_Quarries                          :Mines & Quarries
+STR_IND_FARMS                                       :Farms
+STR_IND_Utility_Comp                                :Utility Companies
+STR_IND_Fishing_Offshore                            :Fishing & Offshore
 
-STR_IND_Marketplace_Core							:MerchantHall CoreModule
-STR_IND_Manufacturing_Core							:Manufactury CoreModule
-STR_IND_Heavy_Ind_Core								:Refinery CoreModule
-STR_IND_Hab_Core									:Residential inHub
-STR_IND_Mines_and_Quarries							:Mining CoreModule
-STR_IND_FarmShed									:FarmShed CoreModule
-STR_IND_Utility_Comp								:Life Support Core
-STR_IND_Fishing_Offshore							:SeaTower Surface Port
+STR_IND_Habs_Marketplaces                           :"MerchantHall" Warehouse Node
+STR_IND_Habs_Manufacturing                          :"Ani-Matic" 4D Printworks Hub
+STR_IND_Habs_Heavy_Ind                              :"L-INK" 4D Refinery Core
+STR_IND_Habs_RESIDENTIAL                            :"Recreatrix" RecCenter
+STR_IND_Habs_Mines_and_Quarries                     :"TownHub" Mining Colony Core
+STR_IND_Habs_FARMS                                  :"AgriSilo" Refrigeration Unit
+STR_IND_Habs_Life_Support                           :"CityHub" Life Support Core
+STR_IND_Habs_Fishing_Offshore                       :"SeaTower" Surface Port
 
+STR_EXTRA_Shopping_Centres                          :{BLACK}Build Shops
+STR_EXTRA_Manufacturing_Ind                         :{BLACK}Build Manufacturing Industries
+STR_EXTRA_Heavy_Ind                                 :{BLACK}Build Heavy Industries
+STR_EXTRA_RESIDENTIAL                               :{BLACK}Build Houses
+STR_EXTRA_Mines_and_Quarries                        :{BLACK}Commission prospector
+STR_EXTRA_FARMS                                     :{BLACK}Build Farms
+STR_EXTRA_Utility_Comp                              :{BLACK}Build Utility Companies
+STR_EXTRA_Fishing_Offshore                          :{BLACK}Build Fishing & Offshore
 
-STR_EXTRA_Shopping_Centres                                                      :{BLACK}Build Shops
-STR_EXTRA_Manufacturing_Ind							:{BLACK}Build Manufacturing Industries
-STR_EXTRA_Heavy_Ind								:{BLACK}Build Heavy Industries
-STR_EXTRA_RESIDENTIAL								:{BLACK}Build Houses
-STR_EXTRA_Mines_and_Quarries							:{BLACK}Build Mines & Quarries
-STR_EXTRA_FARMS									:{BLACK}Build Farms
-STR_EXTRA_Utility_Comp								:{BLACK}Build Utility Companies
-STR_EXTRA_Fishing_Offshore							:{BLACK}Build Fishing & Offshore
+STR_EXTRA_Habs_Shopping_Centres                     :{BLACK}Build Warehouse Nodes
+STR_EXTRA_Habs_Manufacturing_Ind                    :{BLACK}Build 4D PrintWorks
+STR_EXTRA_Habs_Heavy_Ind                            :{BLACK}Build Refinery Cores
+STR_EXTRA_Habs_RESIDENTIAL                          :{BLACK}Build RecCenters
+STR_EXTRA_Habs_Mines_and_Quarries                   :{BLACK}Found Mining Colony
+STR_EXTRA_Habs_FARMS                                :{BLACK}Build Refrigeration Unit
+STR_EXTRA_Habs_Utility_Comp                         :{BLACK}Build Life Support Cores
+STR_EXTRA_Habs_Fishing_Offshore                     :{BLACK}Build SeaTower
 
-STR_TOWN                                                                        :{STRING}
-STR_STATION                                                                     :{STRING} {STRING}
-
-
-STR_STATION_SHOPPING_CENTRES							:Shopping Centre
-STR_STATION_MANUFACTURING_IND							:Manufacturing Industrial
-STR_STATION_HEAVY_IND								:Heavy Industrial Estate
-STR_STATION_RESIDENTIAL								:Residential Estate
-STR_STATION_MINES_AND_QUARRIES							:Mines & Quarries
-STR_STATION_FARMS								:Farming Lands
-STR_STATION_UTILITY_COMP							:Utility Companies
-STR_STATION_FISHING_OFFSHORE							:Fishing & Offshore
-STR_STATION_WATER								:Sandbank
+STR_TOWN                                            :{STRING}
+STR_STATION                                         :{STRING}, {STRING}
+STR_STATION_SEAHAB                                  :{STRING} {STRING}, Surface Entrance
 
 
-STR_GRF_NAME                                                    :OTIS - One Tile Industry Set
-STR_GRF_DOCS_URL                                                :https://www.tt-forums.net/viewtopic.php?f=26&t=88584
+STR_STATION_SHOPPING_CENTRES                        :Shopping Centre
+STR_STATION_MANUFACTURING_IND                       :Manufacturing Industrial
+STR_STATION_HEAVY_IND                               :Heavy Industrial Estate
+STR_STATION_RESIDENTIAL                             :Residential Estate
+STR_STATION_MINES_AND_QUARRIES                      :Mines & Quarries
+STR_STATION_FARMS                                   :Farming Lands
+STR_STATION_UTILITY_COMP                            :Utility Companies
+STR_STATION_FISHING_OFFSHORE                        :Fishing & Offshore
+STR_STATION_WATER                                   :Sandbank
 
-STR_EMPTY   		:
+STR_STATION_HABS_SHOPPING_CENTRES                   :MerchantHall
+STR_STATION_HABS_MANUFACTURING_IND                  :4D Printworks
+STR_STATION_HABS_HEAVY_IND                          :"I.N.K" Refinery
+STR_STATION_HABS_RESIDENTIAL                        :RecNode
+STR_STATION_HABS_MINES_AND_QUARRIES                 :Mining TownHub
+STR_STATION_HABS_FARMS                              :FarmShed Node
+STR_STATION_HABS_UTILITY_COMP                       :Life Support Core
+STR_STATION_HABS_FISHING_OFFSHORE                   :Aquacultural Arcology
+STR_STATION_HABS_WATER                              :SeaTower
+
+
+STR_GRF_NAME                                        :ReMOTIS - reHabs: Martian One Tile Industry Set
+STR_GRF_DOCS_URL                                    :https://github.com/Gadg8eer/OpenGFX-Mars-reHabs-Late-Start
+
+STR_AIR_MINE_STATION_NAME             :Air Mine
+STR_AQUIFER_PUMP_STATION_NAME         :Pumping Station
+STR_FARM_STATION_NAME                 :Farm
+STR_ELECTROLYSIS_PLANT_STATION_NAME   :Water Plant
+STR_CHEMICAL_FACTORY_STATION_NAME     :Chemicals
+STR_FUSION_PLANT_STATION_NAME         :Power Station
+STR_GOODS_FACTORY_STATION_NAME        :Goods Factory
+STR_ICE_MINE_STATION_NAME             :Ice Mine
+STR_METAL_WORKS_STATION_NAME          :Metalworks
+STR_ORE_MINE_STATION_NAME             :Mine
+STR_TERRAFORMING_PLANT_STATION_NAME   :Terraforming
+STR_REGOLITH_PROCESSING_STATION_NAME  :Processing
+STR_REGOLITH_MINE_STATION_NAME        :Regolith Mine
+STR_LIFE_SUPPORT_STATION_NAME         :Life Support
+
+STR_EMPTY           :
