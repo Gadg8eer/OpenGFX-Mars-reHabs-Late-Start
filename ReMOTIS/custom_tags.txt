@@ -1,6 +1,0 @@
-VERSION        :0.1a
-VERSION_STRING :0.1a
-TITLE          :reMOTIS: OpenGFX Mars One Tile Industries Set {VERSION}
-FILENAME       :ogfx-mars-industries.grf
-REPO_HASH      :
-NEWGRF_VERSION :01
