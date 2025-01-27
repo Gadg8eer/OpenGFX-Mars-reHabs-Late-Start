@@ -1,6 +1,6 @@
-VERSION        :1.0
-VERSION_STRING :1
+VERSION        :1.0.1
+VERSION_STRING :1.0.1
 TITLE          :ReFix: OpenGFX Mars Landscape {VERSION}
-FILENAME       :ogfx-mars-landscape.grf
+FILENAME       :ogfx-mars-landscape-fixed.grf
 REPO_HASH      :
-NEWGRF_VERSION :5170
+NEWGRF_VERSION :5171
